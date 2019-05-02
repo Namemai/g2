@@ -119,14 +119,14 @@ lineSettings = sw.getSettings()
 Zmid = sw.getProfile().mid
 responsename = sw.getProfile().displayName
 
-print("---LOGIN SUCCES---\nBY: SELFBOT-BY:SADIS")
+print("---LOGIN SUCCES---\nBY: SELFBOT-BY:Zalim")
 
 poll = LinePoll(cl)
 call = cl
-creator = ["uf50d888821632d32461e37153ac775c0"]
-owner = ["uf50d888821632d32461e37153ac775c0"]
-admin = ["uf50d888821632d32461e37153ac775c0"]
-staff = ["uf50d888821632d32461e37153ac775c0"]
+creator = ["ufe278afdfb3617b8fd9919c9489b9ced"]
+owner = ["ufe278afdfb3617b8fd9919c9489b9ced"]
+admin = ["ufe278afdfb3617b8fd9919c9489b9ced"]
+staff = ["ufe278afdfb3617b8fd9919c9489b9ced"]
 mid = cl.getProfile().mid
 Amid = ki.getProfile().mid
 Bmid = kk.getProfile().mid
