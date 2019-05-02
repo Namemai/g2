@@ -214,12 +214,12 @@ wait = {
     "Talkdblacklist":False,
     "talkban":True,
     "contact":False,
-    'autoJoin':False,
-    'autoBlock':True,
-    'autoAdd':False,
+    'autoJoin':True,
+    'autoBlock':Falso,
+    'autoAdd':True,
     'autoRead':False,
-    'autoLeave':True,
-    'autoLeave1':True,
+    'autoLeave':False,
+    'autoLeave1':False,
     "detectMention":False,
     "Mentionkick":False,
     "welcomeOn":False,
@@ -227,11 +227,11 @@ wait = {
     "selfbot":True,
     "protectantijsOn":True,
     "ghostOn":True,
-    "mention":"Lagi Stalking yaaa...! gabung sini 😊",
-    "Respontag":"Apaan tag2 kalo penting VC aja langsung",
-    "welcome":"Selamat datang & semoga betah",
+    "mention":"╰☆☆ ᴾᴸᶻ ᴰᴼᴺ'ᵀ ᵀᴬᴳ, ᴵ ᴬᴹ ᴼᵁᵀ ᴼᶠ ᴿᴬᴺᴳᴱ ☆☆╮ 😊",
+    "Respontag":"╚»★ ᵂᴬᴵᵀᴵᴺᴳ ᶠᴼᴿ ᵂᴵᶠᴵ ˢᴵᴳᴺᴬᴸˢ ★«╝",
+    "welcome":"wєlcσmє tσ σur lσvєlч grσup '' thαnks fσr jσín",
     "comment":"Like like & like ",
-    "message":"[ Auto block ]\nThanks for add me 😭",
+    "message":"\nThanks for add me 😭",
 }
 
 read = {
@@ -283,7 +283,7 @@ def runtime(secs):
 def mentionMembers(to, mid):
     try:
         arrData = ""
-        textx = "DAFTAR JONES「{}」\n\n  [ Silahkan pilih ]\n1. ".format(str(len(mid)))
+        textx = "⁑мємвєяѕ ℓιѕт⁑「{}」\n\n \n1. ".format(str(len(mid)))
         arr = []
         no = 1
         num = 2
@@ -735,7 +735,7 @@ def bot(op):
                                             pass
         if op.type == 13:
             if mid in op.param3:
-                if wait["autoLeave"] == True:
+                if wait["autoLeave"] == False:
                     if op.param2 not in Bots and op.param2 not in owner and op.param2 not in admin and op.param2 not in staff:
                         cl.acceptGroupInvitation(op.param1)
                         ginfo = cl.getGroup(op.param1)
@@ -938,7 +938,7 @@ def bot(op):
 
         if op.type == 5:
             print ("[ 5 ] SELFBOT-BY:SADIS AUTO BLOCK")
-            if wait["autoBlock"] == True:
+            if wait["autoBlock"] == False:
                 cl.sendText(op.param1, wait["message"])
                 cl.sendContact(op.param1, "uf50d888821632d32461e37153ac775c0")
                 cl.blockContact(op.param1)
@@ -4336,7 +4336,7 @@ def bot(op):
                                for target in targets:
                                        try:
                                            admin.append(target)
-                                           cl.sendMessage(msg.to,"Berhasil menambahkan admin")
+                                           cl.sendMessage(msg.to,"❃ѕuccєєdєd menambahkan admin")
                                        except:
                                            pass
 
@@ -4351,7 +4351,7 @@ def bot(op):
                                for target in targets:
                                        try:
                                            staff.append(target)
-                                           cl.sendMessage(msg.to,"Berhasil menambahkan staff")
+                                           cl.sendMessage(msg.to,"❃ѕuccєєdєd menambahkan staff")
                                        except:
                                            pass
 
@@ -4366,7 +4366,7 @@ def bot(op):
                                for target in targets:
                                        try:
                                            Bots.append(target)
-                                           cl.sendMessage(msg.to,"Berhasil menambahkan bot")
+                                           cl.sendMessage(msg.to,"❃ѕuccєєdєd menambahkan bot")
                                        except:
                                            pass
 
@@ -4381,7 +4381,7 @@ def bot(op):
                                    if target not in Dpk:
                                        try:
                                            admin.remove(target)
-                                           cl.sendMessage(msg.to,"Berhasil menghapus admin")
+                                           cl.sendMessage(msg.to,"❃ѕuccєєdєd menghapus admin")
                                        except:
                                            pass
 
@@ -4396,7 +4396,7 @@ def bot(op):
                                    if target not in Dpk:
                                        try:
                                            staff.remove(target)
-                                           cl.sendMessage(msg.to,"Berhasil menghapus admin")
+                                           cl.sendMessage(msg.to,"❃ѕuccєєdєd menghapus admin")
                                        except:
                                            pass
 
