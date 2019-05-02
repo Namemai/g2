@@ -6,7 +6,7 @@
     "autoAdd": true,
     "autoJoin": false,
     "autoReject": false,
-    "autoLeave": true,
+    "autoLeave": false,
     "autoRead": false,
     "server": {},
     "changePicture": false,
