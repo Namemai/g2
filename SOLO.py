@@ -11,7 +11,7 @@ from googletrans import Translator
 import youtube_dl
 #GUNAKAN BOT DENGAN BIJAK
 #=============
-cl = LineClient("email","paswod")
+cl = LineClient("asifjamali83@gmail.com","paswod")
 cl.log("Auth Token : " + str(cl.authToken))
 channel = LineChannel(cl)
 cl.log("Channel Access Token : " + str(channel.channelAccessToken))
@@ -20,7 +20,7 @@ lineSettings = cl.getSettings()
 mid = cl.getProfile().mid
 responsename = cl.getProfile().displayName
 
-ki = LineClient("email","paswod")
+ki = LineClient("kicker1@asifboot.com","paswod")
 ki.log("Auth Token : " + str(ki.authToken))
 channel1 = LineChannel(ki)
 ki.log("Channel Access Token : " + str(channel1.channelAccessToken))
@@ -29,7 +29,7 @@ lineSettings = ki.getSettings()
 Amid = ki.getProfile().mid
 responsename1 = ki.getProfile().displayName
 
-kk = LineClient("email","paswod")
+kk = LineClient("kicker7@asifboot.com","paswod")
 kk.log("Auth Token : " + str(kk.authToken))
 channel2 = LineChannel(kk)
 kk.log("Channel Access Token : " + str(channel2.channelAccessToken))
@@ -38,7 +38,7 @@ lineSettings = kk.getSettings()
 Bmid = kk.getProfile().mid
 responsename2 = kk.getProfile().displayName
 
-kc = LineClient("email","paswod")
+kc = LineClient("wrfbot4@tol.ooo","paswod")
 kc.log("Auth Token : " + str(kc.authToken))
 channel3 = LineChannel(kc)
 kc.log("Channel Access Token : " + str(channel3.channelAccessToken))
@@ -47,7 +47,7 @@ lineSettings = kc.getSettings()
 Cmid = kc.getProfile().mid
 responsename3 = kc.getProfile().displayName
 
-km = LineClient("email","paswod")
+km = LineClient("wrfbot3@tol.ooo","paswod")
 km.log("Auth Token : " + str(km.authToken))
 channel4 = LineChannel(km)
 km.log("Channel Access Token : " + str(channel4.channelAccessToken))
@@ -56,7 +56,7 @@ lineSettings = km.getSettings()
 Dmid = km.getProfile().mid
 responsename4 = km.getProfile().displayName
 
-kb = LineClient("email","paswod")
+kb = LineClient("wrfbot2@tol.ooo","paswod")
 kb.log("Auth Token : " + str(kb.authToken))
 channel5 = LineChannel(kb)
 kb.log("Channel Access Token : " + str(channel5.channelAccessToken))
@@ -65,7 +65,7 @@ lineSettings = kb.getSettings()
 Emid = kb.getProfile().mid
 responsename5 = kb.getProfile().displayName
 
-kn = LineClient("email","paswod")
+kn = LineClient("wrfbot1@tol.ooo","paswod")
 kn.log("Auth Token : " + str(kn.authToken))
 channel6 = LineChannel(kn)
 kn.log("Channel Access Token : " + str(channel6.channelAccessToken))
@@ -74,7 +74,7 @@ lineSettings = kn.getSettings()
 Fmid = kb.getProfile().mid
 responsename6 = kn.getProfile().displayName
 
-ko = LineClient("email","paswod")
+ko = LineClient("bot-two@asifboot.com","paswod")
 ko.log("Auth Token : " + str(ko.authToken))
 channel7 = LineChannel(ko)
 ko.log("Channel Access Token : " + str(channel7.channelAccessToken))
@@ -83,7 +83,7 @@ lineSettings = ko.getSettings()
 Gmid = ko.getProfile().mid
 responsename7 = kb.getProfile().displayName
 
-kw = LineClient("email","paswod")
+kw = LineClient("bot-one@asifboot.com","paswod")
 kw.log("Auth Token : " + str(kw.authToken))
 channel8 = LineChannel(kw)
 kw.log("Channel Access Token : " + str(channel8.channelAccessToken))
@@ -92,7 +92,7 @@ lineSettings = kw.getSettings()
 Hmid = kw.getProfile().mid
 responsename8 = kw.getProfile().displayName
 
-ke = LineClient("email","paswod")
+ke = LineClient("atifali1@asifboot.com","paswod")
 ke.log("Auth Token : " + str(ke.authToken))
 channel9 = LineChannel(ke)
 ke.log("Channel Access Token : " + str(channel9.channelAccessToken))
@@ -101,7 +101,7 @@ lineSettings = ke.getSettings()
 Imid = ke.getProfile().mid
 responsename9 = ke.getProfile().displayName
 
-ky = LineClient("email","paswod")
+ky = LineClient("bot-three@asifboot.com","paswod")
 ky.log("Auth Token : " + str(ky.authToken))
 channel10 = LineChannel(ky)
 ky.log("Channel Access Token : " + str(channel10.channelAccessToken))
@@ -110,7 +110,7 @@ lineSettings = ky.getSettings()
 Jmid = ky.getProfile().mid
 responsename10 = ky.getProfile().displayName
 
-sw = LineClient("email","paswod")
+sw = LineClient("line11@asifboot.com","paswod")
 sw.log("Auth Token : " + str(sw.authToken))
 channel11 = LineChannel(sw)
 sw.log("Channel Access Token : " + str(channel11.channelAccessToken))
