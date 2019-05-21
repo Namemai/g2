@@ -22,7 +22,7 @@ from googletrans import Translator
 import youtube_dl
 #GUNAKAN BOT DENGAN BIJAK,,,SALAM SANTUN
 #CUKUP GANTI EMAIL&PASWOD KALIAN
-cl = LineClient("EMAIL","PASWOD") 
+cl = LineClient("asifjamali83@gmail.com","Atifkhan83") 
 cl.log("Auth Token : " + str(cl.authToken))
 channel = LineChannel(cl)
 cl.log("Channel Access Token : " + str(channel.channelAccessToken))
@@ -30,10 +30,10 @@ print("\nTERX-BOTS-SADIS SUKCESS LOGIN.....\n")
 
 poll = LinePoll(cl)
 call = cl
-creator = ["uf50d888821632d32461e37153ac775c0"]
-owner = ["uf50d888821632d32461e37153ac775c0"]
-admin = ["uf50d888821632d32461e37153ac775c0"]
-staff = ["uf50d888821632d32461e37153ac775c0"]
+creator = ["u7e99c5b3e4f01c95c104d0993fc41998"]
+owner = ["u7e99c5b3e4f01c95c104d0993fc41998"]
+admin = ["u7e99c5b3e4f01c95c104d0993fc41998"]
+staff = ["u7e99c5b3e4f01c95c104d0993fc41998"]
 lineProfile = cl.getProfile()
 mid = cl.getProfile().mid
 KAC = [cl]
