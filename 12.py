@@ -11,7 +11,7 @@ from googletrans import Translator
 import youtube_dl
 #GUNAKAN BOT DENGAN BIJAK
 #=============
-cl = LineClient("asifjamali83@gmail.com","Atifkhan83")
+cl = LineClient("tst19227@eoopy.com","mai06555mai")
 cl.log("Auth Token : " + str(cl.authToken))
 channel = LineChannel(cl)
 cl.log("Channel Access Token : " + str(channel.channelAccessToken))
@@ -123,10 +123,10 @@ print("---LOGIN SUCCES---\nBY: SELFBOT-BY:Zalim")
 
 poll = LinePoll(cl)
 call = cl
-creator = ["ufe278afdfb3617b8fd9919c9489b9ced"]
-owner = ["ufe278afdfb3617b8fd9919c9489b9ced"]
-admin = ["ufe278afdfb3617b8fd9919c9489b9ced"]
-staff = ["ufe278afdfb3617b8fd9919c9489b9ced"]
+creator = ["uc66e45201d1612eb4ce7b3a86bac4685"]
+owner = ["uc66e45201d1612eb4ce7b3a86bac4685"]
+admin = ["uc66e45201d1612eb4ce7b3a86bac4685"]
+staff = ["uc66e45201d1612eb4ce7b3a86bac4685"]
 mid = cl.getProfile().mid
 Amid = ki.getProfile().mid
 Bmid = kk.getProfile().mid
