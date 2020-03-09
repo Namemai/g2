@@ -452,6 +452,7 @@ def help():
                   "║💀☈ " + key + "Listadmin\n" + \
                   "║💀☈ " + key + "Listprotect\n" + \
                   "╚═[ SELFBOT ]\n" + \
+                  "▬▬▬▬*****▬▬▬▬\n" + \
     return helpMessage
 
 def helpbot():
@@ -516,6 +517,7 @@ def helpbot():
                   "║🤖☈ " + key + "Gift:「Mid korban」「Jumlah」\n" + \
                   "║🤖☈ " + key + "Spam:「Mid korban」「Jumlah」\n" + \
                   "╚═[ SELFBOT ]\n" + \
+                  "▬▬▬▬*****▬▬▬▬\n" + \
     return helpMessage1
 
 def helpgroup():
@@ -557,6 +559,7 @@ def helpgroup():
                   "║👿☈ " + key + "Sider「on/off」\n" + \
                   "║👿☈ " + key + "Broadcast:「Text」\n" + \
                   "╚[ SELFBOT ]\n" + \
+                  "▬▬▬▬*****▬▬▬▬\n" + \
     return helpMessage2
 
 def bot(op):
