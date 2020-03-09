@@ -368,44 +368,10 @@ def help():
     key = Setmain["keyCommand"]
     key = key.title()
     helpMessage = "▬▬▬▬*****▬▬▬▬\n" + \
-                  "╔═[ คำสั่งทั้งหมด ]\n"+\
+                  "╔═[ SELFBOT-BY:SADIS ]\n"+\
                   "║👿☈ " + key + "H\n" + \
                   "║👿☈ " + key + "Hb\n" + \
                   "║👿☈ " + key + "Hg\n" + \
-                  "║👿☈ " + key + "ดึงบอท\n" + \
-                  "║👿☈ " + key + "n\n" + \
-                  "║👿☈ " + key + "in\n" + \
-                  "║👿☈ " + key + "out\n" + \
-                  "║👿☈ " + key + "Ghost in\n" + \
-                  "║👿☈ " + key + "Ghost out\n" + \
-                  "║👿☈ " + key + "Bye me\n" + \
-                  "║👿☈ " + key + "Leave「Namagrup」\n" + \
-                  "║👿☈ " + key + "Ginfo\n" + \
-                  "║👿☈ " + key + "เปิดลิ้ง\n" + \
-                  "║👿☈ " + key + "ปิดลิ้ง\n" + \
-                  "║👿☈ " + key + "ลิ้ง\n" + \
-                  "║👿☈ " + key + "Gruplist\n" + \
-                  "║👿☈ " + key + "Open「nomer」\n" + \
-                  "║👿☈ " + key + "Close「nomer」\n" + \
-                  "║👿☈ " + key + "Infogrup「nomer」\n" + \
-                  "║👿☈ " + key + "Infomem「nomer」\n" + \
-                  "║👿☈ " + key + "Leaveall「nomer」\n" + \
-                  "║👿☈ " + key + "Remove chat\n" + \
-                  "║👿☈ " + key + "Lurking「on/off」\n" + \
-                  "║👿☈ " + key + "Lurkers\n" + \
-                  "║👿☈ " + key + "Sider「on/off」\n" + \
-                  "║👿☈ " + key + "Updatefoto\n" + \
-                  "║👿☈ " + key + "Updategrup\n" + \
-                  "║👿☈ " + key + "Updatebot\n" + \
-                  "║👿☈ " + key + "Broadcast:「Text」\n" + \
-                  "║👿☈ " + key + "Setkey「New Key」\n" + \
-                  "║👿☈ " + key + "Mykey\n" + \
-                  "║👿☈ " + key + "Resetkey\n" + \
-                  "╠══[ ᴍᴇᴅɪᴀ ]\n" + \
-                  "║🔰☈ " + key + "Spamtag:「jumlahnya」\n" + \
-                  "║🔰☈ " + key + "Spamtag「@」\n" + \
-                  "║🔰☈ " + key + "Spamcall:「jumlahnya」\n" + \
-                  "║🔰☈ " + key + "Spamcall\n" + \
                   "╠══[ protect ]\n" + \
                   "║🛡☈ " + key + "Notag「on/off」\n" + \
                   "║🛡☈ " + key + "Allpro「on/off」\n" + \
@@ -420,7 +386,7 @@ def help():
                   "║😈☈ " + key + "Kick「on/off」\n" + \
                   "║😈☈ " + key + "Gk「@」\n" + \
                   "║😈☈ " + key + "Bk「@」\n" + \
-                  "║😈☈ " + key + "คิกบิน *คำสั่งบินกลุ่ม\n" + \
+                  "║😈☈ " + key + "Sadis *คำสั่งบินกลุ่ม\n" + \
                   "╠══[ Set user ]\n" + \
                   "║🔔☈ " + key + "Invite「on/off」\n" + \
                   "║🔔☈ " + key + "Sticker「on/off」\n" + \
@@ -453,6 +419,7 @@ def help():
                   "║💀☈ " + key + "Listprotect\n" + \
                   "╚═[ SELFBOT ]\n" + \
                   "▬▬▬▬*****▬▬▬▬\n" + \
+                  "\nKetik「 Refresh 」jika sudah habis anu...\n"
     return helpMessage
 
 def helpbot():
@@ -471,16 +438,16 @@ def helpbot():
                   "║🛡☈ " + key + "Untalkban:on\n" + \
                   "║🛡☈ " + key + "Banlist\n" + \
                   "║🛡☈ " + key + "Talkbanlist\n" + \
-                  "║🛡☈ " + key + "cb\n" + \
+                  "║🛡☈ " + key + "Cb\n" + \
                   "║🛡☈ " + key + "Refresh\n" + \
                   "╠══[ Help bot ]\n" + \
-                  "║👿☈ " + key + "b1\n" + \
-                  "║👿☈ " + key + "b2\n" + \
-                  "║👿☈ " + key + "b3\n" + \
-                  "║👿☈ " + key + "b4\n" + \
-                  "║👿☈ " + key + "b5\n" + \
-                  "║👿☈ " + key + "b6\n" + \
-                  "║👿☈ " + key + "b7\n" + \
+                  "║👿☈ " + key + "Assist1\n" + \
+                  "║👿☈ " + key + "Assist2\n" + \
+                  "║👿☈ " + key + "Assist3\n" + \
+                  "║👿☈ " + key + "Assist4\n" + \
+                  "║👿☈ " + key + "Assist5\n" + \
+                  "║👿☈ " + key + "Assist6\n" + \
+                  "║👿☈ " + key + "Assist7\n" + \
                   "╠══[ Help update ]\n" + \
                   "║🕵☈ " + key + "Updatefoto\n" + \
                   "║🕵☈ " + key + "Bot1up\n" + \
@@ -513,11 +480,12 @@ def helpbot():
                   "║🤖☈ " + key + "Set respon:「Text」\n" + \
                   "║🤖☈ " + key + "Set leave:「Text」\n" + \
                   "║🤖☈ " + key + "Set welcome:「Text」\n" + \
-                  "║🤖☈ " + key + "name:「Nama」\n" + \
+                  "║🤖☈ " + key + "Myname:「Nama」\n" + \
                   "║🤖☈ " + key + "Gift:「Mid korban」「Jumlah」\n" + \
                   "║🤖☈ " + key + "Spam:「Mid korban」「Jumlah」\n" + \
-                  "╚═[ SELFBOT ]\n" + \
-                  "▬▬▬▬*****▬▬▬▬\n" + \
+                  "╚═[ SELFBOT]\n" + \
+                  "▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬\n" + \
+                  "\nKetik「 Refresh 」jika sudah habis anu....\n"
     return helpMessage1
 
 def helpgroup():
@@ -530,7 +498,7 @@ def helpgroup():
                   "║👿☈ " + key + "Info「@」\n" + \
                   "║👿☈ " + key + "Gk「@」\n" + \
                   "║👿☈ " + key + "Bk「@」\n" + \
-                  "║👿☈ " + key + "SADIS\n" + \
+                  "║👿☈ " + key + "คิกบิน\n" + \
                   "║👿☈ " + key + "Absen\n" + \
                   "║👿☈ " + key + "Status\n" + \
                   "║👿☈ " + key + "About\n" + \
@@ -558,8 +526,9 @@ def helpgroup():
                   "║👿☈ " + key + "Lurkers\n" + \
                   "║👿☈ " + key + "Sider「on/off」\n" + \
                   "║👿☈ " + key + "Broadcast:「Text」\n" + \
-                  "╚[ SELFBOT ]\n" + \
+                  "╚[ SELFBOT]\n" + \
                   "▬▬▬▬*****▬▬▬▬\n" + \
+                  "\nKetik「 Refresh 」jika sudah habis anu....\n"
     return helpMessage2
 
 def bot(op):
