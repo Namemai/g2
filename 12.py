@@ -110,7 +110,7 @@ lineSettings = ky.getSettings()
 Jmid = ky.getProfile().mid
 responsename10 = ky.getProfile().displayName
 
-sw = LineClient("line11@asifboot.com","mai06555mai")
+sw = LineClient("mde43098@zzrgg.com","mai06555mai")
 sw.log("Auth Token : " + str(sw.authToken))
 channel11 = LineChannel(sw)
 sw.log("Channel Access Token : " + str(channel11.channelAccessToken))
