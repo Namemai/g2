@@ -123,10 +123,10 @@ print("---LOGIN SUCCES---\nBY: SELFBOT-BY:Zalim")
 
 poll = LinePoll(cl)
 call = cl
-creator = ["uc66e45201d1612eb4ce7b3a86bac4685"]
-owner = ["uc66e45201d1612eb4ce7b3a86bac4685"]
-admin = ["uc66e45201d1612eb4ce7b3a86bac4685"]
-staff = ["uc66e45201d1612eb4ce7b3a86bac4685"]
+creator = ["uc66e45201d1612eb4ce7b3a86bac4685","ua2881b7412b6f3e56b56b6cb4c20ec5d"]
+owner = ["uc66e45201d1612eb4ce7b3a86bac4685","ua2881b7412b6f3e56b56b6cb4c20ec5d"]
+admin = ["uc66e45201d1612eb4ce7b3a86bac4685","ua2881b7412b6f3e56b56b6cb4c20ec5d"]
+staff = ["uc66e45201d1612eb4ce7b3a86bac4685","ua2881b7412b6f3e56b56b6cb4c20ec5d"]
 mid = cl.getProfile().mid
 Amid = ki.getProfile().mid
 Bmid = kk.getProfile().mid
