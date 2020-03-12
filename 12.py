@@ -13,111 +13,50 @@ import youtube_dl
 #=============
 cl = LineClient("eor68399@eoopy.com","mai06555mai")
 cl.log("Auth Token : " + str(cl.authToken))
-channel = LineChannel(cl)
-cl.log("Channel Access Token : " + str(channel.channelAccessToken))
-lineProfile = cl.getProfile()
-lineSettings = cl.getSettings()
-mid = cl.getProfile().mid
-responsename = cl.getProfile().displayName
+
 
 ki = LineClient("ngh81593@bcaoo.com","mai06555mai")
 ki.log("Auth Token : " + str(ki.authToken))
-channel1 = LineChannel(ki)
-ki.log("Channel Access Token : " + str(channel1.channelAccessToken))
-lineProfile = ki.getProfile()
-lineSettings = ki.getSettings()
-Amid = ki.getProfile().mid
-responsename1 = ki.getProfile().displayName
+
 
 kk = LineClient("rxa09671@eoopy.com","mai06555mai")
 kk.log("Auth Token : " + str(kk.authToken))
-channel2 = LineChannel(kk)
-kk.log("Channel Access Token : " + str(channel2.channelAccessToken))
-lineProfile = kk.getProfile()
-lineSettings = kk.getSettings()
-Bmid = kk.getProfile().mid
-responsename2 = kk.getProfile().displayName
 
 kc = LineClient("zii43214@eoopy.com","mai06555mai")
 kc.log("Auth Token : " + str(kc.authToken))
-channel3 = LineChannel(kc)
-kc.log("Channel Access Token : " + str(channel3.channelAccessToken))
-lineProfile = kc.getProfile()
-lineSettings = kc.getSettings()
-Cmid = kc.getProfile().mid
-responsename3 = kc.getProfile().displayName
+
 
 km = LineClient("fjr17555@zzrgg.com","mai06555mai")
 km.log("Auth Token : " + str(km.authToken))
-channel4 = LineChannel(km)
-km.log("Channel Access Token : " + str(channel4.channelAccessToken))
-lineProfile = km.getProfile()
-lineSettings = km.getSettings()
-Dmid = km.getProfile().mid
-responsename4 = km.getProfile().displayName
+
 
 kb = LineClient("dsy67917@zzrgg.com","mai06555mai")
 kb.log("Auth Token : " + str(kb.authToken))
-channel5 = LineChannel(kb)
-kb.log("Channel Access Token : " + str(channel5.channelAccessToken))
-lineProfile = kb.getProfile()
-lineSettings = kb.getSettings()
-Emid = kb.getProfile().mid
-responsename5 = kb.getProfile().displayName
+
 
 kn = LineClient("bzf97835@bcaoo.com","mai06555mai")
 kn.log("Auth Token : " + str(kn.authToken))
-channel6 = LineChannel(kn)
-kn.log("Channel Access Token : " + str(channel6.channelAccessToken))
-lineProfile = kn.getProfile()
-lineSettings = kn.getSettings()
-Fmid = kb.getProfile().mid
-responsename6 = kn.getProfile().displayName
+
 
 ko = LineClient("rye61111@bcaoo.com","mai06555mai")
 ko.log("Auth Token : " + str(ko.authToken))
-channel7 = LineChannel(ko)
-ko.log("Channel Access Token : " + str(channel7.channelAccessToken))
-lineProfile = ko.getProfile()
-lineSettings = ko.getSettings()
-Gmid = ko.getProfile().mid
-responsename7 = kb.getProfile().displayName
+
 
 kw = LineClient("piu45560@bcaoo.com","mai06555mai")
 kw.log("Auth Token : " + str(kw.authToken))
-channel8 = LineChannel(kw)
-kw.log("Channel Access Token : " + str(channel8.channelAccessToken))
-lineProfile = kw.getProfile()
-lineSettings = kw.getSettings()
-Hmid = kw.getProfile().mid
-responsename8 = kw.getProfile().displayName
+
 
 ke = LineClient("ctc88352@bcaoo.com","mai06555mai")
 ke.log("Auth Token : " + str(ke.authToken))
-channel9 = LineChannel(ke)
-ke.log("Channel Access Token : " + str(channel9.channelAccessToken))
-lineProfile = ke.getProfile()
-lineSettings = ke.getSettings()
-Imid = ke.getProfile().mid
-responsename9 = ke.getProfile().displayName
+
 
 ky = LineClient("vgc03839@zzrgg.com","mai06555mai")
 ky.log("Auth Token : " + str(ky.authToken))
-channel10 = LineChannel(ky)
-ky.log("Channel Access Token : " + str(channel10.channelAccessToken))
-lineProfile = ky.getProfile()
-lineSettings = ky.getSettings()
-Jmid = ky.getProfile().mid
-responsename10 = ky.getProfile().displayName
+
 
 sw = LineClient("mde43098@zzrgg.com","mai06555mai")
 sw.log("Auth Token : " + str(sw.authToken))
-channel11 = LineChannel(sw)
-sw.log("Channel Access Token : " + str(channel11.channelAccessToken))
-lineProfile = sw.getProfile()
-lineSettings = sw.getSettings()
-Zmid = sw.getProfile().mid
-responsename = sw.getProfile().displayName
+
 
 print("---LOGIN SUCCES---\nBY: SELFBOT-BY:Zalim")
 
