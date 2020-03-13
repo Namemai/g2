@@ -13,7 +13,8 @@ import youtube_dl
 #=============
 cl = LineClient("eor68399@eoopy.com","mai06555mai")
 cl.log("Auth Token : " + str(cl.authToken))
-
+channel1 = LineChannel(cl,cl.server.CHANNEL_ID['LINE_TIMELINE'])
+cl.log("Channel Access Token : " + str(channel1.channelAccessToken))
 
 ki = LineClient("ngh81593@bcaoo.com","mai06555mai")
 ki.log("Auth Token : " + str(ki.authToken))
