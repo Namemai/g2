@@ -118,7 +118,7 @@ Jmid = ky.getProfile().mid
 mid12 = k12.getProfile().mid
 Zmid = sw.getProfile().mid
 KAC = [cl,ki,kk,kc,km,kb,kn,ko,kw,ke,ky,k12,sw]
-ABC = [cl,ki,kk,kc,km,kb,kn,ko,kw,ke,ky,k12,sw]
+ABC = [ki,kk,kc,km,kb,kn,ko,kw,ke,ky,k12,sw]
 Bots = [mid,Amid,Bmid,Cmid,Dmid,Emid,Fmid,Gmid,Hmid,Imid,Jmid,mid12,Zmid]
 Dpk = admin + staff
 
@@ -807,24 +807,43 @@ def bot(op):
                 else:
                     wait["blacklist"][op.param2] = True                    
                     try:
-                        cl.cancelGroupInvitation(op.param1,[op.param2])
+                        ki.cancelGroupInvitation(op.param1,[op.param2])
                     except:
                         try:
-                            ki.cancelGroupInvitation(op.param1,[op.param2])
+                            kk.cancelGroupInvitation(op.param1,[op.param2])
                         except:
                             try:
-                                kk.cancelGroupInvitation(op.param1,[op.param2])
+                                kc.cancelGroupInvitation(op.param1,[op.param2])
                             except:
                                 try:
-                                    kc.cancelGroupInvitation(op.param1,[op.param2])
+                                    km.cancelGroupInvitation(op.param1,[op.param2])
                                 except:
                                     try:
-                                    	km.cancleGroupInvitation(op.param1,[op.param2])
+                                        kb.cancleGroupInvitation(op.param1,[op.param2])
                                     except:
                                         try:
-                                        	kb.cancleGroupInvitation(op.param1,[op.param2])
+                                            kn.cancleGroupInvitation(op.param1,[op.param2])
                                         except:
-                                        	pass
+                                            try:
+                                                ko.cancleGroupInvitation(op.param1,[op.param2])
+                                            except:
+                                                try:
+                                                    kw.cancleGroupInvitation(op.param1,[op.param2])
+                                                except:
+                                                    try:
+                                                        ke.cancleGroupInvitation(op.param1,[op.param2])
+                                                    except:
+                                                        try:
+                                                            ky.cancleGroupInvitation(op.param1,[op.param2])
+                                                        except:
+                                                            try:
+                                                                k12.cancleGroupInvitation(op.param1,[op.param2])
+                                                            except:
+                                                                try:
+                                                                    cl.cancleGroupInvitation(op.param1,[op.param2])
+                                                                except:
+                                                                    pass
+
                 return
                                             
 #__________________________________
@@ -1648,8 +1667,8 @@ def bot(op):
                         cl.acceptGroupInvitation(op.param1)
                     except:
                         try:
-                            ky.kickoutFromGroup(op.param1,[op.param2])
-                            ky.inviteIntoGroup(op.param1,[op.param3])
+                            ki.kickoutFromGroup(op.param1,[op.param2])
+                            ki.inviteIntoGroup(op.param1,[op.param3])
                             k12.acceptGroupInvitation(op.param1)
                         except:
                             try:
@@ -1681,13 +1700,13 @@ def bot(op):
                                     Ticket = cl.reissueGroupTicket(op.param1)
                                 except:
                                     try:
-                                        ky.kickoutFromGroup(op.param1,[op.param2])
-                                        ky.inviteIntoGroup(op.param1,[op.param3])
-                                        cl.acceptGroupInvitation(op.param1)
+                                        ki.kickoutFromGroup(op.param1,[op.param2])
+                                        ki.inviteIntoGroup(op.param1,[op.param3])
+                                        k12.acceptGroupInvitation(op.param1)
                                     except:
                                         try:
-                                            ki.kickoutFromGroup(op.param1,[op.param2])
-                                            ki.inviteIntoGroup(op.param1,[op.param3])
+                                            kk.kickoutFromGroup(op.param1,[op.param2])
+                                            kk.inviteIntoGroup(op.param1,[op.param3])
                                             k12.acceptGroupInvitation(op.param1)
                                         except:
                                             pass 
@@ -2455,7 +2474,6 @@ def bot(op):
                         cl.updateGroup(G)
                     else:
                         G = cl.getGroup(op.param1)
-                        cl.kickoutFromGroup(op.param1,[op.param2])
                         G.preventedJoinByTicket = False
                         cl.updateGroup(G)
                         Ticket = cl.reissueGroupTicket(op.param1)
@@ -2905,68 +2923,45 @@ def bot(op):
                                helpMessage2 = helpgroup()
                                cl.sendMessage(msg.to, str(helpMessage2))
 
-                        elif cmd == "set":
+                        elif cmd == "status":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                 tz = pytz.timezone("Asia/Jakarta")
                                 timeNow = datetime.now(tz=tz)
-                                md = "\n       「🔑STATUS🔑」\n"
-                                if wait["stickerOn"] == True: md+="「🔑」 Sticker「ON」📲\n"
-                                else: md+="「🔑」 Sticker「OFF」\n"
-                                if wait["contact"] == True: md+="「🔑」 Contact「ON」📲\n"
-                                else: md+="「🔑」 Contact「OFF」\n"
-                                if wait["talkban"] == True: md+="「🔑」 Talkban「ON」📲\n"
-                                else: md+="「🔑」 Talkban「OFF」\n"
-                                if wait["unsend"] == True: md+="「🔑」 Unsend「ON」📲\n"
-                                else: md+="「🔑」 Unsend「OFF」\n"
-                                if settings["SpamInvite"] == True: md+="「🔑」 Spaminvite「ON」📲\n"
-                                else: md+="「🔑」 Spaminvite「OFF」\n"
-                                if wait["detectMention"] == True: md+="「🔑」 Respon「ON」📲\n"
-                                else: md+="「🔑」 Respon「OFF」\n"
-                                if wait["Timeline"] == True: md+="「🔑」 Timeline「ON」📲\n"
-                                else: md+="「🔑」 Timeline「OFF」\n"
-                                if wait["autoJoin"] == True: md+="「🔑」 Autojoin「ON」📲\n"
-                                else: md+="「🔑」 Autojoin「OFF」\n"
-                                if wait["autoAdd"] == True: md+="「🔑」 Autoadd「ON」📲\n"
-                                else: md+="「🔑」 Autoadd「OFF」\n"
-                                if settings["autoJoinTicket"] == True: md+="「✭」 Jointicket「ON」📲\n"
-                                else: md+="「🔑」 Jointicket「OFF」\n"
-                                if msg.to in welcome: md+="「🔑」 Welcome「ON」📲\n"
-                                else: md+="「🔑」 Welcome「OFF」\n"
-                                if wait["autoLeave"] == True: md+="「🔑」 Autoleave「ON」📲\n"
-                                else: md+="「🔑」 Autoleave「OFF」\n"
-                                if msg.to in protectqr: md+="「🔑」Protecturl「ON」📲\n"
-                                else: md+="「🔑」Protecturl「OFF」\n"
-                                if msg.to in protectjoin: md+="「🔑」Protectjoin「ON」📲\n"
-                                else: md+="「🔑」Protectjoin「OFF」\n"
-                                if msg.to in protectjoin: md+="「🔑」Protectinvite「ON」📲\n"
-                                else: md+="「🔑」Protecinvite「OFF」\n"
-                                if msg.to in protectkick: md+="「🔑」Protectkick「ON」📲\n"
-                                else: md+="「🔑」Protectkick「OFF」\n"
-                                if msg.to in protectcancel: md+="「🔑」Protectcancel「ON」📲\n"
-                                else: md+="「🔑」Protectcancel「OFF」\n"
-                                if msg.to in protectantijs: md+="「🔑」Antijs「ON」📲\n"
-                                else: md+="「🔑」Antijs「OFF」\n"  
-                                if msg.to in ghost: md+="「🔑」Ghost「ON」📲\n"
-                                else: md+="「🔑」Ghost「OFF」\n"
-                                ginfo = cl.getGroup(msg.to)
-                                ryan = cl.getContact(mid)
-                                zx = ""
-                                zxc = ""
-                                zx2 = []
-                                xpesan =  "「 TEAM: SADIS_BOTS 」\n• User : "
-                                ret_ = "• Group : {}\n".format(str(ginfo.name))
-                                ret_ += str(md)
-                                ry = str(ryan.displayName)
-                                pesan = ''
-                                pesan2 = pesan+"@x \n\n"
-                                xlen = str(len(zxc)+len(xpesan))
-                                xlen2 = str(len(zxc)+len(pesan2)+len(xpesan)-1)
-                                zx = {'S':xlen, 'E':xlen2, 'M':ryan.mid}
-                                zx2.append(zx)
-                                zxc += pesan2
-                                text = xpesan + zxc + ret_ + "\n• Jam [ "+ datetime.strftime(timeNow,'%H:%M:%S')+" ]"+"\n• Tanggal : "+ datetime.strftime(timeNow,'%Y-%m-%d')
-                                cl.sendMessage(to, text, contentMetadata={'MENTION':str('{"MENTIONEES":'+json.dumps(zx2).replace(' ','')+'}')}, contentType=0)
+                                md = "SELFBOT\n\n"
+                                if wait["sticker"] == True: md+=" Sticker「 ✔ 」\n"
+                                else: md+=" Sticker「 ✖ 」\n"
+                                if wait["contact"] == True: md+=" Contact「 ✔ 」\n"
+                                else: md+=" Contact「 ✖ 」\n"
+                                if wait["talkban"] == True: md+=" Talkban「 ✔ 」\n"
+                                else: md+=" Talkban「 ✖ 」\n"
+                                if wait["Mentionkick"] == True: md+=" Notag「 ✔ 」\n"
+                                else: md+=" Notag「 ✖ 」\n"
+                                if wait["detectMention"] == True: md+=" Respon「 ✔ 」\n"
+                                else: md+=" Respon「 ✖ 」\n"
+                                if wait["autoJoin"] == True: md+=" Autojoin「 ✔ 」\n"
+                                else: md+=" Autojoin「 ✖ 」\n"
+                                if wait["autoAdd"] == True: md+=" Autoadd「 ✔ 」\n"
+                                else: md+=" Autoadd「 ✖ 」\n"
+                                if msg.to in welcome: md+=" Welcome「 ✔ 」\n"
+                                else: md+=" Welcome「 ✖ 」\n"
+                                if wait["autoLeave"] == True: md+=" Autoleave「 ✔ 」\n"
+                                else: md+=" Autoleave「 ✖ 」\n"
+                                if msg.to in protectqr: md+=" Protecturl「 ✔ 」\n"
+                                else: md+=" Protecturl「 ✖ 」\n"
+                                if msg.to in protectjoin: md+=" Protectjoin「 ✔ 」\n"
+                                else: md+=" Protectjoin「 ✖ 」\n"
+                                if msg.to in protectkick: md+=" Protectkick「 ✔ 」\n"
+                                else: md+=" Protectkick「 ✖ 」\n"
+                                if msg.to in protectinvite: md+=" Protectinvite「 ✔ 」\n"
+                                else: md+=" Protectinvite「 ✖ 」\n"
+                                if msg.to in protectcancel: md+=" Protectcancel「 ✔ 」\n"
+                                else: md+=" Protectcancel「 ✖ 」\n"
+                                if msg.to in protectantijs: md+=" js「 ✔ 」\n"
+                                else: md+=" js「 ✖ 」\n"  
+                                if msg.to in ghost: md+=" ผี「 ✔ 」\n"
+                                else: md+=" ผี「 ✖ 」\n"                                   
+                                cl.sendMessage(msg.to, md+"\nTanggal : "+ datetime.strftime(timeNow,'%Y-%m-%d')+"\nJam [ "+ datetime.strftime(timeNow,'%H:%M:%S')+" ]")
 
                         elif cmd == "creator" or text.lower() == 'ผส':
                             #if msg._from in admin:
@@ -2976,7 +2971,7 @@ def bot(op):
                                     ma = cl.getContact(i)
                                     cl.sendMessage(msg.to, None, contentMetadata={'mid': i}, contentType=13)
 
-                        elif cmd == ".about" or cmd == "informasi":
+                        elif cmd == "about" or cmd == "informasi":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                sendMention(msg.to, sender, "「 Type Selfbot 」\n")
@@ -5157,7 +5152,7 @@ def bot(op):
                               spl = msg.text.replace('js ','')
                               if spl == 'on':
                                   if msg.to in protectantijs:
-                                       msgs = "Anti JS activated"
+                                       msgs = "JS activated"
                                   else:
                                        protectantijs.append(msg.to)
                                        ginfo = cl.getGroup(msg.to)
