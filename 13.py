@@ -793,7 +793,7 @@ def bot(op):
                                         ke.kickoutFromGroup(op.param1,[op.param2])
                                 except:
                                     pass
-
+                return
         if op.type == 13:
             if op.param2 in wait["blacklist"]:
                 if op.param2 in Bots:
