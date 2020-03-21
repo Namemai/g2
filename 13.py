@@ -2478,7 +2478,7 @@ def bot(op):
                         G.preventedJoinByTicket = True
                         cl.updateGroup(G)
                         settings["blacklist"][op.param2] = True
-              except:
+                else:
                     pass
 #======================================================================================================#
                 return
