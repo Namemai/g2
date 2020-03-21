@@ -1,15 +1,27 @@
+
+# -*- coding: utf-8 -*- 
 import KIA
 from KIA import *
 from akad.ttypes import *
+from thrift.unverting import *
+from thrift.TMultiplexedProcessor import *
+from thrift.TSerialization import *
+from thrift.TRecursive import *
+from thrift import transport, protocol, server
 from multiprocessing import Pool, Process
+from humanfriendly import format_timespan, format_size, format_number, format_length
 from time import sleep
-import pytz, datetime, pafy, time, timeit, random, sys, ast, re, os, json, subprocess, threading, string, codecs, requests, tweepy, ctypes, urllib, wikipedia
+import time, random, sys, json, codecs, threading, glob, re, string, os, requests, subprocess, six, ast, pytz, urllib.request, urllib.parse, urllib.error, urllib.parse
 from datetime import timedelta, date
 from datetime import datetime
+from gtts import gTTS
+import html5lib,shutil
+import wikipedia,goslate
+import ffmpy
 from bs4 import BeautifulSoup
 from googletrans import Translator
 import youtube_dl
-#GUNAKAN BOT DENGAN BIJAK
+#SEMOGA BERMANFAAT,,,TEGUH S..
 #=============
 cl = LineClient("eor68399@eoopy.com","mai06555mai")
 cl.log("Auth Token : " + str(cl.authToken))
