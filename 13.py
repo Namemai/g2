@@ -1683,10 +1683,10 @@ def bot(op):
                                             k12.acceptGroupInvitation(op.param1)
                                         except:
                                             pass 
-#======================================================================================================#
+
                     return
         
-             if op.type == 19:
+            if op.type == 19:
                 if op.param3 in mid:
                     if op.param2 in Amid:
                         G = ki.getGroup(op.param1)
