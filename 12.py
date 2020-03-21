@@ -86,7 +86,7 @@ ky.log("Channel Access Token : " + str(channel10.channelAccessToken))
 
 k12 = LineClient("vgc03839@zzrgg.com","mai06555mai")
 k12.log("Auth Token : " + str(k12.authToken))
-channel = LineChannel(k12)
+channel12 = LineChannel(k12)
 k12.log("Channel Access Token : " + str(channel12.channelAccessToken))
 
 
