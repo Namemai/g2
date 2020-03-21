@@ -380,21 +380,78 @@ def help():
     key = Setmain["keyCommand"]
     key = key.title()
     helpMessage = "▬▬▬▬*****▬▬▬▬\n" + \
-                  "╔═[ คำสั่งรวม ]\n"+\
-                  "║☈ " + key + "H\n" + \
-                  "║☈ " + key + "Hb\n" + \
-                  "║☈ " + key + "Hg\n" + \
-                  "║☈ " + key + "ดึงคิก\n" + \
-                  "║☈ " + key + "b\n" + \
-                  "║☈ " + key + "มา\n" + \
-                  "║☈ " + key + "ออก\n" + \
-                  "║☈ " + key + "ผีมา\n" + \
-                  "║☈ " + key + "ผีออก\n" + \
-                  "║☈ " + key + "Ginfo\n" + \
-                  "║☈ " + key + "เปิดลิ้ง\n" + \
-                  "║☈ " + key + "ปิดลิ้ง\n" + \
-                  "║☈ " + key + "ลิ้ง\n" + \
-                  "║☈ " + key + "รายชื่อกลุ่ม\n" + \
+                  "╔═[ SELFBOT-BY:SADIS ]\n"+\
+                  "║👿☈ " + key + "Help\n" + \
+                  "║👿☈ " + key + "Help bot\n" + \
+                  "║👿☈ " + key + "Help group\n" + \
+                  "║👿☈ " + key + "Invitebot\n" + \
+                  "║👿☈ " + key + "Respon\n" + \
+                  "║👿☈ " + key + "join\n" + \
+                  "║👿☈ " + key + "bye\n" + \
+                  "║👿☈ " + key + "Ghost join\n" + \
+                  "║👿☈ " + key + "Ghost bye\n" + \
+                  "║👿☈ " + key + "Bye me\n" + \
+                  "║👿☈ " + key + "Leave「Namagrup」\n" + \
+                  "║👿☈ " + key + "Ginfo\n" + \
+                  "║👿☈ " + key + "Open\n" + \
+                  "║👿☈ " + key + "Close\n" + \
+                  "║👿☈ " + key + "Url\n" + \
+                  "║👿☈ " + key + "Gruplist\n" + \
+                  "║👿☈ " + key + "Open「nomer」\n" + \
+                  "║👿☈ " + key + "Close「nomer」\n" + \
+                  "║👿☈ " + key + "Infogrup「nomer」\n" + \
+                  "║👿☈ " + key + "Infomem「nomer」\n" + \
+                  "║👿☈ " + key + "Leaveall「nomer」\n" + \
+                  "║👿☈ " + key + "Remove chat\n" + \
+                  "║👿☈ " + key + "Lurking「on/off」\n" + \
+                  "║👿☈ " + key + "Lurkers\n" + \
+                  "║👿☈ " + key + "Sider「on/off」\n" + \
+                  "║👿☈ " + key + "Updatefoto\n" + \
+                  "║👿☈ " + key + "Updategrup\n" + \
+                  "║👿☈ " + key + "Updatebot\n" + \
+                  "║👿☈ " + key + "Broadcast:「Text」\n" + \
+                  "║👿☈ " + key + "Setkey「New Key」\n" + \
+                  "║👿☈ " + key + "Mykey\n" + \
+                  "║👿☈ " + key + "Resetkey\n" + \
+                  "╠══[ ᴍᴇᴅɪᴀ ]\n" + \
+                  "║🔰☈ " + key + "Kode wilayah\n" + \
+                  "║🔰☈ " + key + "Listmp3\n" + \
+                  "║🔰☈ " + key + "Listvideo\n" + \
+                  "║🔰☈ " + key + "Listimage\n" + \
+                  "║🔰☈ " + key + "Liststicker\n" + \
+                  "║🔰☈ " + key + "Addimg「Teks」\n" + \
+                  "║🔰☈ " + key + "Dellimg「Teks」\n" + \
+                  "║🔰☈ " + key + "Addmp3「Teks」\n" + \
+                  "║🔰☈ " + key + "Dellmp3「Teks」\n" + \
+                  "║🔰☈ " + key + "Addvideo「Teks」\n" + \
+                  "║🔰☈ " + key + "Dellvideo「Teks」\n" + \
+                  "║🔰☈ " + key + "Addsticker「Teks」\n" + \
+                  "║🔰☈ " + key + "Dellsticker「Teks」\n" + \
+                  "║🔰☈ " + key + "Spamtag:「jumlahnya」\n" + \
+                  "║🔰☈ " + key + "Spamtag「@」\n" + \
+                  "║🔰☈ " + key + "Spamcall:「jumlahnya」\n" + \
+                  "║🔰☈ " + key + "Spamcall\n" + \
+                  "║🔰☈ " + key + "Ytmp3:「Judul Lagu」\n" + \
+                  "║🔰☈ " + key + "Ytmp4:「Judul Video」\n" + \
+                  "║🔰☈ " + key + "Musik「Nama Penyanyi」\n" + \
+                  "║🔰☈ " + key + "Get-fs「Query」\n" + \
+                  "║🔰☈ " + key + "Get-line「ID Line」\n" + \
+                  "║🔰☈ " + key + "Get-apk「Query」\n" + \
+                  "║🔰☈ " + key + "Get-gif「Query」\n" + \
+                  "║🔰☈ " + key + "Get-xxx「Query」\n" + \
+                  "║🔰☈ " + key + "Get-anime「Query」\n" + \
+                  "║🔰☈ " + key + "Get-mimpi「Query」\n" + \
+                  "║🔰☈ " + key + "Get-audio「Query」\n" + \
+                  "║🔰☈ " + key + "Get-mp3「Query」\n" + \
+                  "║🔰☈ " + key + "Get-video「Query」\n" + \
+                  "║🔰☈ " + key + "Get-bintang「Zodiak」\n" + \
+                  "║🔰☈ " + key + "Get-zodiak「Zodiak」\n" + \
+                  "║🔰☈ " + key + "Get-sholat「Nama Kota」\n" + \
+                  "║🔰☈ " + key + "Get-cuaca「Nama Kota」\n" + \
+                  "║🔰☈ " + key + "Get-lokasi「Nama Kota」\n" + \
+                  "║🔰☈ " + key + "Get-lirik「Judul Lagu」\n" + \
+                  "║🔰☈ " + key + "Get-instagram「User Name」\n" + \
+                  "║🔰☈ " + key + "Get-date「tgl-bln-thn」\n" + \
                   "╠══[ protect ]\n" + \
                   "║🛡☈ " + key + "Notag「on/off」\n" + \
                   "║🛡☈ " + key + "Allpro「on/off」\n" + \
@@ -403,44 +460,46 @@ def help():
                   "║🛡☈ " + key + "Protectkick「on/off」\n" + \
                   "║🛡☈ " + key + "Protectinvite「on/off」\n" + \
                   "║🛡☈ " + key + "Protectcancel「on/off」\n" + \
-                  "║🛡☈ " + key + "js「on/off」\n" + \
-                  "║🛡☈ " + key + "ghost「on/off」\n" + \
+                  "║🛡☈ " + key + "Antijs「on/off」\n" + \
+                  "║🛡☈ " + key + "Ghost「on/off」\n" + \
                   "╠══[ Set kicker ]\n" + \
-                  "║☈ " + key + "Kick「on/off」\n" + \
-                  "║☈ " + key + "Gk「@」\n" + \
-                  "║☈ " + key + "Bk「@」\n" + \
-                  "║☈ " + key + "/mai *คำสั่งบินกลุ่ม\n" + \
+                  "║😈☈ " + key + "Kick「on/off」\n" + \
+                  "║😈☈ " + key + "Gk「@」\n" + \
+                  "║😈☈ " + key + "Bk「@」\n" + \
+                  "║😈☈ " + key + "Sadis *คำสั่งบินกลุ่ม\n" + \
                   "╠══[ Set user ]\n" + \
-                  "║☈ " + key + "Invite「on/off」\n" + \
-                  "║☈ " + key + "Unsend「on/off」\n" + \
-                  "║☈ " + key + "Timeline「on/off」\n" + \
-                  "║☈ " + key + "Contact「on/off」\n" + \
-                  "║☈ " + key + "Autojoin「on/off」\n" + \
-                  "║☈ " + key + "Autoadd「on/off」\n" + \
-                  "║☈ " + key + "Welcome「on/off」\n" + \
-                  "║☈ " + key + "Autoleave「on/off」\n" + \
-                  "║☈ " + key + "มุดลิ้ง「on/off」\n" + \
+                  "║🔔☈ " + key + "Invite「on/off」\n" + \
+                  "║🔔☈ " + key + "Sticker「on/off」\n" + \
+                  "║🔔☈ " + key + "Unsend「on/off」\n" + \
+                  "║🔔☈ " + key + "Respontime「on/off」\n" + \
+                  "║🔔☈ " + key + "Timeline「on/off」\n" + \
+                  "║🔔☈ " + key + "Contact「on/off」\n" + \
+                  "║🔔☈ " + key + "Autojoin「on/off」\n" + \
+                  "║🔔☈ " + key + "Autoadd「on/off」\n" + \
+                  "║🔔☈ " + key + "Welcome「on/off」\n" + \
+                  "║🔔☈ " + key + "Autoleave「on/off」\n" + \
+                  "║🔔☈ " + key + "Jointicket「on/off」\n" + \
                   "╠══[ Set Admin ]\n" + \
-                  "║☈ " + key + "Self「on/off」\n" + \
-                  "║☈ " + key + "Bot:on\n" + \
-                  "║☈ " + key + "Bot:expell\n" + \
-                  "║☈ " + key + "Staff:on\n" + \
-                  "║☈ " + key + "Staff:expell\n" + \
-                  "║☈ " + key + "Admin:on\n" + \
-                  "║☈ " + key + "Admin:expell\n" + \
-                  "║☈ " + key + "Botแอด「@」\n" + \
-                  "║☈ " + key + "Botลบ「@」\n" + \
-                  "║☈ " + key + "ตั้งสตาฟ「@」\n" + \
-                  "║☈ " + key + "ลบสตาฟ「@」\n" + \
-                  "║☈ " + key + "ตั้งแอดมิน「@」\n" + \
-                  "║☈ " + key + "ลบแอดมิน「@」\n" + \
-                  "║☈ " + key + "Refresh\n" + \
-                  "║☈ " + key + "รายชื่อบอท\n" + \
-                  "║☈ " + key + "รายชื่อแอดมิน\n" + \
-                  "║☈ " + key + "set2\n" + \
-                  "╚═[ SELFBOT ]\n" + \
+                  "║💀☈ " + key + "Self「on/off」\n" + \
+                  "║💀☈ " + key + "Bot:on\n" + \
+                  "║💀☈ " + key + "Bot:expell\n" + \
+                  "║💀☈ " + key + "Staff:on\n" + \
+                  "║💀☈ " + key + "Staff:expell\n" + \
+                  "║💀☈ " + key + "Admin:on\n" + \
+                  "║💀☈ " + key + "Admin:expell\n" + \
+                  "║💀☈ " + key + "Botadd「@」\n" + \
+                  "║💀☈ " + key + "Botdell「@」\n" + \
+                  "║💀☈ " + key + "Staffadd「@」\n" + \
+                  "║💀☈ " + key + "Staffdell「@」\n" + \
+                  "║💀☈ " + key + "Adminadd「@」\n" + \
+                  "║💀☈ " + key + "Admindell「@」\n" + \
+                  "║💀☈ " + key + "Refresh\n" + \
+                  "║💀☈ " + key + "Listbot\n" + \
+                  "║💀☈ " + key + "Listadmin\n" + \
+                  "║💀☈ " + key + "Listprotect\n" + \
+                  "╚═[ SELFBOT-BY:SADIS ]\n" + \
                   "▬▬▬▬*****▬▬▬▬\n" + \
-                  "\nคำสั่งรวม\n"
+                  "\nKetik「 Refresh 」jika sudah habis anu...\n"
     return helpMessage
 
 def helpbot():
@@ -448,73 +507,74 @@ def helpbot():
     key = key.title()
     helpMessage1 = "▬▬▬▬*****▬▬▬▬\n" + \
                   "╔═[ Help blacklist ]\n"+\
-                  "║☈ " + key + "Bc\n" + \
-                  "║☈ " + key + "Ban:on\n" + \
-                  "║☈ " + key + "Unban:on\n" + \
-                  "║☈ " + key + "Ban「@」\n" + \
-                  "║☈ " + key + "Unban「@」\n" + \
-                  "║☈ " + key + "ดำ「@」\n" + \
-                  "║☈ " + key + "ขาว「@」\n" + \
-                  "║☈ " + key + "Talkban:on\n" + \
-                  "║☈ " + key + "Untalkban:on\n" + \
-                  "║☈ " + key + "รายชื่อดำ\n" + \
-                  "║☈ " + key + "Talkbanlist\n" + \
-                  "║☈ " + key + "Cb\n" + \
-                  "║☈ " + key + "Refresh\n" + \
+                  "║🛡☈ " + key + "Blc\n" + \
+                  "║🛡☈ " + key + "Ban:on\n" + \
+                  "║🛡☈ " + key + "Unban:on\n" + \
+                  "║🛡☈ " + key + "Ban「@」\n" + \
+                  "║🛡☈ " + key + "Unban「@」\n" + \
+                  "║🛡☈ " + key + "Talkban「@」\n" + \
+                  "║🛡☈ " + key + "Untalkban「@」\n" + \
+                  "║🛡☈ " + key + "Talkban:on\n" + \
+                  "║🛡☈ " + key + "Untalkban:on\n" + \
+                  "║🛡☈ " + key + "Banlist\n" + \
+                  "║🛡☈ " + key + "Talkbanlist\n" + \
+                  "║🛡☈ " + key + "Clearban\n" + \
+                  "║🛡☈ " + key + "Refresh\n" + \
                   "╠══[ Help bot ]\n" + \
-                  "║☈ " + key + "A1\n" + \
-                  "║☈ " + key + "A2\n" + \
-                  "║☈ " + key + "A3\n" + \
-                  "║☈ " + key + "A4\n" + \
-                  "║☈ " + key + "A5\n" + \
-                  "║☈ " + key + "A6\n" + \
-                  "║☈ " + key + "A7\n" + \
-                  "║☈ " + key + "A8\n" + \
-                  "║☈ " + key + "A9\n" + \
-                  "║☈ " + key + "A10\n" + \
+                  "║👿☈ " + key + "Assist1\n" + \
+                  "║👿☈ " + key + "Assist2\n" + \
+                  "║👿☈ " + key + "Assist3\n" + \
+                  "║👿☈ " + key + "Assist4\n" + \
+                  "║👿☈ " + key + "Assist5\n" + \
+                  "║👿☈ " + key + "Assist6\n" + \
+                  "║👿☈ " + key + "Assist7\n" + \
+                  "║👿☈ " + key + "Assist8\n" + \
+                  "║👿☈ " + key + "Assist9\n" + \
+                  "║👿☈ " + key + "Assist10\n" + \
                   "╠══[ Help update ]\n" + \
-                  "║☈ " + key + "Up\n" + \
-                  "║☈ " + key + "1up\n" + \
-                  "║☈ " + key + "2up\n" + \
-                  "║☈ " + key + "3up\n" + \
-                  "║☈ " + key + "4up\n" + \
-                  "║☈ " + key + "5up\n" + \
-                  "║☈ " + key + "6up\n" + \
-                  "║☈ " + key + "7up\n" + \
-                  "║☈ " + key + "8up\n" + \
-                  "║☈ " + key + "9up\n" + \
-                  "║☈ " + key + "10up\n" + \
-                  "║☈ " + key + "gup\n" + \
-                  "║☈ " + key + "ชื่อ:「Name」\n" + \
-                  "║☈ " + key + "ชื่อ1:「Name」\n" + \
-                  "║☈ " + key + "ชื่อ2:「Name」\n" + \
-                  "║☈ " + key + "ชื่อ3:「Name」\n" + \
-                  "║☈ " + key + "ชื่อ4:「Name」\n" + \
-                  "║☈ " + key + "ชื่อ5:「Name」\n" + \
-                  "║☈ " + key + "ชื่อ6:「Name」\n" + \
-                  "║☈ " + key + "ชื่อ7:「Name」\n" + \
-                  "║☈ " + key + "ชื่อ8:「Name」\n" + \
-                  "║☈ " + key + "ชื่อ9:「Name」\n" + \
-                  "║☈ " + key + "ชื่อ10:「Name」\n" + \
-                  "║☈ " + key + "ชื่อผี:「Name」\n" + \
+                  "║🕵☈ " + key + "Updatefoto\n" + \
+                  "║🕵☈ " + key + "Bot1up\n" + \
+                  "║🕵☈ " + key + "Bot2up\n" + \
+                  "║🕵☈ " + key + "Bot3up\n" + \
+                  "║🕵☈ " + key + "Bot4up\n" + \
+                  "║🕵☈ " + key + "Bot5up\n" + \
+                  "║🕵☈ " + key + "Bot6up\n" + \
+                  "║🕵☈ " + key + "Bot7up\n" + \
+                  "║🕵☈ " + key + "Bot8up\n" + \
+                  "║🕵☈ " + key + "Bot9up\n" + \
+                  "║🕵☈ " + key + "Bot10up\n" + \
+                  "║🕵☈ " + key + "Ghostup\n" + \
+                  "║🕵☈ " + key + "Myname:「Name」\n" + \
+                  "║🕵☈ " + key + "Bot1name:「Name」\n" + \
+                  "║🕵☈ " + key + "Bot2name:「Name」\n" + \
+                  "║🕵☈ " + key + "Bot3name:「Name」\n" + \
+                  "║🕵☈ " + key + "Bot4name:「Name」\n" + \
+                  "║🕵☈ " + key + "Bot5name:「Name」\n" + \
+                  "║🕵☈ " + key + "Bot6name:「Name」\n" + \
+                  "║🕵☈ " + key + "Bot7name:「Name」\n" + \
+                  "║🕵☈ " + key + "Bot8name:「Name」\n" + \
+                  "║🕵☈ " + key + "Bot9name:「Name」\n" + \
+                  "║🕵☈ " + key + "Bot10name:「Name」\n" + \
+                  "║🕵☈ " + key + "Ghostname:「Name」\n" + \
                   "╠══[ Cek Seting ]\n" + \
-                  "║☈ " + key + "Cek sider\n" + \
-                  "║☈ " + key + "Cek spam\n" + \
-                  "║☈ " + key + "Cek pesan \n" + \
-                  "║☈ " + key + "Cek respon \n" + \
-                  "║☈ " + key + "Cek leave\n" + \
-                  "║☈ " + key + "Cek welcome\n" + \
-                  "║☈ " + key + "Set sider:「Text」\n" + \
-                  "║☈ " + key + "Set spam:「Text」\n" + \
-                  "║☈ " + key + "Set pesan:「Text」\n" + \
-                  "║☈ " + key + "Set respon:「Text」\n" + \
-                  "║☈ " + key + "Set leave:「Text」\n" + \
-                  "║☈ " + key + "Set welcome:「Text」\n" + \
-                  "║☈ " + key + "Gif:「Mid korban」「Jumlah」\n" + \
-                  "║☈ " + key + "Spam:「Mid korban」「Jumlah」\n" + \
-                  "╚═[ SELFBOT]\n" + \
+                  "║🤖☈ " + key + "Cek sider\n" + \
+                  "║🤖☈ " + key + "Cek spam\n" + \
+                  "║🤖☈ " + key + "Cek pesan \n" + \
+                  "║🤖☈ " + key + "Cek respon \n" + \
+                  "║🤖☈ " + key + "Cek leave\n" + \
+                  "║🤖☈ " + key + "Cek welcome\n" + \
+                  "║🤖☈ " + key + "Set sider:「Text」\n" + \
+                  "║🤖☈ " + key + "Set spam:「Text」\n" + \
+                  "║🤖☈ " + key + "Set pesan:「Text」\n" + \
+                  "║🤖☈ " + key + "Set respon:「Text」\n" + \
+                  "║🤖☈ " + key + "Set leave:「Text」\n" + \
+                  "║🤖☈ " + key + "Set welcome:「Text」\n" + \
+                  "║🤖☈ " + key + "Myname:「Nama」\n" + \
+                  "║🤖☈ " + key + "Gift:「Mid korban」「Jumlah」\n" + \
+                  "║🤖☈ " + key + "Spam:「Mid korban」「Jumlah」\n" + \
+                  "╚═[ SELFBOT-BY:SADIS]\n" + \
                   "▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬\n" + \
-                  "\nคำสั่งบอท\n"
+                  "\nKetik「 Refresh 」jika sudah habis anu....\n"
     return helpMessage1
 
 def helpgroup():
@@ -522,16 +582,16 @@ def helpgroup():
     key = key.title()
     helpMessage2 = "▬▬▬▬****▬▬▬▬\n" + \
                   "╔═[ Help Group ]\n"+\
-                  "║👿☈ " + key + "มี\n" + \
-                  "║👿☈ " + key + "มิด「@」\n" + \
-                  "║👿☈ " + key + "ตัส「@」\n" + \
+                  "║👿☈ " + key + "Me\n" + \
+                  "║👿☈ " + key + "Mid「@」\n" + \
+                  "║👿☈ " + key + "Info「@」\n" + \
                   "║👿☈ " + key + "Gk「@」\n" + \
                   "║👿☈ " + key + "Bk「@」\n" + \
-                  "║👿☈ " + key + "มา\n" + \
-                  "║👿☈ " + key + "ออก\n" + \
-                  "║👿☈ " + key + "Set\n" + \
+                  "║👿☈ " + key + "SADIS\n" + \
+                  "║👿☈ " + key + "Absen\n" + \
+                  "║👿☈ " + key + "Status\n" + \
                   "║👿☈ " + key + "About\n" + \
-                  "║👿☈ " + key + "รี\n" + \
+                  "║👿☈ " + key + "Restart\n" + \
                   "║👿☈ " + key + "Runtime\n" + \
                   "║👿☈ " + key + "Creator\n" + \
                   "║👿☈ " + key + "Sp\n" + \
@@ -543,10 +603,23 @@ def helpgroup():
                   "║👿☈ " + key + "bye\n" + \
                   "║👿☈ " + key + "Ghost join\n" + \
                   "║👿☈ " + key + "Ghost bye\n" + \
-                  "╚[ SELFbot]\n" + \
+                  "║👿☈ " + key + "Bye me\n" + \
+                  "║👿☈ " + key + "Leave「Namagrup」\n" + \
+                  "║👿☈ " + key + "Ginfo\n" + \
+                  "║👿☈ " + key + "Open\n" + \
+                  "║👿☈ " + key + "Close\n" + \
+                  "║👿☈ " + key + "Url\n" + \
+                  "║👿☈ " + key + "Gruplist\n" + \
+                  "║👿☈ " + key + "Remove chat\n" + \
+                  "║👿☈ " + key + "Lurking「on/off」\n" + \
+                  "║👿☈ " + key + "Lurkers\n" + \
+                  "║👿☈ " + key + "Sider「on/off」\n" + \
+                  "║👿☈ " + key + "Broadcast:「Text」\n" + \
+                  "╚[ SELFBOT-BY:SADIS]\n" + \
                   "▬▬▬▬*****▬▬▬▬\n" + \
-                  "\nคำสั่งกลุ่ม\n"
+                  "\nKetik「 Refresh 」jika sudah habis anu....\n"
     return helpMessage2
+
 
 def bot(op):
     global time
