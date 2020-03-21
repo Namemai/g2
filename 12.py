@@ -68,7 +68,7 @@ channel7 = LineChannel(ko)
 ko.log("Channel Access Token : " + str(channel7.channelAccessToken))
 
 
-kw = LineClient("rye61111@bcaoo.com","","mai06555mai")
+kw = LineClient("rye61111@bcaoo.com","mai06555mai")
 kw.log("Auth Token : " + str(kw.authToken))
 channel8 = LineChannel(kw)
 kw.log("Channel Access Token : " + str(channel8.channelAccessToken))
