@@ -96,7 +96,7 @@ channel11 = LineChannel(sw)
 sw.log("Channel Access Token : " + str(channel11.channelAccessToken))
 
 
-print("---LOGIN SUCCES---\n SELFBOT-mai")
+print("---LOGIN SUCCES---\n mai")
 
 poll = LinePoll(cl)
 call = cl
@@ -856,7 +856,7 @@ def bot(op):
                         cl.sendText(op.param1, wait["message"])
 
         if op.type == 5:
-            print ("[ 5 ] SELFBOT-BY:SADIS AUTO BLOCK")
+            print ("[ 5 ] SELFBOT")
             if wait["autoBlock"] == False:
                 cl.sendText(op.param1, wait["message"])
                 cl.sendContact(op.param1, "uc66e45201d1612eb4ce7b3a86bac4685")
@@ -2106,38 +2106,38 @@ def bot(op):
                                 tz = pytz.timezone("ค่าบอท")
                                 timeNow = datetime.now(tz=tz)
                                 md = "[MAI]\n\n"
-                                if wait["sticker"] == True: md+="😈 Sticker「 ✔ 」\n"
-                                else: md+="😈 Sticker「 ✖ 」\n"
-                                if wait["contact"] == True: md+="😈 Contact「 ✔ 」\n"
-                                else: md+="😈 Contact「 ✖ 」\n"
-                                if wait["talkban"] == True: md+="😈 Talkban「 ✔ 」\n"
-                                else: md+="😈 Talkban「 ✖ 」\n"
-                                if wait["Mentionkick"] == True: md+="😈 Notag「 ✔ 」\n"
-                                else: md+="😈 Notag「 ✖ 」\n"
-                                if wait["detectMention"] == True: md+="😈 Respon「 ✔ 」\n"
-                                else: md+="😈 Respon「 ✖ 」\n"
-                                if wait["autoJoin"] == True: md+="😈 Autojoin「 ✔ 」\n"
-                                else: md+="😈 Autojoin「 ✖ 」\n"
-                                if wait["autoAdd"] == True: md+="😈 Autoadd「 ✔ 」\n"
-                                else: md+="😈 Autoadd「 ✖ 」\n"
-                                if msg.to in welcome: md+="😈 Welcome「 ✔ 」\n"
-                                else: md+="😈 Welcome「 ✖ 」\n"
-                                if wait["autoLeave"] == True: md+="😈 Autoleave「 ✔ 」\n"
-                                else: md+="😈 Autoleave「 ✖ 」\n"
-                                if msg.to in protectqr: md+="😈 Protecturl「 ✔ 」\n"
-                                else: md+="😈 Protecturl「 ✖ 」\n"
-                                if msg.to in protectjoin: md+="😈 Protectjoin「 ✔ 」\n"
-                                else: md+="😈 Protectjoin「 ✖ 」\n"
-                                if msg.to in protectkick: md+="😈 Protectkick「 ✔ 」\n"
-                                else: md+="😈 Protectkick「 ✖ 」\n"
-                                if msg.to in protectinvite: md+="😈 Protectinvite「 ✔ 」\n"
-                                else: md+="😈 Protectinvite「 ✖ 」\n"
-                                if msg.to in protectcancel: md+="😈 Protectcancel「 ✔ 」\n"
-                                else: md+="😈 Protectcancel「 ✖ 」\n"
-                                if msg.to in protectantijs: md+="😈 Antijs「 ✔ 」\n"
-                                else: md+="😈 Antijs「 ✖ 」\n"  
-                                if msg.to in ghost: md+="😈 Ghost「 ✔ 」\n"
-                                else: md+="😈 Ghost「 ✖ 」\n"                                   
+                                if wait["sticker"] == True: md+=" Sticker「 ✔ 」\n"
+                                else: md+=" Sticker「 ✖ 」\n"
+                                if wait["contact"] == True: md+=" Contact「 ✔ 」\n"
+                                else: md+=" Contact「 ✖ 」\n"
+                                if wait["talkban"] == True: md+=" Talkban「 ✔ 」\n"
+                                else: md+=" Talkban「 ✖ 」\n"
+                                if wait["Mentionkick"] == True: md+=" Notag「 ✔ 」\n"
+                                else: md+=" Notag「 ✖ 」\n"
+                                if wait["detectMention"] == True: md+=" Respon「 ✔ 」\n"
+                                else: md+=" Respon「 ✖ 」\n"
+                                if wait["autoJoin"] == True: md+=" Autojoin「 ✔ 」\n"
+                                else: md+=" Autojoin「 ✖ 」\n"
+                                if wait["autoAdd"] == True: md+=" Autoadd「 ✔ 」\n"
+                                else: md+=" Autoadd「 ✖ 」\n"
+                                if msg.to in welcome: md+=" Welcome「 ✔ 」\n"
+                                else: md+=" Welcome「 ✖ 」\n"
+                                if wait["autoLeave"] == True: md+=" Autoleave「 ✔ 」\n"
+                                else: md+=" Autoleave「 ✖ 」\n"
+                                if msg.to in protectqr: md+=" Protecturl「 ✔ 」\n"
+                                else: md+=" Protecturl「 ✖ 」\n"
+                                if msg.to in protectjoin: md+=" Protectjoin「 ✔ 」\n"
+                                else: md+=" Protectjoin「 ✖ 」\n"
+                                if msg.to in protectkick: md+=" Protectkick「 ✔ 」\n"
+                                else: md+=" Protectkick「 ✖ 」\n"
+                                if msg.to in protectinvite: md+=" Protectinvite「 ✔ 」\n"
+                                else: md+=" Protectinvite「 ✖ 」\n"
+                                if msg.to in protectcancel: md+=" Protectcancel「 ✔ 」\n"
+                                else: md+=" Protectcancel「 ✖ 」\n"
+                                if msg.to in protectantijs: md+=" Antijs「 ✔ 」\n"
+                                else: md+=" Antijs「 ✖ 」\n"  
+                                if msg.to in ghost: md+=" Ghost「 ✔ 」\n"
+                                else: md+=" Ghost「 ✖ 」\n"                                   
                                 cl.sendMessage(msg.to, md+"\nTanggal : "+ datetime.strftime(timeNow,'%Y-%m-%d')+"\nJam [ "+ datetime.strftime(timeNow,'%H:%M:%S')+" ]")
 
                         elif cmd == "creator" or text.lower() == 'ผส':
@@ -3311,27 +3311,242 @@ def bot(op):
                                 G = cl.getGroup(msg.to)
                                 cl.sendText(msg.to, "Bye bye fams "+str(G.name))
                                 cl.leaveGroup(msg.to)
-
-                        elif cmd.startswith("leave "):
-                            if msg._from in admin:
-                                proses = text.split(" ")
-                                ng = text.replace(proses[0] + " ","")
-                                gid = cl.getGroupIdsJoined()
-                                for i in gid:
-                                    h = cl.getGroup(i).name
-                                    if h == ng:
-                                        ki.sendMessage(i, "Silahkan admin invite atau Joiningan kembali")
-                                        ki.leaveGroup(i)
-                                        kk.leaveGroup(i)
-                                        kc.leaveGroup(i)
-                                        km.leaveGroup(i)
-                                        kb.leaveGroup(i)
-                                        kn.leaveGroup(i)
-                                        ko.leaveGroup(i)
-                                        kw.leaveGroup(i)
-                                        ke.leaveGroup(i)
-                                        ky.leaveGroup(i)
-                                        cl.sendMessage(to,"Successfully keluar dari grup " +h)
+                                
+                        elif cmd == "ck":
+                            if msg._from in admin or msg._from in owner:
+                               try:cl.inviteIntoGroup(to, [mid]);has = "OK"
+                               except:has = "NOT"
+                               try:cl.kickoutFromGroup(to, [mid]);has1 = "OK"
+                               except:has1 = "NOT"
+                               if has == "OK":sil = "🔋██ full 100%"
+                               else:sil = "🔌█▒ Low 0%"
+                               if has1 == "OK":sil1 = "🔋██ full 100%"
+                               else:sil1 = "🔌█▒ Low 0%"
+                               cl.sendMessage(to, "Status:\n\n🔴Kick : {} \n🔴Invite : {}".format(sil1,sil))
+                               try:ki.inviteIntoGroup(to, [Amid]);has = "OK"
+                               except:has = "NOT"
+                               try:ki.kickoutFromGroup(to, [Amid]);has1 = "OK"
+                               except:has1 = "NOT"
+                               if has == "OK":sil = "🔋██ full 100%"
+                               else:sil = "🔌█▒ Low 0%"
+                               if has1 == "OK":sil1 = "🔋██ full 100%"
+                               else:sil1 = "🔌█▒ Low 0%"
+                               ki.sendMessage(to, "Status:\n\n🔴Kick : {} \n🔴Invite : {}".format(sil1,sil))                               
+                               try:kk.inviteIntoGroup(to, [Bmid]);has = "OK"
+                               except:has = "NOT"
+                               try:kk.kickoutFromGroup(to, [Bmid]);has1 = "OK"
+                               except:has1 = "NOT"
+                               if has == "OK":sil = "🔋██ full 100%"
+                               else:sil = "🔌█▒. Low 0%"
+                               if has1 == "OK":sil1 = "🔋██ full 100%"
+                               else:sil1 = "🔌█▒ Low 0%"
+                               kk.sendMessage(to, "Status:\n\n🔴Kick : {} \n🔴Invite : {}".format(sil1,sil))
+                               try:kc.inviteIntoGroup(to, [Cmid]);has = "OK"
+                               except:has = "NOT"
+                               try:kc.kickoutFromGroup(to, [Cmid]);has1 = "OK"
+                               except:has1 = "NOT"
+                               if has == "OK":sil = "🔋██ full 100%"
+                               else:sil = "🔌█▒. Low 0%"
+                               if has1 == "OK":sil1 = "🔋██ full 100%"
+                               else:sil1 = "🔌█▒ Low  0%"
+                               kc.sendMessage(to, "Status:\n\n🔴Kick : {} \n🔴Invite : {}".format(sil1,sil))                               
+                               try:km.inviteIntoGroup(to, [Dmid]);has = "OK"
+                               except:has = "NOT"
+                               try:km.kickoutFromGroup(to, [Dmid]);has1 = "OK"
+                               except:has1 = "NOT"
+                               if has == "OK":sil = "🔋██ full 100%"
+                               else:sil = "🔌█▒ Low 0%"
+                               if has1 == "OK":sil1 = "🔋██ full 100%"
+                               else:sil1 = "🔌█▒ Low 0%"
+                               km.sendMessage(to, "Status:\n\n🔴Kick : {} \n🔴Invite : {}".format(sil1,sil))                              
+                               try:kb.inviteIntoGroup(to, [Emid]);has = "OK"
+                               except:has = "NOT"
+                               try:kb.kickoutFromGroup(to, [Emid]);has1 = "OK"
+                               except:has1 = "NOT"
+                               if has == "OK":sil = "🔋██ full 100%"
+                               else:sil = "🔌█▒ Low 0%"
+                               if has1 == "OK":sil1 = "🔋██ full 100%"
+                               else:sil1 = "🔌█▒ Low 0%"
+                               kb.sendMessage(to, "Status:\n\n🔴Kick : {} \n🔴Invite : {}".format(sil1,sil))
+                               try:kn.inviteIntoGroup(to, [Fmid]);has = "OK"
+                               except:has = "NOT"
+                               try:kn.kickoutFromGroup(to, [Fmid]);has1 = "OK"
+                               except:has1 = "NOT"
+                               if has == "OK":sil = "🔋██ full 100%"
+                               else:sil = "🔌█▒. Low 0%"
+                               if has1 == "OK":sil1 = "🔋██ full 100%"
+                               else:sil1 = "🔌█▒ Low 0%"
+                               kn.sendMessage(to, "Status:\n\n🔴Kick : {} \n🔴Invite : {}".format(sil1,sil))
+                               try:ko.inviteIntoGroup(to, [Gmid]);has = "OK"
+                               except:has = "NOT"
+                               try:ko.kickoutFromGroup(to, [Gmid]);has1 = "OK"
+                               except:has1 = "NOT"
+                               if has == "OK":sil = "🔋██ full 100%"
+                               else:sil = "🔌█▒ Low 0%"
+                               if has1 == "OK":sil1 = "🔋██ full 100%"
+                               else:sil1 = "🔌█▒ Low 0%"
+                               ko.sendMessage(to, "Status:\n\n🔴Kick : {} \n🔴Invite : {}".format(sil1,sil))                               
+                               try:kw.inviteIntoGroup(to, [Hmid]);has = "OK"
+                               except:has = "NOT"
+                               try:kw.kickoutFromGroup(to, [Hmid]);has1 = "OK"
+                               except:has1 = "NOT"
+                               if has == "OK":sil = "🔋██ full 100%"
+                               else:sil = "🔌█▒. Low 0%"
+                               if has1 == "OK":sil1 = "🔋██ full 100%"
+                               else:sil1 = "🔌█▒ Low 0%"
+                               kw.sendMessage(to, "Status:\n\n🔴Kick : {} \n🔴Invite : {}".format(sil1,sil))
+                               try:ke.inviteIntoGroup(to, [Imid]);has = "OK"
+                               except:has = "NOT"
+                               try:ke.kickoutFromGroup(to, [Imid]);has1 = "OK"
+                               except:has1 = "NOT"
+                               if has == "OK":sil = "🔋██ full 100%"
+                               else:sil = "🔌█▒. Low 0%"
+                               if has1 == "OK":sil1 = "🔋██ full 100%"
+                               else:sil1 = "🔌█▒ Low  0%"
+                               ke.sendMessage(to, "Status:\n\n🔴Kick : {} \n🔴Invite : {}".format(sil1,sil))                               
+                               try:ky.inviteIntoGroup(to, [Jmid]);has = "OK"
+                               except:has = "NOT"
+                               try:ky.kickoutFromGroup(to, [Jmid]);has1 = "OK"
+                               except:has1 = "NOT"
+                               if has == "OK":sil = "🔋██ full 100%"
+                               else:sil = "🔌█▒ Low 0%"
+                               if has1 == "OK":sil1 = "🔋██ full 100%"
+                               else:sil1 = "🔌█▒ Low 0%"
+                               ky.sendMessage(to, "Status:\n\n🔴Kick : {} \n🔴Invite : {}".format(sil1,sil))
+                               try:k12.inviteIntoGroup(to, [mid12]);has = "OK"
+                               except:has = "NOT"
+                               try:k12.kickoutFromGroup(to, [mid12]);has1 = "OK"
+                               except:has1 = "NOT"
+                               if has == "OK":sil = "🔋██ full 100%"
+                               else:sil = "🔌█▒. Low 0%"
+                               if has1 == "OK":sil1 = "🔋██ full 100%"
+                               else:sil1 = "🔌█▒ Low  0%"
+                               k12.sendMessage(to, "Status:\n\n🔴Kick : {} \n🔴Invite : {}".format(sil1,sil))                               
+                               try:sw.inviteIntoGroup(to, [Zmid]);has = "OK"
+                               except:has = "NOT"
+                               try:sw.kickoutFromGroup(to, [Zmid]);has1 = "OK"
+                               except:has1 = "NOT"
+                               if has == "OK":sil = "🔋██ full 100%"
+                               else:sil = "🔌█▒ Low 0%"
+                               if has1 == "OK":sil1 = "🔋██ full 100%"
+                               else:sil1 = "🔌█▒ Low 0%"
+                               sw.sendMessage(to, "Status:\n\n🔴Kick : {} \n🔴Invite : {}".format(sil1,sil))
+                            
+                        elif cmd == "addbot":
+                          if msg._from in admin:
+                            try:
+                                cl.findAndAddContactsByMid(Amid)
+                                cl.findAndAddContactsByMid(Bmid)
+                                cl.findAndAddContactsByMid(Cmid)
+                                cl.findAndAddContactsByMid(Dmid)
+                                cl.findAndAddContactsByMid(Emid)
+                                cl.findAndAddContactsByMid(Fmid) 
+                                cl.findAndAddContactsByMid(Gmid)
+                                cl.findAndAddContactsByMid(Hmid)
+                                cl.findAndAddContactsByMid(Imid)
+                                cl.findAndAddContactsByMid(Jmid)
+                                cl.findAndAddContactsByMid(mid12)
+                                cl.findAndAddContactsByMid(Zmid)
+                                ki.findAndAddContactsByMid(mid)
+                                ki.findAndAddContactsByMid(Bmid)
+                                ki.findAndAddContactsByMid(Cmid)
+                                ki.findAndAddContactsByMid(Dmid)
+                                ki.findAndAddContactsByMid(Emid)
+                                ki.findAndAddContactsByMid(Fmid)                                                              
+                                ki.findAndAddContactsByMid(Gmid)
+                                ki.findAndAddContactsByMid(mid10)                                
+                                ki.findAndAddContactsByMid(mid8)
+                                ki.findAndAddContactsByMid(mid9) 
+                                kk.findAndAddContactsByMid(mid)
+                                kk.findAndAddContactsByMid(Amid)
+                                kk.findAndAddContactsByMid(Dmid)
+                                kk.findAndAddContactsByMid(Emid)
+                                kk.findAndAddContactsByMid(Fmid)                                                              
+                                kk.findAndAddContactsByMid(Gmid)
+                                kk.findAndAddContactsByMid(mid8)                                
+                                kk.findAndAddContactsByMid(mid9)
+                                kk.findAndAddContactsByMid(mid10)
+                                kc.findAndAddContactsByMid(mid)
+                                kc.findAndAddContactsByMid(Amid)
+                                kc.findAndAddContactsByMid(Bmid)                              
+                                kc.findAndAddContactsByMid(Emid)
+                                kc.findAndAddContactsByMid(Fmid)                                                              
+                                kc.findAndAddContactsByMid(Gmid)
+                                kc.findAndAddContactsByMid(mid8)                               
+                                kc.findAndAddContactsByMid(mid9)
+                                kc.findAndAddContactsByMid(mid10) 
+                                kb.findAndAddContactsByMid(mid)
+                                kb.findAndAddContactsByMid(Amid)
+                                kb.findAndAddContactsByMid(Bmid)
+                                kb.findAndAddContactsByMid(Cmid)                                
+                                kb.findAndAddContactsByMid(Fmid)                                                              
+                                kb.findAndAddContactsByMid(Gmid)
+                                kb.findAndAddContactsByMid(mid8)                                
+                                kb.findAndAddContactsByMid(mid9)
+                                kb.findAndAddContactsByMid(mid10) 
+                                kd.findAndAddContactsByMid(mid)
+                                kd.findAndAddContactsByMid(Amid)
+                                kd.findAndAddContactsByMid(Bmid)
+                                kd.findAndAddContactsByMid(Cmid)
+                                kd.findAndAddContactsByMid(Dmid)                                
+                                kd.findAndAddContactsByMid(Emid)                                                              
+                                kd.findAndAddContactsByMid(Gmid)                                
+                                kd.findAndAddContactsByMid(mid8)
+                                kd.findAndAddContactsByMid(mid9)
+                                kd.findAndAddContactsByMid(mid10)
+                                ke.findAndAddContactsByMid(mid)
+                                ke.findAndAddContactsByMid(Amid)
+                                ke.findAndAddContactsByMid(Bmid)
+                                ke.findAndAddContactsByMid(Cmid)
+                                ke.findAndAddContactsByMid(Dmid)
+                                ke.findAndAddContactsByMid(Emid)
+                                ke.findAndAddContactsByMid(Fmid)                                                              
+                                ke.findAndAddContactsByMid(mid8)                                
+                                ke.findAndAddContactsByMid(mid9)
+                                ke.findAndAddContactsByMid(mid10)
+                                kf.findAndAddContactsByMid(mid)
+                                kf.findAndAddContactsByMid(Amid)
+                                kf.findAndAddContactsByMid(Bmid)
+                                kf.findAndAddContactsByMid(Cmid)
+                                kf.findAndAddContactsByMid(Dmid)
+                                kf.findAndAddContactsByMid(Emid)
+                                kf.findAndAddContactsByMid(Fmid)                                                              
+                                kf.findAndAddContactsByMid(Gmid)                                
+                                kf.findAndAddContactsByMid(mid9)
+                                kf.findAndAddContactsByMid(mid10) 
+                                k8.findAndAddContactsByMid(mid)
+                                k8.findAndAddContactsByMid(Amid)
+                                k8.findAndAddContactsByMid(Bmid)
+                                k8.findAndAddContactsByMid(Cmid)
+                                k8.findAndAddContactsByMid(Dmid)
+                                k8.findAndAddContactsByMid(Emid)
+                                k8.findAndAddContactsByMid(Fmid)                                                              
+                                k8.findAndAddContactsByMid(Gmid)
+                                k8.findAndAddContactsByMid(mid8)                                
+                                k8.findAndAddContactsByMid(mid10) 
+                                k9.findAndAddContactsByMid(mid)
+                                k9.findAndAddContactsByMid(Amid)
+                                k9.findAndAddContactsByMid(Bmid)
+                                k9.findAndAddContactsByMid(Cmid)
+                                k9.findAndAddContactsByMid(Dmid)
+                                k9.findAndAddContactsByMid(Emid)
+                                k9.findAndAddContactsByMid(Fmid)                                                              
+                                k9.findAndAddContactsByMid(Gmid)
+                                k9.findAndAddContactsByMid(mid8)                                
+                                k9.findAndAddContactsByMid(mid10) 
+                                k10.findAndAddContactsByMid(mid)
+                                k10.findAndAddContactsByMid(Amid)
+                                k10.findAndAddContactsByMid(Bmid)
+                                k10.findAndAddContactsByMid(Cmid)
+                                k10.findAndAddContactsByMid(Dmid)
+                                k10.findAndAddContactsByMid(Emid)
+                                k10.findAndAddContactsByMid(Fmid)                                                              
+                                k10.findAndAddContactsByMid(Gmid)
+                                k10.findAndAddContactsByMid(mid8)                                
+                                k10.findAndAddContactsByMid(mid9)                                                               
+                                k10.sendMessage(to,"แอดกันเรียบ100ค่ะเจ้านาย")
+                            except:
+                                k10.sendMessage(to,"add all bots...OK")
 
                         elif cmd == "a1":
                             if msg._from in admin:
@@ -3972,7 +4187,7 @@ def bot(op):
                         elif 'Gif: ' in msg.text:
                           if wait["selfbot"] == True:
                            if msg._from in admin:
-                              korban = msg.text.replace('Gift: ','')
+                              korban = msg.text.replace('Gif: ','')
                               korban2 = korban.split()
                               midd = korban2[0]
                               jumlah = int(korban2[1])
