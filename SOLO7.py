@@ -883,7 +883,7 @@ def bot(op):
                         pass
                     else:
                         cl.sendText(op.param1, wait["message"])
-                        cl.sendContact(op.param1, "uf50d888821632d32461e37153ac775c0")
+                        cl.sendContact(op.param1, "")
                         cl.blockContact(op.param1)
 #================================================================================
         if op.type == 19:
