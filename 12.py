@@ -114,6 +114,7 @@ Zmid = sw.getProfile().mid
 KAC = [cl,ki,kk,kc,km,kb,kn,ko,kw,ke,ky,sw]
 ABC = [ki,kk,kc,km,kb,kn,ko,kw,ke,ky,sw]
 Bots = [mid,Amid,Bmid,Cmid,Dmid,Emid,Fmid,Gmid,Hmid,Imid,Jmid,Zmid]
+Ghost = [sw]
 Dpk = admin + staff
 
 protectqr = []
