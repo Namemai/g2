@@ -32,7 +32,7 @@ ki.log("Auth Token : " + str(ki.authToken))
 channel1 = LineChannel(ki)
 ki.log("Channel Access Token : " + str(channel1.channelAccessToken))
 
-kk = LineClient("zdz17088@zzrgg.com","mai06555mai")
+kk = LineClient("06555mai@gmail.com","mai06555mai")
 kk.log("Auth Token : " + str(kk.authToken))
 channel2 = LineChannel(kk)
 kk.log("Channel Access Token : " + str(channel2.channelAccessToken))
