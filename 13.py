@@ -135,7 +135,6 @@ responsename7 = ko.getProfile().displayName
 responsename8 = kw.getProfile().displayName
 responsename9 = ke.getProfile().displayName
 responsename10 = ky.getProfile().displayName
-responsename11 = sw.getProfile().displayName
 
 settings = {
     "Picture":False,
@@ -744,6 +743,53 @@ def bot(op):
                         ky.acceptGroupInvitation(op.param1)
                         ginfo = ky.getGroup(op.param1)
 
+                return
+        if op.type == 13:
+            if op.param2 in wait["blacklist"]:
+                if op.param2 in Bots:
+                    pass
+                if op.param2 in admin:
+                    pass
+                if op.param2 in staff:
+                    pass
+                else:
+                    wait["blacklist"][op.param2] = True                    
+                    try:
+                        ki.cancelGroupInvitation(op.param1,[op.param2])
+                    except:
+                        try:
+                            kk.cancelGroupInvitation(op.param1,[op.param2])
+                        except:
+                            try:
+                                kc.cancelGroupInvitation(op.param1,[op.param2])
+                            except:
+                                try:
+                                    km.cancelGroupInvitation(op.param1,[op.param2])
+                                except:
+                                    try:
+                                        kb.cancleGroupInvitation(op.param1,[op.param2])
+                                    except:
+                                        try:
+                                            kn.cancleGroupInvitation(op.param1,[op.param2])
+                                        except:
+                                            try:
+                                                ko.cancleGroupInvitation(op.param1,[op.param2])
+                                            except:
+                                                try:
+                                                    kw.cancleGroupInvitation(op.param1,[op.param2])
+                                                except:
+                                                    try:
+                                                        ke.cancleGroupInvitation(op.param1,[op.param2])
+                                                    except:
+                                                        try:
+                                                            ky.cancleGroupInvitation(op.param1,[op.param2])
+                                                        except:
+                                                            try:
+                                                                cl.cancleGroupInvitation(op.param1,[op.param2])
+                                                            except:
+                                                                pass
+
+                return
         if op.type == 13:
             if op.param1 in protectinvite:
                 if op.param2 not in Bots and op.param2 not in owner and op.param2 not in admin and op.param2 not in staff:
@@ -814,55 +860,7 @@ def bot(op):
                                                                 for _mid in gMembMids:
                                                                     ky.cancelGroupInvitation(op.param1,[_mid])
                                                             except:
-                                                                pass
-                return
-        if op.type == 13:
-            if op.param2 in wait["blacklist"]:
-                if op.param2 in Bots:
-                    pass
-                if op.param2 in admin:
-                    pass
-                if op.param2 in staff:
-                    pass
-                else:
-                    wait["blacklist"][op.param2] = True                    
-                    try:
-                        ki.cancelGroupInvitation(op.param1,[op.param2])
-                    except:
-                        try:
-                            kk.cancelGroupInvitation(op.param1,[op.param2])
-                        except:
-                            try:
-                                kc.cancelGroupInvitation(op.param1,[op.param2])
-                            except:
-                                try:
-                                    km.cancelGroupInvitation(op.param1,[op.param2])
-                                except:
-                                    try:
-                                        kb.cancleGroupInvitation(op.param1,[op.param2])
-                                    except:
-                                        try:
-                                            kn.cancleGroupInvitation(op.param1,[op.param2])
-                                        except:
-                                            try:
-                                                ko.cancleGroupInvitation(op.param1,[op.param2])
-                                            except:
-                                                try:
-                                                    kw.cancleGroupInvitation(op.param1,[op.param2])
-                                                except:
-                                                    try:
-                                                        ke.cancleGroupInvitation(op.param1,[op.param2])
-                                                    except:
-                                                        try:
-                                                            ky.cancleGroupInvitation(op.param1,[op.param2])
-                                                        except:
-                                                            try:
-                                                                cl.cancleGroupInvitation(op.param1,[op.param2])
-                                                            except:
-                                                                pass
-
-                return
-                                            
+                                                                pass             
 #__________________________________
         if op.type == 17:
             if op.param2 in wait["blacklist"]:
