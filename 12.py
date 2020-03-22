@@ -376,10 +376,10 @@ def help():
                   "║☈ " + key + "H\n" + \
                   "║☈ " + key + "Hb\n" + \
                   "║☈ " + key + "Hg\n" + \
-                  "║☈ " + key + "ดึงคิก\n" + \
-                  "║☈ " + key + "b\n" + \
-                  "║☈ " + key + "มา\n" + \
-                  "║☈ " + key + "ออก\n" + \
+                  "║☈ " + key + "ดึง10\n" + \
+                  "║☈ " + key + "b10\n" + \
+                  "║☈ " + key + "in10\n" + \
+                  "║☈ " + key + "out10\n" + \
                   "║☈ " + key + "ผีมา\n" + \
                   "║☈ " + key + "ผีออก\n" + \
                   "║☈ " + key + "Ginfo\n" + \
@@ -407,7 +407,7 @@ def help():
                   "║☈ " + key + "Unsend「on/off」\n" + \
                   "║☈ " + key + "Timeline「on/off」\n" + \
                   "║☈ " + key + "Contact「on/off」\n" + \
-                  "║☈ " + key + "Autojoin「on/off」\n" + \
+                  "║☈ " + key + "join「on/off」\n" + \
                   "║☈ " + key + "Autoadd「on/off」\n" + \
                   "║☈ " + key + "Welcome「on/off」\n" + \
                   "║☈ " + key + "Autoleave「on/off」\n" + \
@@ -3777,7 +3777,7 @@ def bot(op):
                                Setmain["keyCommand"] = ""
                                cl.sendMessage(msg.to, "「Setkey」\nSetkey mu kembali ke awal")
 
-                        elif cmd == "รี":
+                        elif cmd == "รี10":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                cl.sendMessage(msg.to, "ใช้เวลารีระบบ 3วิ กรุนารอซักครู่...")
@@ -4610,7 +4610,7 @@ def bot(op):
                                     mf += str(a) + ". " +cl.getGroup(group).name + "\n"
                                 cl.sendMessage(msg.to,"SELFBOT\n\n「😈」 PROTECT URL :\n"+ma+"\n「😈」 PROTECT KICK :\n"+mb+"\n「😈」 PROTECT JOIN :\n"+md+"\n「😈」 PROTECT CANCEL:\n"+mc+"\n「😈」 PROTECT INVITE:\n"+me+"\n「😈」 PROTECT ANTIJS :\n"+mf+"\nTotal「%s」Grup diamankan" %(str(len(protectqr)+len(protectkick)+len(protectjoin)+len(protectcancel)+len(protectinvite)+len(protectantijs))))
 
-                        elif cmd == "b":
+                        elif cmd == "b10":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                 ki.sendMessage(msg.to,responsename1)
@@ -4624,7 +4624,7 @@ def bot(op):
                                 ke.sendMessage(msg.to,responsename9)
                                 ky.sendMessage(msg.to,responsename10)
                                 
-                        elif cmd == "ดึงคิก":
+                        elif cmd == "ดึง10":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                 try:
@@ -4655,7 +4655,7 @@ def bot(op):
                                 except:
                                     pass
     
-                        elif cmd == "10in":
+                        elif cmd == "in10":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                 G = cl.getGroup(msg.to)
@@ -4679,7 +4679,7 @@ def bot(op):
                                 ky.updateGroup(G)
                                 ky.sendMessage(msg.to, "พร้อมคุ้มกันเจ้านายค่ะ ")
 
-                        elif cmd == "10out":
+                        elif cmd == "out10":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                 G = cl.getGroup(msg.to)
@@ -4702,7 +4702,7 @@ def bot(op):
                                 cl.sendText(msg.to, "Bye bye fams "+str(G.name))
                                 cl.leaveGroup(msg.to)
                                 
-                        elif cmd == "ck":
+                        elif cmd == "ck10":
                             if msg._from in admin or msg._from in owner:
                                try:cl.inviteIntoGroup(to, [mid]);has = "OK"
                                except:has = "NOT"
@@ -4804,7 +4804,7 @@ def bot(op):
                                else:sil1 = "🔌█▒ Low 0%"
                                ky.sendMessage(to, "Status:\n\n🔴Kick : {} \n🔴Invite : {}".format(sil1,sil))
                             
-                        elif cmd == "out":
+                        elif cmd == "/ออก":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                 G = cl.getGroup(msg.to)
@@ -4960,7 +4960,7 @@ def bot(op):
                                 G = cl.getGroup(msg.to)
                                 sw.leaveGroup(msg.to)
                                 
-                        elif cmd == "bb" or cmd == "ชบ":
+                        elif cmd == "10" or cmd == "ชบ":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                 ki.sendMessage(msg.to, "อยู่ค่ะเจ้านาย ")
@@ -5030,7 +5030,7 @@ def bot(op):
                                elapsed_time = time.time() - start
                                cl.sendMessage(msg.to, "{} ms".format(str(elapsed_time)))
 
-                        elif cmd == "speedbot" or cmd == "sb":
+                        elif cmd == "speedbot" or cmd == "sp10":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                start = time.time()
@@ -6035,19 +6035,19 @@ def bot(op):
                                 wait["detectMention"] = False
                                 cl.sendText(msg.to,"Auto respon deactivated")
 
-                        elif cmd == "autojoin on" or text.lower() == 'autojoin on':
+                        elif cmd == "autojoin on" or text.lower() == 'join on':
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                 wait["autoJoin"] = True
                                 cl.sendText(msg.to,"Autojoin activated")
 
-                        elif cmd == "autojoin off" or text.lower() == 'autojoin off':
+                        elif cmd == "autojoin off" or text.lower() == 'join off':
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                 wait["autoJoin"] = False
                                 cl.sendText(msg.to,"Autojoin deactivated")
 
-                        elif cmd == "autoleave on" or text.lower() == 'autoleave off':
+                        elif cmd == "autoleave on" or text.lower() == 'autoleave on':
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                 wait["autoLeave"] = True
