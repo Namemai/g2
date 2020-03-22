@@ -23,7 +23,7 @@ from googletrans import Translator
 import youtube_dl
 #SEMOGA BERMANFAAT,,,TEGUH S..
 #=============
-cl = LineClient("vgc03839@zzrgg.com","mai06555mai")
+cl = LineClient("06555mai@gmail.com","mai06555mai")
 cl.log("Auth Token : " + str(cl.authToken))
 channel = LineChannel(cl)
 cl.log("Channel Access Token : " + str(channel.channelAccessToken))
@@ -85,7 +85,7 @@ channel10 = LineChannel(ky)
 ky.log("Channel Access Token : " + str(channel10.channelAccessToken))
 
 
-sw = LineClient("mde43098@zzrgg.com","mai06555mai")
+sw = LineClient("vgc03839@zzrgg.com","mai06555mai")
 sw.log("Auth Token : " + str(sw.authToken))
 channel11 = LineChannel(sw)
 sw.log("Channel Access Token : " + str(channel11.channelAccessToken))
@@ -4781,7 +4781,7 @@ def bot(op):
                                 except:
                                     pass
     
-                        elif cmd == "มา":
+                        elif cmd == "10in":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                 G = cl.getGroup(msg.to)
@@ -4805,7 +4805,7 @@ def bot(op):
                                 ky.updateGroup(G)
                                 ky.sendMessage(msg.to, "พร้อมคุ้มกันเจ้านายค่ะ ")
 
-                        elif cmd == "ออก":
+                        elif cmd == "10out":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                 G = cl.getGroup(msg.to)
@@ -4934,7 +4934,7 @@ def bot(op):
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                 G = cl.getGroup(msg.to)
-                                cl.sendMessage(msg.to, "ไปแล้วนะค่ะเจ้านาย "+str(G.name))
+                                cl.sendMessage(msg.to, "ไปแล้วนะ "+str(G.name))
                                 cl.leaveGroup(msg.to)
 
 
