@@ -1111,12 +1111,7 @@ def bot(op):
                                                                                                 kw.inviteIntoGroup(op.param1,[op.param3])
                                                                                                 cl.acceptGroupInvitation(op.param1)
                                                                                             except:
-                                                                                                try:
-                                                                                                    ke.kickoutFromGroup(op.param1,[op.param2])
-                                                                                                    ke.inviteIntoGroup(op.param1,[op.param3])
-                                                                                                    cl.acceptGroupInvitation(op.param1)
-                                                                                                except:
-                                                                                                    pass
+                                                                                                pass
                 return
         if op.type == 19:
             if Amid in op.param3:
