@@ -399,7 +399,6 @@ def help():
                   "║🛡☈ " + key + "js「on/off」\n" + \
                   "║🛡☈ " + key + "ผี「on/off」\n" + \
                   "╠══[ Set kicker ]\n" + \
-                  "║☈ " + key + "Kick「on/off」\n" + \
                   "║☈ " + key + "Gk「@」\n" + \
                   "║☈ " + key + "Bk「@」\n" + \
                   "║☈ " + key + "/mai *คำสั่งบินกลุ่ม\n" + \
@@ -414,13 +413,6 @@ def help():
                   "║☈ " + key + "Autoleave「on/off」\n" + \
                   "║☈ " + key + "มุดลิ้ง「on/off」\n" + \
                   "╠══[ Set Admin ]\n" + \
-                  "║☈ " + key + "Self「on/off」\n" + \
-                  "║☈ " + key + "Bot:on\n" + \
-                  "║☈ " + key + "Bot:expell\n" + \
-                  "║☈ " + key + "Staff:on\n" + \
-                  "║☈ " + key + "Staff:expell\n" + \
-                  "║☈ " + key + "Admin:on\n" + \
-                  "║☈ " + key + "Admin:expell\n" + \
                   "║☈ " + key + "บอทแอด「@」\n" + \
                   "║☈ " + key + "บอทลบ「@」\n" + \
                   "║☈ " + key + "ตั้งสตาฟ「@」\n" + \
@@ -520,16 +512,16 @@ def helpgroup():
                   "║☈ " + key + "ตัส「@」\n" + \
                   "║☈ " + key + "Gk「@」\n" + \
                   "║☈ " + key + "Bk「@」\n" + \
-                  "║☈ " + key + "มา\n" + \
-                  "║☈ " + key + "ออก\n" + \
-                  "║☈ " + key + "Set\n" + \
+                  "║☈ " + key + "in10\n" + \
+                  "║☈ " + key + "out10\n" + \
+                  "║☈ " + key + "Set2\n" + \
                   "║☈ " + key + "About\n" + \
                   "║☈ " + key + "รี\n" + \
-                  "║☈ " + key + "Runtime\n" + \
+                  "║☈ " + key + "10\n" + \
                   "║☈ " + key + "Creator\n" + \
-                  "║☈ " + key + "Sp\n" + \
-                  "║☈ " + key + "Sprespon\n" + \
-                  "║☈ " + key + "Invitebot\n" + \
+                  "║☈ " + key + "Sp10\n" + \
+                  "║☈ " + key + "ปิดบอท10/เปิดบอท10\n" + \
+                  "║☈ " + key + "ดึง10\n" + \
                   "║☈ " + key + "Respon\n" + \
                   "║☈ " + key + "join\n" + \
                   "║☈ " + key + "bye\n" + \
@@ -752,66 +744,77 @@ def bot(op):
                         group = cl.getGroup(op.param1)
                         gMembMids = [contact.mid for contact in group.invitee]
                         for _mid in gMembMids:
+                            random.choice(ABC).kickoutFromGroup(op.param1,[op.param2])
                             random.choice(ABC).cancelGroupInvitation(op.param1,[_mid])
                     except:
                         try:
                             group = ki.getGroup(op.param1)
                             gMembMids = [contact.mid for contact in group.invitee]
                             for _mid in gMembMids:
+                                random.choice(ABC).kickoutFromGroup(op.param1,[op.param2])
                                 random.choice(ABC).cancelGroupInvitation(op.param1,[_mid])
                         except:
                             try:
                                 group = kk.getGroup(op.param1)
                                 gMembMids = [contact.mid for contact in group.invitee]
                                 for _mid in gMembMids:
+                                    random.choice(ABC).kickoutFromGroup(op.param1,[op.param2])
                                     random.choice(ABC).cancelGroupInvitation(op.param1,[_mid])
                             except:
                                 try:
                                     group = kc.getGroup(op.param1)
                                     gMembMids = [contact.mid for contact in group.invitee]
                                     for _mid in gMembMids:
+                                        random.choice(ABC).kickoutFromGroup(op.param1,[op.param2])
                                         random.choice(ABC).cancelGroupInvitation(op.param1,[_mid])
                                 except:
                                     try:
                                         group = km.getGroup(op.param1)
                                         gMembMids = [contact.mid for contact in group.invitee]
                                         for _mid in gMembMids:
+                                            random.choice(ABC).kickoutFromGroup(op.param1,[op.param2])
                                             random.choice(ABC).cancelGroupInvitation(op.param1,[_mid])
                                     except:
                                         try:
                                             group = kb.getGroup(op.param1)
                                             gMembMids = [contact.mid for contact in group.invitee]
                                             for _mid in gMembMids:
+                                                random.choice(ABC).kickoutFromGroup(op.param1,[op.param2])
                                                 random.choice(ABC).cancelGroupInvitation(op.param1,[_mid])
                                         except:
                                             try:
                                                 group = kn.getGroup(op.param1)
                                                 gMembMids = [contact.mid for contact in group.invitee]
                                                 for _mid in gMembMids:
+                                                    random.choice(ABC).kickoutFromGroup(op.param1,[op.param2])
                                                     random.choice(ABC).cancelGroupInvitation(op.param1,[_mid])
                                             except:
                                                 try:
                                                     group = ko.getGroup(op.param1)
                                                     gMembMids = [contact.mid for contact in group.invitee]
                                                     for _mid in gMembMids:
+                                                        random.choice(ABC).kickoutFromGroup(op.param1,[op.param2])
                                                         random.choice(ABC).cancelGroupInvitation(op.param1,[_mid])
                                                 except:
                                                     try:
                                                         group = kw.getGroup(op.param1)
                                                         gMembMids = [contact.mid for contact in group.invitee]
                                                         for _mid in gMembMids:
+                                                            random.choice(ABC).kickoutFromGroup(op.param1,[op.param2])
                                                             random.choice(ABC).cancelGroupInvitation(op.param1,[_mid])
                                                     except:
                                                         try:
                                                             group = ke.getGroup(op.param1)
                                                             gMembMids = [contact.mid for contact in group.invitee]
                                                             for _mid in gMembMids:
+                                                                random.choice(ABC).kickoutFromGroup(op.param1,[op.param2])
                                                                 random.choice(ABC).cancelGroupInvitation(op.param1,[_mid])
                                                         except:
                                                             try:
                                                                 group = ky.getGroup(op.param1)
                                                                 gMembMids = [contact.mid for contact in group.invitee]
                                                                 for _mid in gMembMids:
+                                                                    random.choice(ABC).kickoutFromGroup(op.param1,[op.param2])
                                                                     random.choice(ABC).cancelGroupInvitation(op.param1,[_mid])
                                                             except:
                                                                 pass
@@ -862,6 +865,12 @@ def bot(op):
                                                             except:
                                                                 pass
 #____________________________________________________________________
+        if op.type == 13:
+            if op.param3 in wait["blacklist"]:
+                    try:
+                        random.choice(ABC).cancelGroupInvitation(op.param1,[op.param3])
+                    except:
+                        pass
 
         if op.type == 17:
             if op.param2 in wait["blacklist"]:
@@ -3267,6 +3276,16 @@ def bot(op):
                               random.choice(ABC).kickoutFromGroup(msg.to, [msg._from])
                           except:
                               random.choice(ABC).kickoutFromGroup(msg.to, [msg._from])
+               if msg._from not in Bots:
+                 if wait["talkban"] == True:
+                   if msg._from in wait["Talkblacklist"]:
+                      try:
+                          random.choice(ABC).kickoutFromGroup(msg.to, [msg._from])
+                      except:
+                          try:
+                              random.choice(ABC).kickoutFromGroup(msg.to, [msg._from])
+                          except:
+                              random.choice(ABC).kickoutFromGroup(msg.to, [msg._from])
                if 'MENTION' in msg.contentMetadata.keys() != None:
                  if wait["detectMention"] == True:
                    name = re.findall(r'@(\w+)', msg.text)
@@ -3559,6 +3578,7 @@ def bot(op):
                         sw.sendChatChecked(msg.to, msg_id)
                     if text is None:
                         return
+                    
                     else:
                         cmd = command(text)
                         if cmd == "h":
@@ -3567,15 +3587,15 @@ def bot(op):
                                helpMessage = help()
                                cl.sendMessage(msg.to, str(helpMessage))
                                                                                        
-                        if cmd == "self on":
+                        if cmd == "เปิดบอท10":
                             if msg._from in admin:
                                 wait["selfbot"] = True
-                                cl.sendText(msg.to, "Selfbot activated")
+                                cl.sendText(msg.to, "เปิดระบบทำงานคิก10ตัวแล้ว..")
                                 
-                        elif cmd == "self off":
+                        elif cmd == "ปิดบอท10":
                             if msg._from in admin:
                                 wait["selfbot"] = False
-                                cl.sendText(msg.to, "Selfbot deactivated")
+                                cl.sendText(msg.to, "ปิดระบบทำงานคิก10ตัวแล้ว")
                                             
                         elif cmd == "hb":
                           if wait["selfbot"] == True:
@@ -4804,14 +4824,6 @@ def bot(op):
                                if has1 == "OK":sil1 = "🔋██ full 100%"
                                else:sil1 = "🔌█▒ Low 0%"
                                ky.sendMessage(to, "Status:\n\n🔴Kick : {} \n🔴Invite : {}".format(sil1,sil))
-                            
-                        elif cmd == "/ออก":
-                          if wait["selfbot"] == True:
-                            if msg._from in admin:
-                                G = cl.getGroup(msg.to)
-                                cl.sendMessage(msg.to, "ไปแล้วนะ "+str(G.name))
-                                cl.leaveGroup(msg.to)
-
 
                         elif cmd == "a1":
                             if msg._from in admin:
@@ -4975,7 +4987,7 @@ def bot(op):
                                 ke.sendMessage(msg.to, "อยู่ค่ะเจ้านาย ")
                                 ky.sendMessage(msg.to, "อยู่ค่ะเจ้านาย ")
 
-                        elif cmd == "spb":
+                        elif cmd == "sb10":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                 get_profile_time_start = time.time()
@@ -6251,6 +6263,42 @@ def bot(op):
                               ragets = cl.getContacts(wait["blacklist"])
                               mc = "「%i」User Blacklist" % len(ragets)
                               cl.sendMessage(msg.to,"Sukses membersihkan " +mc)
+
+                        elif cmd.startswith("ผีดึง "):
+                          if msg._from in admin:
+                               sep = text.split(" ")
+                               idnya = text.replace(sep[0] + " ","")
+                               conn = sw.findContactsByUserid(idnya)
+                               sw.findAndAddContactsByMid(conn.mid)
+                               sw.inviteIntoGroup(msg.to,[conn.mid])
+                               group = sw.getGroup(msg.to)
+                               xname = sw.getContact(conn.mid)
+                               zx = ""
+                               zxc = ""
+                               zx2 = []
+                               xpesan = '「 Sukses Diinvite 」\nNama contact '
+                               recky = str(xname.displayName)
+                               pesan = ''
+                               pesan2 = pesan+"@a\n"
+                               xlen = str(len(zxc)+len(xpesan))
+                               xlen2 = str(len(zxc)+len(pesan2)+len(xpesan)-1)
+                               zx = {'S':xlen, 'E':xlen2, 'M':xname.mid}
+                               zx2.append(zx)
+                               zxc += pesan2
+                               text = xpesan+ zxc + "ke grup " + str(group.name) +""
+                               sw.sendMessage(receiver, text, contentMetadata={'MENTION':str('{"MENTIONEES":'+json.dumps(zx2).replace(' ','')+'}')}, contentType=0)
+                                
+                        elif cmd == "เปิดเชิญ" or text.lower() == 'invite on':
+                          if wait["selfbot"] == True:
+                            if msg._from in admin:
+                                wait["invite"] = True
+                                sendMention(msg.to, sender, "「 Status Invite 」\nUser ", "\nSilahkan kirim kontaknya,\nKetik invite off jika sudah slesai")
+
+                        elif cmd == "ปิดเชิญ" or text.lower() == 'invite off':
+                          if wait["selfbot"] == True:
+                            if msg._from in admin:
+                                wait["invite"] = False
+                                sendMention(msg.to, sender, "「 Status Invite 」\nUser ", " \nInvite via contact dinonaktifkan")
 #===========COMMAND SET============#
                         elif 'Set pesan: ' in msg.text:
                            if msg._from in admin:
