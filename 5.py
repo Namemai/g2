@@ -129,7 +129,7 @@ wait = {
     "addstaff":False,
     "dellstaff":False,
     "bots":{},
-    "addbots":False,
+    "addbots":True,
     "dellbots":False,
     "blacklist":{},
     "wblacklist":False,
@@ -1678,36 +1678,6 @@ def bot(op):
                             del Setmain["ARfoto"][Emid]
                             kb.updateProfilePicture(path)
                             kb.sendMessage(msg.to,"Foto Successfully dirubah")
-                        elif Fmid in Setmain["ARfoto"]:
-                            path = kn.downloadObjectMsg(msg_id)
-                            del Setmain["ARfoto"][Fmid]
-                            kn.updateProfilePicture(path)
-                            kn.sendMessage(msg.to,"Foto Successfully dirubah")
-                        elif Gmid in Setmain["ARfoto"]:
-                            path = ko.downloadObjectMsg(msg_id)
-                            del Setmain["ARfoto"][Gmid]
-                            ko.updateProfilePicture(path)
-                            ko.sendMessage(msg.to,"Foto Successfully dirubah")
-                        elif Hmid in Setmain["ARfoto"]:
-                            path = kw.downloadObjectMsg(msg_id)
-                            del Setmain["ARfoto"][Hmid]
-                            kw.updateProfilePicture(path)
-                            kw.sendMessage(msg.to,"Foto Successfully dirubah")
-                        elif Imid in Setmain["ARfoto"]:
-                            path = ke.downloadObjectMsg(msg_id)
-                            del Setmain["ARfoto"][Imid]
-                            ke.updateProfilePicture(path)
-                            ke.sendMessage(msg.to,"Foto Successfully dirubah")
-                        elif Jmid in Setmain["ARfoto"]:
-                            path = ky.downloadObjectMsg(msg_id)
-                            del Setmain["ARfoto"][Jmid]
-                            ky.updateProfilePicture(path)
-                            ky.sendMessage(msg.to,"Foto Successfully dirubah")
-                        elif Zmid in Setmain["ARfoto"]:
-                            path = sw.downloadObjectMsg(msg_id)
-                            del Setmain["ARfoto"][Zmid]
-                            sw.updateProfilePicture(path)
-                            sw.sendMessage(msg.to,"Foto Successfully dirubah")
 
                if msg.contentType == 1:
                  if msg._from in admin:
@@ -1717,12 +1687,6 @@ def bot(op):
                      path3 = kc.downloadObjectMsg(msg_id)
                      path4 = km.downloadObjectMsg(msg_id)
                      path5 = kb.downloadObjectMsg(msg_id)
-                     path6 = kn.downloadObjectMsg(msg_id)
-                     path7 = ko.downloadObjectMsg(msg_id)
-                     path8 = kw.downloadObjectMsg(msg_id)
-                     path9 = ke.downloadObjectMsg(msg_id)
-                     path10 = ky.downloadObjectMsg(msg_id)
-                     path11 = sw.downloadObjectMsg(msg_id)
                      settings["changePicture"] = False
                      ki.updateProfilePicture(path1)
                      ki.sendMessage(msg.to, "Successfully mengubah foto profile bot")
@@ -1734,18 +1698,6 @@ def bot(op):
                      km.sendMessage(msg.to, "Successfully mengubah foto profile bot")
                      kb.updateProfilePicture(path5)
                      kb.sendMessage(msg.to, "Successfully mengubah foto profile bot")
-                     kn.updateProfilePicture(path6)
-                     kn.sendMessage(msg.to, "Successfully mengubah foto profile bot")
-                     ko.updateProfilePicture(path7)
-                     ko.sendMessage(msg.to, "Successfully mengubah foto profile bot")
-                     kw.updateProfilePicture(path8)
-                     kw.sendMessage(msg.to, "Successfully mengubah foto profile bot")
-                     ke.updateProfilePicture(path9)
-                     ke.sendMessage(msg.to, "Successfully mengubah foto profile bot")
-                     ky.updateProfilePicture(path10)
-                     ky.sendMessage(msg.to, "Successfully mengubah foto profile bot")
-                     sw.updateProfilePicture(path11)
-                     sw.sendMessage(msg.to, "Successfully mengubah foto profile bot")
 
                if msg.contentType == 0:
                     if Setmain["autoRead"] == True:
@@ -1755,12 +1707,6 @@ def bot(op):
                         kc.sendChatChecked(msg.to, msg_id)
                         km.sendChatChecked(msg.to, msg_id)
                         kb.sendChatChecked(msg.to, msg_id)
-                        kn.sendChatChecked(msg.to, msg_id)
-                        ko.sendChatChecked(msg.to, msg_id)
-                        kw.sendChatChecked(msg.to, msg_id)
-                        ke.sendChatChecked(msg.to, msg_id)
-                        ky.sendChatChecked(msg.to, msg_id)
-                        sw.sendChatChecked(msg.to, msg_id)
                     if text is None:
                         return
                     else:
@@ -1771,12 +1717,12 @@ def bot(op):
                                helpMessage = help()
                                cl.sendMessage(msg.to, str(helpMessage))
                                                                                        
-                        if cmd == "self on":
+                        if cmd == "เปิดบอท5":
                             if msg._from in admin:
                                 wait["selfbot"] = True
                                 cl.sendText(msg.to, "Selfbot activated")
                                 
-                        elif cmd == "self off":
+                        elif cmd == "ปิดบอท5":
                             if msg._from in admin:
                                 wait["selfbot"] = False
                                 cl.sendText(msg.to, "Selfbot deactivated")
@@ -2780,7 +2726,7 @@ def bot(op):
                                 km.leaveGroup(msg.to)
                                 kb.leaveGroup(msg.to)
                                 
-                        elif cmd == "byeme":
+                        elif cmd == "bye5":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                 G = cl.getGroup(msg.to)
@@ -2844,7 +2790,7 @@ def bot(op):
                                else:sil1 = "🔌█▒ Low 0%"
                                kb.sendMessage(to, "Status:\n\n🔴Kick : {} \n🔴Invite : {}".format(sil1,sil))
                             
-                        elif cmd == "/ออก":
+                        elif cmd == "ออก5":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                 G = cl.getGroup(msg.to)
@@ -2943,11 +2889,6 @@ def bot(op):
                                 kc.sendMessage(msg.to, "อยู่ค่ะเจ้านาย ")
                                 km.sendMessage(msg.to, "อยู่ค่ะเจ้านาย ")
                                 kb.sendMessage(msg.to, "อยู่ค่ะเจ้านาย ")
-                                kn.sendMessage(msg.to, "อยู่ค่ะเจ้านาย ")
-                                ko.sendMessage(msg.to, "อยู่ค่ะเจ้านาย ")
-                                kw.sendMessage(msg.to, "อยู่ค่ะเจ้านาย ")
-                                ke.sendMessage(msg.to, "อยู่ค่ะเจ้านาย ")
-                                ky.sendMessage(msg.to, "อยู่ค่ะเจ้านาย ")
 
                         elif cmd == "spb5":
                           if wait["selfbot"] == True:
@@ -3418,13 +3359,6 @@ def bot(op):
                                       kc.sendMessage(midd, None, contentMetadata={'PRDID': 'a0768339-c2d3-4189-9653-2909e9bb6f58', 'PRDTYPE': 'THEME', 'MSGTPL': '6'}, contentType=9)
                                       km.sendMessage(midd, None, contentMetadata={'PRDID': 'a0768339-c2d3-4189-9653-2909e9bb6f58', 'PRDTYPE': 'THEME', 'MSGTPL': '6'}, contentType=9)
                                       kb.sendMessage(midd, None, contentMetadata={'PRDID': 'a0768339-c2d3-4189-9653-2909e9bb6f58', 'PRDTYPE': 'THEME', 'MSGTPL': '6'}, contentType=9)
-                                      kn.sendMessage(midd, None, contentMetadata={'PRDID': 'a0768339-c2d3-4189-9653-2909e9bb6f58', 'PRDTYPE': 'THEME', 'MSGTPL': '6'}, contentType=9)
-                                      ko.sendMessage(midd, None, contentMetadata={'PRDID': 'a0768339-c2d3-4189-9653-2909e9bb6f58', 'PRDTYPE': 'THEME', 'MSGTPL': '6'}, contentType=9)
-                                      kw.sendMessage(midd, None, contentMetadata={'PRDID': 'a0768339-c2d3-4189-9653-2909e9bb6f58', 'PRDTYPE': 'THEME', 'MSGTPL': '6'}, contentType=9)
-                                      ke.sendMessage(midd, None, contentMetadata={'PRDID': 'a0768339-c2d3-4189-9653-2909e9bb6f58', 'PRDTYPE': 'THEME', 'MSGTPL': '6'}, contentType=9)
-                                      ky.sendMessage(midd, None, contentMetadata={'PRDID': 'a0768339-c2d3-4189-9653-2909e9bb6f58', 'PRDTYPE': 'THEME', 'MSGTPL': '6'}, contentType=9)
-                                      k12.sendMessage(midd, None, contentMetadata={'PRDID': 'a0768339-c2d3-4189-9653-2909e9bb6f58', 'PRDTYPE': 'THEME', 'MSGTPL': '6'}, contentType=9)
-                                      sw.sendMessage(midd, None, contentMetadata={'PRDID': 'a0768339-c2d3-4189-9653-2909e9bb6f58', 'PRDTYPE': 'THEME', 'MSGTPL': '6'}, contentType=9)
 
                         elif 'Spam: ' in msg.text:
                           if wait["selfbot"] == True:
@@ -3441,11 +3375,6 @@ def bot(op):
                                       kc.sendMessage(midd, str(Setmain["ARmessage1"]))
                                       km.sendMessage(midd, str(Setmain["ARmessage1"]))
                                       kb.sendMessage(midd, str(Setmain["ARmessage1"]))
-                                      kn.sendMessage(midd, str(Setmain["ARmessage1"]))
-                                      ko.sendMessage(midd, str(Setmain["ARmessage1"]))
-                                      kw.sendMessage(midd, str(Setmain["ARmessage1"]))
-                                      ke.sendMessage(midd, str(Setmain["ARmessage1"]))
-                                      ky.sendMessage(midd, str(Setmain["ARmessage1"]))
 
                         elif 'ID line: ' in msg.text:
                           if wait["selfbot"] == True:
