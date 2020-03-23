@@ -111,7 +111,7 @@ Imid = ke.getProfile().mid
 Jmid = ky.getProfile().mid
 Zmid = sw.getProfile().mid
 KAC = [cl,ki,kk,kc,km,kb,kn,ko,kw,ke,ky,sw]
-ABC = [ki,kk,kc,km,kb,kn,ko,kw,ke,ky,sw]
+ABC = [cl,ki,kk,kc,km,kb,kn,ko,kw,ke,ky,sw]
 Bots = [mid,Amid,Bmid,Cmid,Dmid,Emid,Fmid,Gmid,Hmid,Imid,Jmid,Zmid]
 Ghost = [sw]
 Dpk = admin + staff
@@ -817,6 +817,8 @@ def bot(op):
                                                                     random.choice(ABC).cancelGroupInvitation(op.param1,[_mid])
                                                             except:
                                                                 pass
+                return
+
         if op.type == 13:
             if op.param2 in wait["blacklist"]:
                 if op.param2 in Bots:
@@ -863,6 +865,12 @@ def bot(op):
                                                                 ky.cancleGroupInvitation(op.param1,[op.param2])
                                                             except:
                                                                 pass
+        if op.type == 13:
+            if op.param3 in wait["blacklist"]:
+                    try:
+                        random.choice(ABC).cancelGroupInvitation(op.param1,[op.param3])
+                    except:
+                        pass
 #======================================================================================================#
         if op.type == 13:
             if op.param3 in mid:
@@ -997,13 +1005,6 @@ def bot(op):
                     cl.updateGroup(X)
                     Ti = cl.reissueGroupTicket(op.param1)
 #======================================================================================================#
-        if op.type == 13:
-            if op.param3 in wait["blacklist"]:
-                    try:
-                        random.choice(ABC).cancelGroupInvitation(op.param1,[op.param3])
-                    except:
-                        pass
-
         if op.type == 17:
             if op.param2 in wait["blacklist"]:
                 random.choice(ABC).kickoutFromGroup(op.param1,[op.param2])
