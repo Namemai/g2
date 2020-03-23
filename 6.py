@@ -55,12 +55,6 @@ channel5 = LineChannel(kb)
 kb.log("Channel Access Token : " + str(channel5.channelAccessToken))
 
 
-sw = LineClient("vgc03839@zzrgg.com","mai06555mai")
-sw.log("Auth Token : " + str(sw.authToken))
-channel11 = LineChannel(sw)
-sw.log("Channel Access Token : " + str(channel11.channelAccessToken))
-
-
 print("---LOGIN SUCCES---\n mai")
 
 poll = LinePoll(cl)
@@ -75,11 +69,9 @@ Bmid = kk.getProfile().mid
 Cmid = kc.getProfile().mid
 Dmid = km.getProfile().mid
 Emid = kb.getProfile().mid
-Zmid = sw.getProfile().mid
 KAC = [cl,ki,kk,kc,km,kb,sw]
-ABC = [ki,kk,kc,km,kb,sw]
-Bots = [mid,Amid,Bmid,Cmid,Dmid,Emid,Zmid]
-Ghost = [sw]
+ABC = [cl,ki,kk,kc,km,kb]
+Bots = [mid,Amid,Bmid,Cmid,Dmid,Emid]
 Dpk = admin + staff
 
 protectqr = []
@@ -755,25 +747,7 @@ def bot(op):
                     wait["blacklist"][op.param2] = True
                     random.choice(ABC).kickoutFromGroup(op.param1,[op.param2])
                 else:
-                    pass
-
-        if op.type == 19:
-            try:
-                if op.param1 in ghost:
-                    if op.param2 not in Bots and op.param2 not in owner and op.param2 not in admin and op.param2 not in staff:
-                        G = cl.getGroup(op.param1)
-                        G.preventedJoinByTicket = False
-                        cl.updateGroup(G)
-                        invsend = 0
-                        Ticket = cl.reissueGroupTicket(op.param1)
-                        sw.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        sw.kickoutFromGroup(op.param1,[op.param2])
-                        sw.leaveGroup(op.param1)
-                        X = cl.getGroup(op.param1)
-                        X.preventedJoinByTicket = True
-                        cl.updateGroup(X)
-            except:
-                pass             
+                    pass            
                 
         if op.type == 19:
             try:
@@ -870,23 +844,23 @@ def bot(op):
                                         cl.acceptGroupInvitation(op.param1)
                                     except:
                                         try:
-                                            kk.kickoutFromGroup(op.param1,[op.param2])
-                                            kk.inviteIntoGroup(op.param1,[op.param3])
+                                            ki.kickoutFromGroup(op.param1,[op.param2])
+                                            ki.inviteIntoGroup(op.param1,[op.param3])
                                             cl.acceptGroupInvitation(op.param1)
                                         except:
                                             try:
-                                                kc.kickoutFromGroup(op.param1,[op.param2])
-                                                kc.inviteIntoGroup(op.param1,[op.param3])
+                                                kk.kickoutFromGroup(op.param1,[op.param2])
+                                                kk.inviteIntoGroup(op.param1,[op.param3])
                                                 cl.acceptGroupInvitation(op.param1)
                                             except:
                                                 try:
-                                                    km.kickoutFromGroup(op.param1,[op.param2])
-                                                    km.inviteIntoGroup(op.param1,[op.param3])
+                                                    kc.kickoutFromGroup(op.param1,[op.param2])
+                                                    kc.inviteIntoGroup(op.param1,[op.param3])
                                                     cl.acceptGroupInvitation(op.param1)
                                                 except:
                                                     try:
-                                                        kb.kickoutFromGroup(op.param1,[op.param2])
-                                                        kb.inviteIntoGroup(op.param1,[op.param3])
+                                                        km.kickoutFromGroup(op.param1,[op.param2])
+                                                        km.inviteIntoGroup(op.param1,[op.param3])
                                                         cl.acceptGroupInvitation(op.param1)
                                                     except:
                                                         try:
@@ -906,48 +880,48 @@ def bot(op):
                                                             Ticket = cl.reissueGroupTicket(op.param1)
                                                         except:
                                                             try:
-                                                                ki.kickoutFromGroup(op.param1,[op.param2])
-                                                                ki.inviteIntoGroup(op.param1,[op.param3])
+                                                                kb.kickoutFromGroup(op.param1,[op.param2])
+                                                                kb.inviteIntoGroup(op.param1,[op.param3])
                                                                 cl.acceptGroupInvitation(op.param1)
                                                             except:
                                                                 try:
-                                                                    kk.kickoutFromGroup(op.param1,[op.param2])
-                                                                    kk.inviteIntoGroup(op.param1,[op.param3])
+                                                                    ki.kickoutFromGroup(op.param1,[op.param2])
+                                                                    ki.inviteIntoGroup(op.param1,[op.param3])
                                                                     cl.acceptGroupInvitation(op.param1)
                                                                 except:
                                                                     try:
-                                                                        kc.kickoutFromGroup(op.param1,[op.param2])
-                                                                        kc.inviteIntoGroup(op.param1,[op.param3])
+                                                                        kk.kickoutFromGroup(op.param1,[op.param2])
+                                                                        kk.inviteIntoGroup(op.param1,[op.param3])
                                                                         cl.acceptGroupInvitation(op.param1)
                                                                     except:
                                                                         try:
-                                                                            km.kickoutFromGroup(op.param1,[op.param2])
-                                                                            km.inviteIntoGroup(op.param1,[op.param3])
+                                                                            kc.kickoutFromGroup(op.param1,[op.param2])
+                                                                            kc.inviteIntoGroup(op.param1,[op.param3])
                                                                             cl.acceptGroupInvitation(op.param1)
                                                                         except:
                                                                             try:
-                                                                                kb.kickoutFromGroup(op.param1,[op.param2])
-                                                                                kb.inviteIntoGroup(op.param1,[op.param3])
+                                                                                km.kickoutFromGroup(op.param1,[op.param2])
+                                                                                km.inviteIntoGroup(op.param1,[op.param3])
                                                                                 cl.acceptGroupInvitation(op.param1)
                                                                             except:
                                                                                 try:
-                                                                                    kk.kickoutFromGroup(op.param1,[op.param2])
-                                                                                    kk.inviteIntoGroup(op.param1,[op.param3])
+                                                                                    kb.kickoutFromGroup(op.param1,[op.param2])
+                                                                                    kb.inviteIntoGroup(op.param1,[op.param3])
                                                                                     cl.acceptGroupInvitation(op.param1)
                                                                                 except:
                                                                                     try:
-                                                                                        kc.kickoutFromGroup(op.param1,[op.param2])
-                                                                                        kc.inviteIntoGroup(op.param1,[op.param3])
+                                                                                        ki.kickoutFromGroup(op.param1,[op.param2])
+                                                                                        ki.inviteIntoGroup(op.param1,[op.param3])
                                                                                         cl.acceptGroupInvitation(op.param1)
                                                                                     except:
                                                                                         try:
-                                                                                            km.kickoutFromGroup(op.param1,[op.param2])
-                                                                                            km.inviteIntoGroup(op.param1,[op.param3])
+                                                                                            kk.kickoutFromGroup(op.param1,[op.param2])
+                                                                                            kk.inviteIntoGroup(op.param1,[op.param3])
                                                                                             cl.acceptGroupInvitation(op.param1)
                                                                                         except:
                                                                                             try:
-                                                                                                kb.kickoutFromGroup(op.param1,[op.param2])
-                                                                                                kb.inviteIntoGroup(op.param1,[op.param3])
+                                                                                                kc.kickoutFromGroup(op.param1,[op.param2])
+                                                                                                kc.inviteIntoGroup(op.param1,[op.param3])
                                                                                                 cl.acceptGroupInvitation(op.param1)
                                                                                             except:
                                                                                                 pass
@@ -1026,48 +1000,48 @@ def bot(op):
                                                             Ticket = ki.reissueGroupTicket(op.param1)
                                                         except:
                                                             try:
-                                                                kk.kickoutFromGroup(op.param1,[op.param2])
-                                                                kk.inviteIntoGroup(op.param1,[op.param3])
+                                                                cl.kickoutFromGroup(op.param1,[op.param2])
+                                                                cl.inviteIntoGroup(op.param1,[op.param3])
                                                                 ki.acceptGroupInvitation(op.param1)
                                                             except:
                                                                 try:
-                                                                    kc.kickoutFromGroup(op.param1,[op.param2])
-                                                                    kc.inviteIntoGroup(op.param1,[op.param3])
+                                                                    kk.kickoutFromGroup(op.param1,[op.param2])
+                                                                    kk.inviteIntoGroup(op.param1,[op.param3])
                                                                     ki.acceptGroupInvitation(op.param1)
                                                                 except:
                                                                     try:
-                                                                        km.kickoutFromGroup(op.param1,[op.param2])
-                                                                        km.inviteIntoGroup(op.param1,[op.param3])
+                                                                        kc.kickoutFromGroup(op.param1,[op.param2])
+                                                                        kc.inviteIntoGroup(op.param1,[op.param3])
                                                                         ki.acceptGroupInvitation(op.param1)
                                                                     except:
                                                                         try:
-                                                                            kb.kickoutFromGroup(op.param1,[op.param2])
-                                                                            kb.inviteIntoGroup(op.param1,[op.param3])
+                                                                            km.kickoutFromGroup(op.param1,[op.param2])
+                                                                            km.inviteIntoGroup(op.param1,[op.param3])
                                                                             ki.acceptGroupInvitation(op.param1)
                                                                         except:
                                                                             try:
-                                                                                cl.kickoutFromGroup(op.param1,[op.param2])
-                                                                                cl.inviteIntoGroup(op.param1,[op.param3])
+                                                                                kb.kickoutFromGroup(op.param1,[op.param2])
+                                                                                kb.inviteIntoGroup(op.param1,[op.param3])
                                                                                 ki.acceptGroupInvitation(op.param1)
                                                                             except:
                                                                                 try:
-                                                                                    kk.kickoutFromGroup(op.param1,[op.param2])
-                                                                                    kk.inviteIntoGroup(op.param1,[op.param3])
+                                                                                    cl.kickoutFromGroup(op.param1,[op.param2])
+                                                                                    cl.inviteIntoGroup(op.param1,[op.param3])
                                                                                     ki.acceptGroupInvitation(op.param1)
                                                                                 except:
                                                                                     try:
-                                                                                        kc.kickoutFromGroup(op.param1,[op.param2])
-                                                                                        kc.inviteIntoGroup(op.param1,[op.param3])
+                                                                                        ki.kickoutFromGroup(op.param1,[op.param2])
+                                                                                        ki.inviteIntoGroup(op.param1,[op.param3])
                                                                                         ki.acceptGroupInvitation(op.param1)
                                                                                     except:
                                                                                         try:
-                                                                                            km.kickoutFromGroup(op.param1,[op.param2])
-                                                                                            km.inviteIntoGroup(op.param1,[op.param3])
+                                                                                            kk.kickoutFromGroup(op.param1,[op.param2])
+                                                                                            kk.inviteIntoGroup(op.param1,[op.param3])
                                                                                             ki.acceptGroupInvitation(op.param1)
                                                                                         except:
                                                                                             try:
-                                                                                                kb.kickoutFromGroup(op.param1,[op.param2])
-                                                                                                kb.inviteIntoGroup(op.param1,[op.param3])
+                                                                                                kc.kickoutFromGroup(op.param1,[op.param2])
+                                                                                                kc.inviteIntoGroup(op.param1,[op.param3])
                                                                                                 ki.acceptGroupInvitation(op.param1)
                                                                                             except:
                                                                                                 pass
@@ -1100,13 +1074,13 @@ def bot(op):
                                 kk.acceptGroupInvitation(op.param1)
                             except:
                                 try:
-                                    ki.kickoutFromGroup(op.param1,[op.param2])
-                                    ki.inviteIntoGroup(op.param1,[op.param3])
+                                    cl.kickoutFromGroup(op.param1,[op.param2])
+                                    cl.inviteIntoGroup(op.param1,[op.param3])
                                     kk.acceptGroupInvitation(op.param1)
                                 except:
                                     try:
-                                        cl.kickoutFromGroup(op.param1,[op.param2])
-                                        cl.inviteIntoGroup(op.param1,[op.param3])
+                                        ki.kickoutFromGroup(op.param1,[op.param2])
+                                        ki.inviteIntoGroup(op.param1,[op.param3])
                                         kk.acceptGroupInvitation(op.param1)
                                     except:
                                         try:
@@ -1125,8 +1099,8 @@ def bot(op):
                                                     kk.acceptGroupInvitation(op.param1)
                                                 except:
                                                     try:
-                                                        ki.kickoutFromGroup(op.param1,[op.param2])
-                                                        ki.inviteIntoGroup(op.param1,[op.param3])
+                                                        cl.kickoutFromGroup(op.param1,[op.param2])
+                                                        cl.inviteIntoGroup(op.param1,[op.param3])
                                                         kk.acceptGroupInvitation(op.param1)
                                                     except:
                                                         try:
@@ -1146,23 +1120,23 @@ def bot(op):
                                                             Ticket = kk.reissueGroupTicket(op.param1)
                                                         except:
                                                             try:
-                                                                kc.kickoutFromGroup(op.param1,[op.param2])
-                                                                kc.inviteIntoGroup(op.param1,[op.param3])
+                                                                ki.kickoutFromGroup(op.param1,[op.param2])
+                                                                ki.inviteIntoGroup(op.param1,[op.param3])
                                                                 kk.acceptGroupInvitation(op.param1)
                                                             except:
                                                                 try:
-                                                                    km.kickoutFromGroup(op.param1,[op.param2])
-                                                                    km.inviteIntoGroup(op.param1,[op.param3])
+                                                                    kc.kickoutFromGroup(op.param1,[op.param2])
+                                                                    kc.inviteIntoGroup(op.param1,[op.param3])
                                                                     kk.acceptGroupInvitation(op.param1)
                                                                 except:
                                                                     try:
-                                                                        kb.kickoutFromGroup(op.param1,[op.param2])
-                                                                        kb.inviteIntoGroup(op.param1,[op.param3])
+                                                                        km.kickoutFromGroup(op.param1,[op.param2])
+                                                                        km.inviteIntoGroup(op.param1,[op.param3])
                                                                         kk.acceptGroupInvitation(op.param1)
                                                                     except:
                                                                         try:
-                                                                            ki.kickoutFromGroup(op.param1,[op.param2])
-                                                                            ki.inviteIntoGroup(op.param1,[op.param3])
+                                                                            kb.kickoutFromGroup(op.param1,[op.param2])
+                                                                            kb.inviteIntoGroup(op.param1,[op.param3])
                                                                             kk.acceptGroupInvitation(op.param1)
                                                                         except:
                                                                             try:
@@ -1171,23 +1145,23 @@ def bot(op):
                                                                                 kk.acceptGroupInvitation(op.param1)
                                                                             except:
                                                                                 try:
-                                                                                    kc.kickoutFromGroup(op.param1,[op.param2])
-                                                                                    kc.inviteIntoGroup(op.param1,[op.param3])
+                                                                                    ki.kickoutFromGroup(op.param1,[op.param2])
+                                                                                    ki.inviteIntoGroup(op.param1,[op.param3])
                                                                                     kk.acceptGroupInvitation(op.param1)
                                                                                 except:
                                                                                     try:
-                                                                                        km.kickoutFromGroup(op.param1,[op.param2])
-                                                                                        km.inviteIntoGroup(op.param1,[op.param3])
+                                                                                        kc.kickoutFromGroup(op.param1,[op.param2])
+                                                                                        kc.inviteIntoGroup(op.param1,[op.param3])
                                                                                         kk.acceptGroupInvitation(op.param1)
                                                                                     except:
                                                                                         try:
-                                                                                            kb.kickoutFromGroup(op.param1,[op.param2])
-                                                                                            kb.inviteIntoGroup(op.param1,[op.param3])
+                                                                                            km.kickoutFromGroup(op.param1,[op.param2])
+                                                                                            km.inviteIntoGroup(op.param1,[op.param3])
                                                                                             kk.acceptGroupInvitation(op.param1)
                                                                                         except:
                                                                                             try:
-                                                                                                ki.kickoutFromGroup(op.param1,[op.param2])
-                                                                                                ki.inviteIntoGroup(op.param1,[op.param3])
+                                                                                                kb.kickoutFromGroup(op.param1,[op.param2])
+                                                                                                kb.inviteIntoGroup(op.param1,[op.param3])
                                                                                                 kk.acceptGroupInvitation(op.param1)
                                                                                             except:
                                                                                                 pass
@@ -1266,48 +1240,48 @@ def bot(op):
                                                             Ticket = kc.reissueGroupTicket(op.param1)
                                                         except:
                                                             try:
-                                                                km.kickoutFromGroup(op.param1,[op.param2])
-                                                                km.inviteIntoGroup(op.param1,[op.param3])
+                                                                kk.kickoutFromGroup(op.param1,[op.param2])
+                                                                kk.inviteIntoGroup(op.param1,[op.param3])
                                                                 kc.acceptGroupInvitation(op.param1)
                                                             except:
                                                                 try:
-                                                                    kb.kickoutFromGroup(op.param1,[op.param2])
-                                                                    kb.inviteIntoGroup(op.param1,[op.param3])
+                                                                    km.kickoutFromGroup(op.param1,[op.param2])
+                                                                    km.inviteIntoGroup(op.param1,[op.param3])
                                                                     kc.acceptGroupInvitation(op.param1)
                                                                 except:
                                                                     try:
-                                                                        kn.kickoutFromGroup(op.param1,[op.param2])
-                                                                        kn.inviteIntoGroup(op.param1,[op.param3])
+                                                                        kb.kickoutFromGroup(op.param1,[op.param2])
+                                                                        kb.inviteIntoGroup(op.param1,[op.param3])
                                                                         kc.acceptGroupInvitation(op.param1)
                                                                     except:
                                                                         try:
-                                                                            ko.kickoutFromGroup(op.param1,[op.param2])
-                                                                            ko.inviteIntoGroup(op.param1,[op.param3])
+                                                                            cl.kickoutFromGroup(op.param1,[op.param2])
+                                                                            cl.inviteIntoGroup(op.param1,[op.param3])
                                                                             kc.acceptGroupInvitation(op.param1)
                                                                         except:
                                                                             try:
-                                                                                kw.kickoutFromGroup(op.param1,[op.param2])
-                                                                                kw.inviteIntoGroup(op.param1,[op.param3])
+                                                                                ki.kickoutFromGroup(op.param1,[op.param2])
+                                                                                ki.inviteIntoGroup(op.param1,[op.param3])
                                                                                 kc.acceptGroupInvitation(op.param1)
                                                                             except:
                                                                                 try:
-                                                                                    ke.kickoutFromGroup(op.param1,[op.param2])
-                                                                                    ke.inviteIntoGroup(op.param1,[op.param3])
+                                                                                    kk.kickoutFromGroup(op.param1,[op.param2])
+                                                                                    kk.inviteIntoGroup(op.param1,[op.param3])
                                                                                     kc.acceptGroupInvitation(op.param1)
                                                                                 except:
                                                                                     try:
-                                                                                        ky.kickoutFromGroup(op.param1,[op.param2])
-                                                                                        ky.inviteIntoGroup(op.param1,[op.param3])
+                                                                                        km.kickoutFromGroup(op.param1,[op.param2])
+                                                                                        km.inviteIntoGroup(op.param1,[op.param3])
                                                                                         kc.acceptGroupInvitation(op.param1)
                                                                                     except:
                                                                                         try:
-                                                                                            ki.kickoutFromGroup(op.param1,[op.param2])
-                                                                                            ki.inviteIntoGroup(op.param1,[op.param3])
+                                                                                            kb.kickoutFromGroup(op.param1,[op.param2])
+                                                                                            kb.inviteIntoGroup(op.param1,[op.param3])
                                                                                             kc.acceptGroupInvitation(op.param1)
                                                                                         except:
                                                                                             try:
-                                                                                                kk.kickoutFromGroup(op.param1,[op.param2])
-                                                                                                kk.inviteIntoGroup(op.param1,[op.param3])
+                                                                                                cl.kickoutFromGroup(op.param1,[op.param2])
+                                                                                                cl.inviteIntoGroup(op.param1,[op.param3])
                                                                                                 kc.acceptGroupInvitation(op.param1)
                                                                                             except:
                                                                                                 pass
@@ -1330,43 +1304,43 @@ def bot(op):
                         km.acceptGroupInvitation(op.param1)
                     except:
                         try:
-                            kn.kickoutFromGroup(op.param1,[op.param2])
-                            kn.inviteIntoGroup(op.param1,[op.param3])
+                            cl.kickoutFromGroup(op.param1,[op.param2])
+                            cl.inviteIntoGroup(op.param1,[op.param3])
                             km.acceptGroupInvitation(op.param1)
                         except:
                             try:
-                                ko.kickoutFromGroup(op.param1,[op.param2])
-                                ko.inviteIntoGroup(op.param1,[op.param3])
+                                ki.kickoutFromGroup(op.param1,[op.param2])
+                                ki.inviteIntoGroup(op.param1,[op.param3])
                                 km.acceptGroupInvitation(op.param1)
                             except:
                                 try:
-                                    kw.kickoutFromGroup(op.param1,[op.param2])
-                                    kw.inviteIntoGroup(op.param1,[op.param3])
+                                    kk.kickoutFromGroup(op.param1,[op.param2])
+                                    kk.inviteIntoGroup(op.param1,[op.param3])
                                     km.acceptGroupInvitation(op.param1)
                                 except:
                                     try:
-                                        ke.kickoutFromGroup(op.param1,[op.param2])
-                                        ke.inviteIntoGroup(op.param1,[op.param3])
+                                        kc.kickoutFromGroup(op.param1,[op.param2])
+                                        kc.inviteIntoGroup(op.param1,[op.param3])
                                         km.acceptGroupInvitation(op.param1)
                                     except:
                                         try:
-                                            ky.kickoutFromGroup(op.param1,[op.param2])
-                                            ky.inviteIntoGroup(op.param1,[op.param3])
+                                            kb.kickoutFromGroup(op.param1,[op.param2])
+                                            kb.inviteIntoGroup(op.param1,[op.param3])
                                             km.acceptGroupInvitation(op.param1)
                                         except:
                                             try:
-                                                ki.kickoutFromGroup(op.param1,[op.param2])
-                                                ki.inviteIntoGroup(op.param1,[op.param3])
+                                                cl.kickoutFromGroup(op.param1,[op.param2])
+                                                cl.inviteIntoGroup(op.param1,[op.param3])
                                                 km.acceptGroupInvitation(op.param1)
                                             except:
                                                 try:
-                                                    kk.kickoutFromGroup(op.param1,[op.param2])
-                                                    kk.inviteIntoGroup(op.param1,[op.param3])
+                                                    ki.kickoutFromGroup(op.param1,[op.param2])
+                                                    ki.inviteIntoGroup(op.param1,[op.param3])
                                                     km.acceptGroupInvitation(op.param1)
                                                 except:
                                                     try:
-                                                        kc.kickoutFromGroup(op.param1,[op.param2])
-                                                        kc.inviteIntoGroup(op.param1,[op.param3])
+                                                        kk.kickoutFromGroup(op.param1,[op.param2])
+                                                        kk.inviteIntoGroup(op.param1,[op.param3])
                                                         km.acceptGroupInvitation(op.param1)
                                                     except:
                                                         try:
@@ -1380,59 +1354,54 @@ def bot(op):
                                                             kc.acceptGroupInvitationByTicket(op.param1,Ticket)
                                                             km.acceptGroupInvitationByTicket(op.param1,Ticket)
                                                             kb.acceptGroupInvitationByTicket(op.param1,Ticket)
-                                                            kn.acceptGroupInvitationByTicket(op.param1,Ticket)
-                                                            ko.acceptGroupInvitationByTicket(op.param1,Ticket)
-                                                            kw.acceptGroupInvitationByTicket(op.param1,Ticket)
-                                                            ke.acceptGroupInvitationByTicket(op.param1,Ticket)
-                                                            ky.acceptGroupInvitationByTicket(op.param1,Ticket)
                                                             G = km.getGroup(op.param1)
                                                             G.preventedJoinByTicket = True
                                                             km.updateGroup(G)
                                                             Ticket = km.reissueGroupTicket(op.param1)
                                                         except:
                                                             try:
-                                                                kb.kickoutFromGroup(op.param1,[op.param2])
-                                                                kb.inviteIntoGroup(op.param1,[op.param3])
+                                                                kc.kickoutFromGroup(op.param1,[op.param2])
+                                                                kc.inviteIntoGroup(op.param1,[op.param3])
                                                                 km.acceptGroupInvitation(op.param1)
                                                             except:
                                                                 try:
-                                                                    kn.kickoutFromGroup(op.param1,[op.param2])
-                                                                    kn.inviteIntoGroup(op.param1,[op.param3])
+                                                                    kb.kickoutFromGroup(op.param1,[op.param2])
+                                                                    kb.inviteIntoGroup(op.param1,[op.param3])
                                                                     km.acceptGroupInvitation(op.param1)
                                                                 except:
                                                                     try:
-                                                                        ko.kickoutFromGroup(op.param1,[op.param2])
-                                                                        ko.inviteIntoGroup(op.param1,[op.param3])
+                                                                        cl.kickoutFromGroup(op.param1,[op.param2])
+                                                                        cl.inviteIntoGroup(op.param1,[op.param3])
                                                                         km.acceptGroupInvitation(op.param1)
                                                                     except:
                                                                         try:
-                                                                            kw.kickoutFromGroup(op.param1,[op.param2])
-                                                                            kw.inviteIntoGroup(op.param1,[op.param3])
+                                                                            ki.kickoutFromGroup(op.param1,[op.param2])
+                                                                            ki.inviteIntoGroup(op.param1,[op.param3])
                                                                             km.acceptGroupInvitation(op.param1)
                                                                         except:
                                                                             try:
-                                                                                ke.kickoutFromGroup(op.param1,[op.param2])
-                                                                                ke.inviteIntoGroup(op.param1,[op.param3])
+                                                                                kk.kickoutFromGroup(op.param1,[op.param2])
+                                                                                kk.inviteIntoGroup(op.param1,[op.param3])
                                                                                 km.acceptGroupInvitation(op.param1)
                                                                             except:
                                                                                 try:
-                                                                                    ky.kickoutFromGroup(op.param1,[op.param2])
-                                                                                    ky.inviteIntoGroup(op.param1,[op.param3])
+                                                                                    kc.kickoutFromGroup(op.param1,[op.param2])
+                                                                                    kc.inviteIntoGroup(op.param1,[op.param3])
                                                                                     km.acceptGroupInvitation(op.param1)
                                                                                 except:
                                                                                     try:
-                                                                                        ki.kickoutFromGroup(op.param1,[op.param2])
-                                                                                        ki.inviteIntoGroup(op.param1,[op.param3])
+                                                                                        kb.kickoutFromGroup(op.param1,[op.param2])
+                                                                                        kb.inviteIntoGroup(op.param1,[op.param3])
                                                                                         km.acceptGroupInvitation(op.param1)
                                                                                     except:
                                                                                         try:
-                                                                                            kk.kickoutFromGroup(op.param1,[op.param2])
-                                                                                            kk.inviteIntoGroup(op.param1,[op.param3])
+                                                                                            cl.kickoutFromGroup(op.param1,[op.param2])
+                                                                                            cl.inviteIntoGroup(op.param1,[op.param3])
                                                                                             km.acceptGroupInvitation(op.param1)
                                                                                         except:
                                                                                             try:
-                                                                                                kc.kickoutFromGroup(op.param1,[op.param2])
-                                                                                                kc.inviteIntoGroup(op.param1,[op.param3])
+                                                                                                ki.kickoutFromGroup(op.param1,[op.param2])
+                                                                                                ki.inviteIntoGroup(op.param1,[op.param3])
                                                                                                 km.acceptGroupInvitation(op.param1)
                                                                                             except:
                                                                                                 pass
@@ -1450,48 +1419,48 @@ def bot(op):
                 else:
                     wait["blacklist"][op.param2] = True
                     try:
-                        kn.kickoutFromGroup(op.param1,[op.param2])
-                        kn.inviteIntoGroup(op.param1,[op.param3])
+                        cl.kickoutFromGroup(op.param1,[op.param2])
+                        cl.inviteIntoGroup(op.param1,[op.param3])
                         kb.acceptGroupInvitation(op.param1)
                     except:
                         try:
-                            ko.kickoutFromGroup(op.param1,[op.param2])
-                            ko.inviteIntoGroup(op.param1,[op.param3])
+                            ki.kickoutFromGroup(op.param1,[op.param2])
+                            ki.inviteIntoGroup(op.param1,[op.param3])
                             kb.acceptGroupInvitation(op.param1)
                         except:
                             try:
-                                kw.kickoutFromGroup(op.param1,[op.param2])
-                                kw.inviteIntoGroup(op.param1,[op.param3])
+                                kk.kickoutFromGroup(op.param1,[op.param2])
+                                kk.inviteIntoGroup(op.param1,[op.param3])
                                 kb.acceptGroupInvitation(op.param1)
                             except:
                                 try:
-                                    ke.kickoutFromGroup(op.param1,[op.param2])
-                                    ke.inviteIntoGroup(op.param1,[op.param3])
+                                    kc.kickoutFromGroup(op.param1,[op.param2])
+                                    kc.inviteIntoGroup(op.param1,[op.param3])
                                     kb.acceptGroupInvitation(op.param1)
                                 except:
                                     try:
-                                        ky.kickoutFromGroup(op.param1,[op.param2])
-                                        ky.inviteIntoGroup(op.param1,[op.param3])
+                                        km.kickoutFromGroup(op.param1,[op.param2])
+                                        km.inviteIntoGroup(op.param1,[op.param3])
                                         kb.acceptGroupInvitation(op.param1)
                                     except:
                                         try:
-                                            ki.kickoutFromGroup(op.param1,[op.param2])
-                                            ki.inviteIntoGroup(op.param1,[op.param3])
+                                            cl.kickoutFromGroup(op.param1,[op.param2])
+                                            cl.inviteIntoGroup(op.param1,[op.param3])
                                             kb.acceptGroupInvitation(op.param1)
                                         except:
                                             try:
-                                                kk.kickoutFromGroup(op.param1,[op.param2])
-                                                kk.inviteIntoGroup(op.param1,[op.param3])
+                                                ki.kickoutFromGroup(op.param1,[op.param2])
+                                                ki.inviteIntoGroup(op.param1,[op.param3])
                                                 kb.acceptGroupInvitation(op.param1)
                                             except:
                                                 try:
-                                                    kc.kickoutFromGroup(op.param1,[op.param2])
-                                                    kc.inviteIntoGroup(op.param1,[op.param3])
+                                                    kk.kickoutFromGroup(op.param1,[op.param2])
+                                                    kk.inviteIntoGroup(op.param1,[op.param3])
                                                     kb.acceptGroupInvitation(op.param1)
                                                 except:
                                                     try:
-                                                        km.kickoutFromGroup(op.param1,[op.param2])
-                                                        km.inviteIntoGroup(op.param1,[op.param3])
+                                                        kc.kickoutFromGroup(op.param1,[op.param2])
+                                                        kc.inviteIntoGroup(op.param1,[op.param3])
                                                         kb.acceptGroupInvitation(op.param1)
                                                     except:
                                                         try:
@@ -1505,763 +1474,58 @@ def bot(op):
                                                             kc.acceptGroupInvitationByTicket(op.param1,Ticket)
                                                             km.acceptGroupInvitationByTicket(op.param1,Ticket)
                                                             kb.acceptGroupInvitationByTicket(op.param1,Ticket)
-                                                            kn.acceptGroupInvitationByTicket(op.param1,Ticket)
-                                                            ko.acceptGroupInvitationByTicket(op.param1,Ticket)
-                                                            kw.acceptGroupInvitationByTicket(op.param1,Ticket)
-                                                            ke.acceptGroupInvitationByTicket(op.param1,Ticket)
-                                                            ky.acceptGroupInvitationByTicket(op.param1,Ticket)
                                                             G = kb.getGroup(op.param1)
                                                             G.preventedJoinByTicket = True
                                                             kb.updateGroup(G)
                                                             Ticket = kb.reissueGroupTicket(op.param1)
                                                         except:
                                                             try:
-                                                                kn.kickoutFromGroup(op.param1,[op.param2])
-                                                                kn.inviteIntoGroup(op.param1,[op.param3])
+                                                                km.kickoutFromGroup(op.param1,[op.param2])
+                                                                km.inviteIntoGroup(op.param1,[op.param3])
                                                                 kb.acceptGroupInvitation(op.param1)
                                                             except:
                                                                 try:
-                                                                    ko.kickoutFromGroup(op.param1,[op.param2])
-                                                                    ko.inviteIntoGroup(op.param1,[op.param3])
+                                                                    cl.kickoutFromGroup(op.param1,[op.param2])
+                                                                    cl.inviteIntoGroup(op.param1,[op.param3])
                                                                     kb.acceptGroupInvitation(op.param1)
-                                                                except:
-                                                                    try:
-                                                                        kw.kickoutFromGroup(op.param1,[op.param2])
-                                                                        kw.inviteIntoGroup(op.param1,[op.param3])
-                                                                        kb.acceptGroupInvitation(op.param1)
-                                                                    except:
-                                                                        try:
-                                                                            ke.kickoutFromGroup(op.param1,[op.param2])
-                                                                            ke.inviteIntoGroup(op.param1,[op.param3])
-                                                                            kb.acceptGroupInvitation(op.param1)
-                                                                        except:
-                                                                            try:
-                                                                                ky.kickoutFromGroup(op.param1,[op.param2])
-                                                                                ky.inviteIntoGroup(op.param1,[op.param3])
-                                                                                kb.acceptGroupInvitation(op.param1)
-                                                                            except:
-                                                                                try:
-                                                                                    ki.kickoutFromGroup(op.param1,[op.param2])
-                                                                                    ki.inviteIntoGroup(op.param1,[op.param3])
-                                                                                    kb.acceptGroupInvitation(op.param1)
-                                                                                except:
-                                                                                    try:
-                                                                                        kk.kickoutFromGroup(op.param1,[op.param2])
-                                                                                        kk.inviteIntoGroup(op.param1,[op.param3])
-                                                                                        kb.acceptGroupInvitation(op.param1)
-                                                                                    except:
-                                                                                        try:
-                                                                                            kc.kickoutFromGroup(op.param1,[op.param2])
-                                                                                            kc.inviteIntoGroup(op.param1,[op.param3])
-                                                                                            kb.acceptGroupInvitation(op.param1)
-                                                                                        except:
-                                                                                            try:
-                                                                                                km.kickoutFromGroup(op.param1,[op.param2])
-                                                                                                km.inviteIntoGroup(op.param1,[op.param3])
-                                                                                                kb.acceptGroupInvitation(op.param1)
-                                                                                            except:
-                                                                                                pass
-                return
-        if op.type == 19:
-            if Fmid in op.param3:
-                if op.param2 in Bots:
-                    pass
-                if op.param2 in owner:
-                    pass
-                if op.param2 in admin:
-                    pass
-                if op.param2 in staff:
-                    pass
-                else:
-                    wait["blacklist"][op.param2] = True
-                    try:
-                        ko.kickoutFromGroup(op.param1,[op.param2])
-                        ko.inviteIntoGroup(op.param1,[op.param3])
-                        kn.acceptGroupInvitation(op.param1)
-                    except:
-                        try:
-                            kw.kickoutFromGroup(op.param1,[op.param2])
-                            kw.inviteIntoGroup(op.param1,[op.param3])
-                            kn.acceptGroupInvitation(op.param1)
-                        except:
-                            try:
-                                ke.kickoutFromGroup(op.param1,[op.param2])
-                                ke.inviteIntoGroup(op.param1,[op.param3])
-                                kn.acceptGroupInvitation(op.param1)
-                            except:
-                                try:
-                                    ky.kickoutFromGroup(op.param1,[op.param2])
-                                    ky.inviteIntoGroup(op.param1,[op.param3])
-                                    kn.acceptGroupInvitation(op.param1)
-                                except:
-                                    try:
-                                        ki.kickoutFromGroup(op.param1,[op.param2])
-                                        ki.inviteIntoGroup(op.param1,[op.param3])
-                                        kn.acceptGroupInvitation(op.param1)
-                                    except:
-                                        try:
-                                            kk.kickoutFromGroup(op.param1,[op.param2])
-                                            kk.inviteIntoGroup(op.param1,[op.param3])
-                                            kn.acceptGroupInvitation(op.param1)
-                                        except:
-                                            try:
-                                                kc.kickoutFromGroup(op.param1,[op.param2])
-                                                kc.inviteIntoGroup(op.param1,[op.param3])
-                                                kn.acceptGroupInvitation(op.param1)
-                                            except:
-                                                try:
-                                                    km.kickoutFromGroup(op.param1,[op.param2])
-                                                    km.inviteIntoGroup(op.param1,[op.param3])
-                                                    kn.acceptGroupInvitation(op.param1)
-                                                except:
-                                                    try:
-                                                        kb.kickoutFromGroup(op.param1,[op.param2])
-                                                        kb.inviteIntoGroup(op.param1,[op.param3])
-                                                        kn.acceptGroupInvitation(op.param1)
-                                                    except:
-                                                        try:
-                                                            G = kn.getGroup(op.param1)
-                                                            G.preventedJoinByTicket = False
-                                                            kn.updateGroup(G)
-                                                            Ticket = kn.reissueGroupTicket(op.param1)
-                                                            cl.acceptGroupInvitationByTicket(op.param1,Ticket)
-                                                            ki.acceptGroupInvitationByTicket(op.param1,Ticket)
-                                                            kk.acceptGroupInvitationByTicket(op.param1,Ticket)
-                                                            kc.acceptGroupInvitationByTicket(op.param1,Ticket)
-                                                            km.acceptGroupInvitationByTicket(op.param1,Ticket)
-                                                            kb.acceptGroupInvitationByTicket(op.param1,Ticket)
-                                                            kn.acceptGroupInvitationByTicket(op.param1,Ticket)
-                                                            ko.acceptGroupInvitationByTicket(op.param1,Ticket)
-                                                            kw.acceptGroupInvitationByTicket(op.param1,Ticket)
-                                                            ke.acceptGroupInvitationByTicket(op.param1,Ticket)
-                                                            ky.acceptGroupInvitationByTicket(op.param1,Ticket)
-                                                            G = kn.getGroup(op.param1)
-                                                            G.preventedJoinByTicket = True
-                                                            kn.updateGroup(G)
-                                                            Ticket = kn.reissueGroupTicket(op.param1)
-                                                        except:
-                                                            try:
-                                                                ko.kickoutFromGroup(op.param1,[op.param2])
-                                                                ko.inviteIntoGroup(op.param1,[op.param3])
-                                                                kn.acceptGroupInvitation(op.param1)
-                                                            except:
-                                                                try:
-                                                                    kw.kickoutFromGroup(op.param1,[op.param2])
-                                                                    kw.inviteIntoGroup(op.param1,[op.param3])
-                                                                    kn.acceptGroupInvitation(op.param1)
-                                                                except:
-                                                                    try:
-                                                                        ke.kickoutFromGroup(op.param1,[op.param2])
-                                                                        ke.inviteIntoGroup(op.param1,[op.param3])
-                                                                        kn.acceptGroupInvitation(op.param1)
-                                                                    except:
-                                                                        try:
-                                                                            ky.kickoutFromGroup(op.param1,[op.param2])
-                                                                            ky.inviteIntoGroup(op.param1,[op.param3])
-                                                                            kn.acceptGroupInvitation(op.param1)
-                                                                        except:
-                                                                            try:
-                                                                                ki.kickoutFromGroup(op.param1,[op.param2])
-                                                                                ki.inviteIntoGroup(op.param1,[op.param3])
-                                                                                kn.acceptGroupInvitation(op.param1)
-                                                                            except:
-                                                                                try:
-                                                                                    kk.kickoutFromGroup(op.param1,[op.param2])
-                                                                                    kk.inviteIntoGroup(op.param1,[op.param3])
-                                                                                    kn.acceptGroupInvitation(op.param1)
-                                                                                except:
-                                                                                    try:
-                                                                                        kc.kickoutFromGroup(op.param1,[op.param2])
-                                                                                        kc.inviteIntoGroup(op.param1,[op.param3])
-                                                                                        kn.acceptGroupInvitation(op.param1)
-                                                                                    except:
-                                                                                        try:
-                                                                                            km.kickoutFromGroup(op.param1,[op.param2])
-                                                                                            km.inviteIntoGroup(op.param1,[op.param3])
-                                                                                            kn.acceptGroupInvitation(op.param1)
-                                                                                        except:
-                                                                                            try:
-                                                                                                kb.kickoutFromGroup(op.param1,[op.param2])
-                                                                                                kb.inviteIntoGroup(op.param1,[op.param3])
-                                                                                                kn.acceptGroupInvitation(op.param1)
-                                                                                            except:
-                                                                                                pass
-                return
-        if op.type == 19:
-            if Gmid in op.param3:
-                if op.param2 in Bots:
-                    pass
-                if op.param2 in owner:
-                    pass
-                if op.param2 in admin:
-                    pass
-                if op.param2 in staff:
-                    pass
-                else:
-                    wait["blacklist"][op.param2] = True
-                    try:
-                        kw.kickoutFromGroup(op.param1,[op.param2])
-                        kw.inviteIntoGroup(op.param1,[op.param3])
-                        ko.acceptGroupInvitation(op.param1)
-                    except:
-                        try:
-                            ke.kickoutFromGroup(op.param1,[op.param2])
-                            ke.inviteIntoGroup(op.param1,[op.param3])
-                            ko.acceptGroupInvitation(op.param1)
-                        except:
-                            try:
-                                ky.kickoutFromGroup(op.param1,[op.param2])
-                                ky.inviteIntoGroup(op.param1,[op.param3])
-                                ko.acceptGroupInvitation(op.param1)
-                            except:
-                                try:
-                                    ki.kickoutFromGroup(op.param1,[op.param2])
-                                    ki.inviteIntoGroup(op.param1,[op.param3])
-                                    ko.acceptGroupInvitation(op.param1)
-                                except:
-                                    try:
-                                        kk.kickoutFromGroup(op.param1,[op.param2])
-                                        kk.inviteIntoGroup(op.param1,[op.param3])
-                                        ko.acceptGroupInvitation(op.param1)
-                                    except:
-                                        try:
-                                            kc.kickoutFromGroup(op.param1,[op.param2])
-                                            kc.inviteIntoGroup(op.param1,[op.param3])
-                                            ko.acceptGroupInvitation(op.param1)
-                                        except:
-                                            try:
-                                                km.kickoutFromGroup(op.param1,[op.param2])
-                                                km.inviteIntoGroup(op.param1,[op.param3])
-                                                ko.acceptGroupInvitation(op.param1)
-                                            except:
-                                                try:
-                                                    kb.kickoutFromGroup(op.param1,[op.param2])
-                                                    kb.inviteIntoGroup(op.param1,[op.param3])
-                                                    ko.acceptGroupInvitation(op.param1)
-                                                except:
-                                                    try:
-                                                        kn.kickoutFromGroup(op.param1,[op.param2])
-                                                        kn.inviteIntoGroup(op.param1,[op.param3])
-                                                        ko.acceptGroupInvitation(op.param1)
-                                                    except:
-                                                        try:
-                                                            G = ko.getGroup(op.param1)
-                                                            G.preventedJoinByTicket = False
-                                                            ko.updateGroup(G)
-                                                            Ticket = ko.reissueGroupTicket(op.param1)
-                                                            cl.acceptGroupInvitationByTicket(op.param1,Ticket)
-                                                            ki.acceptGroupInvitationByTicket(op.param1,Ticket)
-                                                            kk.acceptGroupInvitationByTicket(op.param1,Ticket)
-                                                            kc.acceptGroupInvitationByTicket(op.param1,Ticket)
-                                                            km.acceptGroupInvitationByTicket(op.param1,Ticket)
-                                                            kb.acceptGroupInvitationByTicket(op.param1,Ticket)
-                                                            kn.acceptGroupInvitationByTicket(op.param1,Ticket)
-                                                            ko.acceptGroupInvitationByTicket(op.param1,Ticket)
-                                                            kw.acceptGroupInvitationByTicket(op.param1,Ticket)
-                                                            ke.acceptGroupInvitationByTicket(op.param1,Ticket)
-                                                            ky.acceptGroupInvitationByTicket(op.param1,Ticket)
-                                                            G = ko.getGroup(op.param1)
-                                                            G.preventedJoinByTicket = True
-                                                            ko.updateGroup(G)
-                                                            Ticket = ko.reissueGroupTicket(op.param1)
-                                                        except:
-                                                            try:
-                                                                kw.kickoutFromGroup(op.param1,[op.param2])
-                                                                kw.inviteIntoGroup(op.param1,[op.param3])
-                                                                ko.acceptGroupInvitation(op.param1)
-                                                            except:
-                                                                try:
-                                                                    ke.kickoutFromGroup(op.param1,[op.param2])
-                                                                    ke.inviteIntoGroup(op.param1,[op.param3])
-                                                                    ko.acceptGroupInvitation(op.param1)
-                                                                except:
-                                                                    try:
-                                                                        ky.kickoutFromGroup(op.param1,[op.param2])
-                                                                        ky.inviteIntoGroup(op.param1,[op.param3])
-                                                                        ko.acceptGroupInvitation(op.param1)
-                                                                    except:
-                                                                        try:
-                                                                            ki.kickoutFromGroup(op.param1,[op.param2])
-                                                                            ki.inviteIntoGroup(op.param1,[op.param3])
-                                                                            ko.acceptGroupInvitation(op.param1)
-                                                                        except:
-                                                                            try:
-                                                                                kk.kickoutFromGroup(op.param1,[op.param2])
-                                                                                kk.inviteIntoGroup(op.param1,[op.param3])
-                                                                                ko.acceptGroupInvitation(op.param1)
-                                                                            except:
-                                                                                try:
-                                                                                    kc.kickoutFromGroup(op.param1,[op.param2])
-                                                                                    kc.inviteIntoGroup(op.param1,[op.param3])
-                                                                                    ko.acceptGroupInvitation(op.param1)
-                                                                                except:
-                                                                                    try:
-                                                                                        km.kickoutFromGroup(op.param1,[op.param2])
-                                                                                        km.inviteIntoGroup(op.param1,[op.param3])
-                                                                                        ko.acceptGroupInvitation(op.param1)
-                                                                                    except:
-                                                                                        try:
-                                                                                            kb.kickoutFromGroup(op.param1,[op.param2])
-                                                                                            kb.inviteIntoGroup(op.param1,[op.param3])
-                                                                                            ko.acceptGroupInvitation(op.param1)
-                                                                                        except:
-                                                                                            try:
-                                                                                                kn.kickoutFromGroup(op.param1,[op.param2])
-                                                                                                kn.inviteIntoGroup(op.param1,[op.param3])
-                                                                                                ko.acceptGroupInvitation(op.param1)
-                                                                                            except:
-                                                                                                pass
-                return
-        if op.type == 19:
-            if Hmid in op.param3:
-                if op.param2 in Bots:
-                    pass
-                if op.param2 in owner:
-                    pass
-                if op.param2 in admin:
-                    pass
-                if op.param2 in staff:
-                    pass
-                else:
-                    wait["blacklist"][op.param2] = True
-                    try:
-                        ke.kickoutFromGroup(op.param1,[op.param2])
-                        ke.inviteIntoGroup(op.param1,[op.param3])
-                        kw.acceptGroupInvitation(op.param1)
-                    except:
-                        try:
-                            ky.kickoutFromGroup(op.param1,[op.param2])
-                            ky.inviteIntoGroup(op.param1,[op.param3])
-                            kw.acceptGroupInvitation(op.param1)
-                        except:
-                            try:
-                                ki.kickoutFromGroup(op.param1,[op.param2])
-                                ki.inviteIntoGroup(op.param1,[op.param3])
-                                kw.acceptGroupInvitation(op.param1)
-                            except:
-                                try:
-                                    kk.kickoutFromGroup(op.param1,[op.param2])
-                                    kk.inviteIntoGroup(op.param1,[op.param3])
-                                    kw.acceptGroupInvitation(op.param1)
-                                except:
-                                    try:
-                                        kc.kickoutFromGroup(op.param1,[op.param2])
-                                        kc.inviteIntoGroup(op.param1,[op.param3])
-                                        kw.acceptGroupInvitation(op.param1)
-                                    except:
-                                        try:
-                                            km.kickoutFromGroup(op.param1,[op.param2])
-                                            km.inviteIntoGroup(op.param1,[op.param3])
-                                            kw.acceptGroupInvitation(op.param1)
-                                        except:
-                                            try:
-                                                kb.kickoutFromGroup(op.param1,[op.param2])
-                                                kb.inviteIntoGroup(op.param1,[op.param3])
-                                                kw.acceptGroupInvitation(op.param1)
-                                            except:
-                                                try:
-                                                    kn.kickoutFromGroup(op.param1,[op.param2])
-                                                    kn.inviteIntoGroup(op.param1,[op.param3])
-                                                    kw.acceptGroupInvitation(op.param1)
-                                                except:
-                                                    try:
-                                                        ko.kickoutFromGroup(op.param1,[op.param2])
-                                                        ko.inviteIntoGroup(op.param1,[op.param3])
-                                                        kw.acceptGroupInvitation(op.param1)
-                                                    except:
-                                                        try:
-                                                            G = kw.getGroup(op.param1)
-                                                            G.preventedJoinByTicket = False
-                                                            kw.updateGroup(G)
-                                                            Ticket = kw.reissueGroupTicket(op.param1)
-                                                            cl.acceptGroupInvitationByTicket(op.param1,Ticket)
-                                                            ki.acceptGroupInvitationByTicket(op.param1,Ticket)
-                                                            kk.acceptGroupInvitationByTicket(op.param1,Ticket)
-                                                            kc.acceptGroupInvitationByTicket(op.param1,Ticket)
-                                                            km.acceptGroupInvitationByTicket(op.param1,Ticket)
-                                                            kb.acceptGroupInvitationByTicket(op.param1,Ticket)
-                                                            kn.acceptGroupInvitationByTicket(op.param1,Ticket)
-                                                            ko.acceptGroupInvitationByTicket(op.param1,Ticket)
-                                                            kw.acceptGroupInvitationByTicket(op.param1,Ticket)
-                                                            ke.acceptGroupInvitationByTicket(op.param1,Ticket)
-                                                            ky.acceptGroupInvitationByTicket(op.param1,Ticket)
-                                                            G = kw.getGroup(op.param1)
-                                                            G.preventedJoinByTicket = True
-                                                            kw.updateGroup(G)
-                                                            Ticket = kw.reissueGroupTicket(op.param1)
-                                                        except:
-                                                            try:
-                                                                ke.kickoutFromGroup(op.param1,[op.param2])
-                                                                ke.inviteIntoGroup(op.param1,[op.param3])
-                                                                kw.acceptGroupInvitation(op.param1)
-                                                            except:
-                                                                try:
-                                                                    ky.kickoutFromGroup(op.param1,[op.param2])
-                                                                    ky.inviteIntoGroup(op.param1,[op.param3])
-                                                                    kw.acceptGroupInvitation(op.param1)
                                                                 except:
                                                                     try:
                                                                         ki.kickoutFromGroup(op.param1,[op.param2])
                                                                         ki.inviteIntoGroup(op.param1,[op.param3])
-                                                                        kw.acceptGroupInvitation(op.param1)
+                                                                        kb.acceptGroupInvitation(op.param1)
                                                                     except:
                                                                         try:
                                                                             kk.kickoutFromGroup(op.param1,[op.param2])
                                                                             kk.inviteIntoGroup(op.param1,[op.param3])
-                                                                            kw.acceptGroupInvitation(op.param1)
+                                                                            kb.acceptGroupInvitation(op.param1)
                                                                         except:
                                                                             try:
                                                                                 kc.kickoutFromGroup(op.param1,[op.param2])
                                                                                 kc.inviteIntoGroup(op.param1,[op.param3])
-                                                                                kw.acceptGroupInvitation(op.param1)
+                                                                                kb.acceptGroupInvitation(op.param1)
                                                                             except:
                                                                                 try:
                                                                                     km.kickoutFromGroup(op.param1,[op.param2])
                                                                                     km.inviteIntoGroup(op.param1,[op.param3])
-                                                                                    kw.acceptGroupInvitation(op.param1)
+                                                                                    kb.acceptGroupInvitation(op.param1)
                                                                                 except:
                                                                                     try:
-                                                                                        kb.kickoutFromGroup(op.param1,[op.param2])
-                                                                                        kb.inviteIntoGroup(op.param1,[op.param3])
-                                                                                        kw.acceptGroupInvitation(op.param1)
+                                                                                        cl.kickoutFromGroup(op.param1,[op.param2])
+                                                                                        cl.inviteIntoGroup(op.param1,[op.param3])
+                                                                                        kb.acceptGroupInvitation(op.param1)
                                                                                     except:
                                                                                         try:
-                                                                                            kn.kickoutFromGroup(op.param1,[op.param2])
-                                                                                            kn.inviteIntoGroup(op.param1,[op.param3])
-                                                                                            kw.acceptGroupInvitation(op.param1)
+                                                                                            ki.kickoutFromGroup(op.param1,[op.param2])
+                                                                                            ki.inviteIntoGroup(op.param1,[op.param3])
+                                                                                            kb.acceptGroupInvitation(op.param1)
                                                                                         except:
                                                                                             try:
-                                                                                                ko.kickoutFromGroup(op.param1,[op.param2])
-                                                                                                ko.inviteIntoGroup(op.param1,[op.param3])
-                                                                                                kw.acceptGroupInvitation(op.param1)
+                                                                                                kk.kickoutFromGroup(op.param1,[op.param2])
+                                                                                                kk.inviteIntoGroup(op.param1,[op.param3])
+                                                                                                kb.acceptGroupInvitation(op.param1)
                                                                                             except:
                                                                                                 pass
                 return
-        if op.type == 19:
-            if Imid in op.param3:
-                if op.param2 in Bots:
-                    pass
-                if op.param2 in owner:
-                    pass
-                if op.param2 in admin:
-                    pass
-                if op.param2 in staff:
-                    pass
-                else:
-                    wait["blacklist"][op.param2] = True
-                    try:
-                        ky.kickoutFromGroup(op.param1,[op.param2])
-                        ky.inviteIntoGroup(op.param1,[op.param3])
-                        ke.acceptGroupInvitation(op.param1)
-                    except:
-                        try:
-                            ki.kickoutFromGroup(op.param1,[op.param2])
-                            ki.inviteIntoGroup(op.param1,[op.param3])
-                            ke.acceptGroupInvitation(op.param1)
-                        except:
-                            try:
-                                kk.kickoutFromGroup(op.param1,[op.param2])
-                                kk.inviteIntoGroup(op.param1,[op.param3])
-                                ke.acceptGroupInvitation(op.param1)
-                            except:
-                                try:
-                                    kc.kickoutFromGroup(op.param1,[op.param2])
-                                    kc.inviteIntoGroup(op.param1,[op.param3])
-                                    ke.acceptGroupInvitation(op.param1)
-                                except:
-                                    try:
-                                        km.kickoutFromGroup(op.param1,[op.param2])
-                                        km.inviteIntoGroup(op.param1,[op.param3])
-                                        ke.acceptGroupInvitation(op.param1)
-                                    except:
-                                        try:
-                                            kb.kickoutFromGroup(op.param1,[op.param2])
-                                            kb.inviteIntoGroup(op.param1,[op.param3])
-                                            ke.acceptGroupInvitation(op.param1)
-                                        except:
-                                            try:
-                                                kn.kickoutFromGroup(op.param1,[op.param2])
-                                                kn.inviteIntoGroup(op.param1,[op.param3])
-                                                ke.acceptGroupInvitation(op.param1)
-                                            except:
-                                                try:
-                                                    ko.kickoutFromGroup(op.param1,[op.param2])
-                                                    ko.inviteIntoGroup(op.param1,[op.param3])
-                                                    ke.acceptGroupInvitation(op.param1)
-                                                except:
-                                                    try:
-                                                        kw.kickoutFromGroup(op.param1,[op.param2])
-                                                        kw.inviteIntoGroup(op.param1,[op.param3])
-                                                        ke.acceptGroupInvitation(op.param1)
-                                                    except:
-                                                        try:
-                                                            G = ke.getGroup(op.param1)
-                                                            G.preventedJoinByTicket = False
-                                                            ke.updateGroup(G)
-                                                            Ticket = ke.reissueGroupTicket(op.param1)
-                                                            cl.acceptGroupInvitationByTicket(op.param1,Ticket)
-                                                            ki.acceptGroupInvitationByTicket(op.param1,Ticket)
-                                                            kk.acceptGroupInvitationByTicket(op.param1,Ticket)
-                                                            kc.acceptGroupInvitationByTicket(op.param1,Ticket)
-                                                            km.acceptGroupInvitationByTicket(op.param1,Ticket)
-                                                            kb.acceptGroupInvitationByTicket(op.param1,Ticket)
-                                                            kn.acceptGroupInvitationByTicket(op.param1,Ticket)
-                                                            ko.acceptGroupInvitationByTicket(op.param1,Ticket)
-                                                            kw.acceptGroupInvitationByTicket(op.param1,Ticket)
-                                                            ke.acceptGroupInvitationByTicket(op.param1,Ticket)
-                                                            ky.acceptGroupInvitationByTicket(op.param1,Ticket)
-                                                            G = ke.getGroup(op.param1)
-                                                            G.preventedJoinByTicket = True
-                                                            ke.updateGroup(G)
-                                                            Ticket = ke.reissueGroupTicket(op.param1)
-                                                        except:
-                                                            try:
-                                                                ky.kickoutFromGroup(op.param1,[op.param2])
-                                                                ky.inviteIntoGroup(op.param1,[op.param3])
-                                                                ke.acceptGroupInvitation(op.param1)
-                                                            except:
-                                                                try:
-                                                                    ki.kickoutFromGroup(op.param1,[op.param2])
-                                                                    ki.inviteIntoGroup(op.param1,[op.param3])
-                                                                    ke.acceptGroupInvitation(op.param1)
-                                                                except:
-                                                                    try:
-                                                                        kk.kickoutFromGroup(op.param1,[op.param2])
-                                                                        kk.inviteIntoGroup(op.param1,[op.param3])
-                                                                        ke.acceptGroupInvitation(op.param1)
-                                                                    except:
-                                                                        try:
-                                                                            kc.kickoutFromGroup(op.param1,[op.param2])
-                                                                            kc.inviteIntoGroup(op.param1,[op.param3])
-                                                                            ke.acceptGroupInvitation(op.param1)
-                                                                        except:
-                                                                            try:
-                                                                                km.kickoutFromGroup(op.param1,[op.param2])
-                                                                                km.inviteIntoGroup(op.param1,[op.param3])
-                                                                                ke.acceptGroupInvitation(op.param1)
-                                                                            except:
-                                                                                try:
-                                                                                    kb.kickoutFromGroup(op.param1,[op.param2])
-                                                                                    kb.inviteIntoGroup(op.param1,[op.param3])
-                                                                                    ke.acceptGroupInvitation(op.param1)
-                                                                                except:
-                                                                                    try:
-                                                                                        kn.kickoutFromGroup(op.param1,[op.param2])
-                                                                                        kn.inviteIntoGroup(op.param1,[op.param3])
-                                                                                        ke.acceptGroupInvitation(op.param1)
-                                                                                    except:
-                                                                                        try:
-                                                                                            ko.kickoutFromGroup(op.param1,[op.param2])
-                                                                                            ko.inviteIntoGroup(op.param1,[op.param3])
-                                                                                            ke.acceptGroupInvitation(op.param1)
-                                                                                        except:
-                                                                                            try:
-                                                                                                kw.kickoutFromGroup(op.param1,[op.param2])
-                                                                                                kw.inviteIntoGroup(op.param1,[op.param3])
-                                                                                                ke.acceptGroupInvitation(op.param1)
-                                                                                            except:
-                                                                                                pass
-                return
-        if op.type == 19:
-            if Jmid in op.param3:
-                if op.param2 in Bots:
-                    pass
-                if op.param2 in owner:
-                    pass
-                if op.param2 in admin:
-                    pass
-                if op.param2 in staff:
-                    pass
-                else:
-                    wait["blacklist"][op.param2] = True
-                    try:
-                        ke.kickoutFromGroup(op.param1,[op.param2])
-                        ke.inviteIntoGroup(op.param1,[op.param3])
-                        ky.acceptGroupInvitation(op.param1)
-                    except:
-                        try:
-                            ki.kickoutFromGroup(op.param1,[op.param2])
-                            ki.inviteIntoGroup(op.param1,[op.param3])
-                            ky.acceptGroupInvitation(op.param1)
-                        except:
-                            try:
-                                kk.kickoutFromGroup(op.param1,[op.param2])
-                                kk.inviteIntoGroup(op.param1,[op.param3])
-                                ky.acceptGroupInvitation(op.param1)
-                            except:
-                                try:
-                                    kc.kickoutFromGroup(op.param1,[op.param2])
-                                    kc.inviteIntoGroup(op.param1,[op.param3])
-                                    ky.acceptGroupInvitation(op.param1)
-                                except:
-                                    try:
-                                        km.kickoutFromGroup(op.param1,[op.param2])
-                                        km.inviteIntoGroup(op.param1,[op.param3])
-                                        ky.acceptGroupInvitation(op.param1)
-                                    except:
-                                        try:
-                                            kb.kickoutFromGroup(op.param1,[op.param2])
-                                            kb.inviteIntoGroup(op.param1,[op.param3])
-                                            ky.acceptGroupInvitation(op.param1)
-                                        except:
-                                            try:
-                                                kn.kickoutFromGroup(op.param1,[op.param2])
-                                                kn.inviteIntoGroup(op.param1,[op.param3])
-                                                ky.acceptGroupInvitation(op.param1)
-                                            except:
-                                                try:
-                                                    ko.kickoutFromGroup(op.param1,[op.param2])
-                                                    ko.inviteIntoGroup(op.param1,[op.param3])
-                                                    ky.acceptGroupInvitation(op.param1)
-                                                except:
-                                                    try:
-                                                        kw.kickoutFromGroup(op.param1,[op.param2])
-                                                        kw.inviteIntoGroup(op.param1,[op.param3])
-                                                        ky.acceptGroupInvitation(op.param1)
-                                                    except:
-                                                        try:
-                                                            G = ky.getGroup(op.param1)
-                                                            G.preventedJoinByTicket = False
-                                                            ky.updateGroup(G)
-                                                            Ticket = ky.reissueGroupTicket(op.param1)
-                                                            cl.acceptGroupInvitationByTicket(op.param1,Ticket)
-                                                            ki.acceptGroupInvitationByTicket(op.param1,Ticket)
-                                                            kk.acceptGroupInvitationByTicket(op.param1,Ticket)
-                                                            kc.acceptGroupInvitationByTicket(op.param1,Ticket)
-                                                            km.acceptGroupInvitationByTicket(op.param1,Ticket)
-                                                            kb.acceptGroupInvitationByTicket(op.param1,Ticket)
-                                                            kn.acceptGroupInvitationByTicket(op.param1,Ticket)
-                                                            ko.acceptGroupInvitationByTicket(op.param1,Ticket)
-                                                            kw.acceptGroupInvitationByTicket(op.param1,Ticket)
-                                                            ke.acceptGroupInvitationByTicket(op.param1,Ticket)
-                                                            ky.acceptGroupInvitationByTicket(op.param1,Ticket)
-                                                            G = ky.getGroup(op.param1)
-                                                            G.preventedJoinByTicket = True
-                                                            ky.updateGroup(G)
-                                                            Ticket = ky.reissueGroupTicket(op.param1)
-                                                        except:
-                                                            try:
-                                                                ke.kickoutFromGroup(op.param1,[op.param2])
-                                                                ke.inviteIntoGroup(op.param1,[op.param3])
-                                                                ky.acceptGroupInvitation(op.param1)
-                                                            except:
-                                                                try:
-                                                                    ki.kickoutFromGroup(op.param1,[op.param2])
-                                                                    ki.inviteIntoGroup(op.param1,[op.param3])
-                                                                    ky.acceptGroupInvitation(op.param1)
-                                                                except:
-                                                                    try:
-                                                                        kk.kickoutFromGroup(op.param1,[op.param2])
-                                                                        kk.inviteIntoGroup(op.param1,[op.param3])
-                                                                        ky.acceptGroupInvitation(op.param1)
-                                                                    except:
-                                                                        try:
-                                                                            kc.kickoutFromGroup(op.param1,[op.param2])
-                                                                            kc.inviteIntoGroup(op.param1,[op.param3])
-                                                                            ky.acceptGroupInvitation(op.param1)
-                                                                        except:
-                                                                            try:
-                                                                                km.kickoutFromGroup(op.param1,[op.param2])
-                                                                                km.inviteIntoGroup(op.param1,[op.param3])
-                                                                                ky.acceptGroupInvitation(op.param1)
-                                                                            except:
-                                                                                try:
-                                                                                    kb.kickoutFromGroup(op.param1,[op.param2])
-                                                                                    kb.inviteIntoGroup(op.param1,[op.param3])
-                                                                                    ky.acceptGroupInvitation(op.param1)
-                                                                                except:
-                                                                                    try:
-                                                                                        kn.kickoutFromGroup(op.param1,[op.param2])
-                                                                                        kn.inviteIntoGroup(op.param1,[op.param3])
-                                                                                        ky.acceptGroupInvitation(op.param1)
-                                                                                    except:
-                                                                                        try:
-                                                                                            ko.kickoutFromGroup(op.param1,[op.param2])
-                                                                                            ko.inviteIntoGroup(op.param1,[op.param3])
-                                                                                            ky.acceptGroupInvitation(op.param1)
-                                                                                        except:
-                                                                                            try:
-                                                                                                kw.kickoutFromGroup(op.param1,[op.param2])
-                                                                                                kw.inviteIntoGroup(op.param1,[op.param3])
-                                                                                                ky.acceptGroupInvitation(op.param1)
-                                                                                            except:
-                                                                                                pass
-                    return
-        if op.type == 19:
-            if Zmid in op.param3:
-                if op.param2 in Bots:
-                    pass
-                if op.param2 in owner:
-                    pass
-                if op.param2 in admin:
-                    pass
-                if op.param2 in staff:
-                    pass
-                else:
-                    wait["blacklist"][op.param2] = True
-                    try:
-                        cl.inviteIntoGroup(op.param1,[op.param3])
-                        ki.acceptGroupInvitation(op.param1)
-                    except:
-                        try:
-                            cl.inviteIntoGroup(op.param1,[op.param3])
-                            kk.acceptGroupInvitation(op.param1)
-                        except:
-                            try:
-                                cl.inviteIntoGroup(op.param1,[op.param3])
-                                kc.acceptGroupInvitation(op.param1)
-                            except:
-                                try:
-                                    cl.inviteIntoGroup(op.param1,[op.param3])
-                                    km.acceptGroupInvitation(op.param1)
-                                except:
-                                    try:
-                                        cl.inviteIntoGroup(op.param1,[op.param3])
-                                        kb.acceptGroupInvitation(op.param1)
-                                    except:
-                                        try:
-                                            cl.inviteIntoGroup(op.param1,[op.param3])
-                                            kn.acceptGroupInvitation(op.param1)
-                                        except:
-                                            try:
-                                                cl.inviteIntoGroup(op.param1,[op.param3])
-                                                ko.acceptGroupInvitation(op.param1)
-                                            except:
-                                                try:
-                                                    cl.inviteIntoGroup(op.param1,[op.param3])
-                                                    kw.acceptGroupInvitation(op.param1)
-                                                except:
-                                                    try:
-                                                        cl.inviteIntoGroup(op.param1,[op.param3])
-                                                        ke.acceptGroupInvitation(op.param1)
-                                                    except:
-                                                        try:
-                                                            G = cl.getGroup(op.param1)
-                                                            G.preventedJoinByTicket = False
-                                                            cl.updateGroup(G)
-                                                            Ticket = cl.reissueGroupTicket(op.param1)
-                                                            cl.acceptGroupInvitationByTicket(op.param1,Ticket)
-                                                            ki.acceptGroupInvitationByTicket(op.param1,Ticket)
-                                                            kk.acceptGroupInvitationByTicket(op.param1,Ticket)
-                                                            kc.acceptGroupInvitationByTicket(op.param1,Ticket)
-                                                            km.acceptGroupInvitationByTicket(op.param1,Ticket)
-                                                            kb.acceptGroupInvitationByTicket(op.param1,Ticket)
-                                                            kn.acceptGroupInvitationByTicket(op.param1,Ticket)
-                                                            ko.acceptGroupInvitationByTicket(op.param1,Ticket)
-                                                            kw.acceptGroupInvitationByTicket(op.param1,Ticket)
-                                                            ke.acceptGroupInvitationByTicket(op.param1,Ticket)
-                                                            ky.acceptGroupInvitationByTicket(op.param1,Ticket)
-                                                            G = cl.getGroup(op.param1)
-                                                            G.preventedJoinByTicket = True
-                                                            cl.updateGroup(G)
-                                                            Ticket = cl.reissueGroupTicket(op.param1)
-                                                        except:
-                                                            try:
-                                                                cl.inviteIntoGroup(op.param1,[op.param3])
-                                                                ky.acceptGroupInvitation(op.param1)
-                                                            except:
-                                                                pass
-                    return
         
             if op.type == 19:
                 if op.param3 in mid:
@@ -2282,16 +1546,6 @@ def bot(op):
                         time.sleep(0.01)
                         kb.acceptGroupInvitationByTicket(op.param1,Ticket)
                         time.sleep(0.01)
-                        kn.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        ko.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        kw.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        ke.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        ky.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
                         G.preventedJoinByTicket = True
                         ki.updateGroup(G)
                     else:
@@ -2311,16 +1565,6 @@ def bot(op):
                         km.acceptGroupInvitationByTicket(op.param1,Ticket)
                         time.sleep(0.01)
                         kb.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        kn.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        ko.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        kw.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        ke.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        ky.acceptGroupInvitationByTicket(op.param1,Ticket)
                         time.sleep(0.01)
                         G.preventedJoinByTicket = True
                         ki.updateGroup(G)
@@ -2344,16 +1588,6 @@ def bot(op):
                         time.sleep(0.01)
                         kb.acceptGroupInvitationByTicket(op.param1,Ticket)
                         time.sleep(0.01)
-                        kn.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        ko.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        kw.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        ke.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        ky.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
                         G.preventedJoinByTicket = True
                         kk.updateGroup(G)
                     else:
@@ -2373,16 +1607,6 @@ def bot(op):
                         km.acceptGroupInvitationByTicket(op.param1,Ticket)
                         time.sleep(0.01)
                         kb.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        kn.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        ko.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        kw.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        ke.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        ky.acceptGroupInvitationByTicket(op.param1,Ticket)
                         time.sleep(0.01)
                         G.preventedJoinByTicket = True
                         kk.updateGroup(G)
@@ -2406,16 +1630,6 @@ def bot(op):
                         time.sleep(0.01)
                         kb.acceptGroupInvitationByTicket(op.param1,Ticket)
                         time.sleep(0.01)
-                        kn.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        ko.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        kw.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        ke.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        ky.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
                         G.preventedJoinByTicket = True
                         kc.updateGroup(G)
                     else:
@@ -2435,16 +1649,6 @@ def bot(op):
                         km.acceptGroupInvitationByTicket(op.param1,Ticket)
                         time.sleep(0.01)
                         kb.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        kn.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        ko.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        kw.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        ke.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        ky.acceptGroupInvitationByTicket(op.param1,Ticket)
                         time.sleep(0.01)
                         G.preventedJoinByTicket = True
                         kc.updateGroup(G)
@@ -2468,16 +1672,6 @@ def bot(op):
                         time.sleep(0.01)
                         kb.acceptGroupInvitationByTicket(op.param1,Ticket)
                         time.sleep(0.01)
-                        kn.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        ko.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        kw.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        ke.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        ky.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
                         G.preventedJoinByTicket = True
                         km.updateGroup(G)
                     else:
@@ -2497,16 +1691,6 @@ def bot(op):
                         km.acceptGroupInvitationByTicket(op.param1,Ticket)
                         time.sleep(0.01)
                         kb.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        kn.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        ko.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        kw.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        ke.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        ky.acceptGroupInvitationByTicket(op.param1,Ticket)
                         time.sleep(0.01)
                         G.preventedJoinByTicket = True
                         km.updateGroup(G)
@@ -2530,16 +1714,6 @@ def bot(op):
                         time.sleep(0.01)
                         kb.acceptGroupInvitationByTicket(op.param1,Ticket)
                         time.sleep(0.01)
-                        kn.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        ko.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        kw.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        ke.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        ky.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
                         G.preventedJoinByTicket = True
                         kb.updateGroup(G)
                     else:
@@ -2560,331 +1734,11 @@ def bot(op):
                         time.sleep(0.01)
                         kb.acceptGroupInvitationByTicket(op.param1,Ticket)
                         time.sleep(0.01)
-                        kn.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        ko.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        kw.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        ke.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        ky.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
                         G.preventedJoinByTicket = True
                         kb.updateGroup(G)
                         settings["blacklist"][op.param2] = True
                         
                 if op.param3 in Emid:
-                    if op.param2 in Fmid:
-                        G = kn.getGroup(op.param1)
-                        G.preventedJoinByTicket = False
-                        kn.updateGroup(G)
-                        Ticket = kn.reissueGroupTicket(op.param1)
-                        cl.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        ki.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        kk.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        kc.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        km.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        kb.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        kn.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        ko.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        kw.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        ke.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        ky.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        G.preventedJoinByTicket = True
-                        kn.updateGroup(G)
-                    else:
-                        G = kn.getGroup(op.param1)
-                        kn.kickoutFromGroup(op.param1,[op.param2])
-                        G.preventedJoinByTicket = False
-                        kn.updateGroup(G)
-                        Ticket = kn.reissueGroupTicket(op.param1)
-                        cl.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        ki.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        kk.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        kc.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        km.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        kb.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        kn.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        ko.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        kw.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        ke.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        ky.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        G.preventedJoinByTicket = True
-                        kn.updateGroup(G)
-                        settings["blacklist"][op.param2] = True
-                        
-                if op.param3 in Fmid:
-                    if op.param2 in Gmid:
-                        G = ko.getGroup(op.param1)
-                        G.preventedJoinByTicket = False
-                        ko.updateGroup(G)
-                        Ticket = ko.reissueGroupTicket(op.param1)
-                        cl.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        ki.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        kk.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        kc.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        km.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        kb.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        kn.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        ko.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        kw.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        ke.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        ky.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        G.preventedJoinByTicket = True
-                        ko.updateGroup(G)
-                    else:
-                        G = ko.getGroup(op.param1)
-                        ko.kickoutFromGroup(op.param1,[op.param2])
-                        G.preventedJoinByTicket = False
-                        ko.updateGroup(G)
-                        Ticket = ko.reissueGroupTicket(op.param1)
-                        cl.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        ki.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        kk.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        kc.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        km.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        kb.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        kn.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        ko.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        kw.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        ke.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        ky.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        G.preventedJoinByTicket = True
-                        ko.updateGroup(G)
-                        settings["blacklist"][op.param2] = True
-                        
-                if op.param3 in Gmid:
-                    if op.param2 in Hmid:
-                        G = kw.getGroup(op.param1)
-                        G.preventedJoinByTicket = False
-                        kw.updateGroup(G)
-                        Ticket = kw.reissueGroupTicket(op.param1)
-                        cl.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        ki.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        kk.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        kc.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        km.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        kb.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        kn.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        ko.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        kw.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        ke.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        ky.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        G.preventedJoinByTicket = True
-                        kw.updateGroup(G)
-                    else:
-                        G = kw.getGroup(op.param1)
-                        kw.kickoutFromGroup(op.param1,[op.param2])
-                        G.preventedJoinByTicket = False
-                        kw.updateGroup(G)
-                        Ticket = kw.reissueGroupTicket(op.param1)
-                        cl.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        ki.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        kk.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        kc.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        km.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        kb.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        kn.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        ko.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        kw.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        ke.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        ky.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        G.preventedJoinByTicket = True
-                        kw.updateGroup(G)
-                        settings["blacklist"][op.param2] = True
-                        
-                if op.param3 in Hmid:
-                    if op.param2 in Imid:
-                        G = ke.getGroup(op.param1)
-                        G.preventedJoinByTicket = False
-                        ke.updateGroup(G)
-                        Ticket = ke.reissueGroupTicket(op.param1)
-                        cl.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        ki.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        kk.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        kc.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        km.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        kb.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        kn.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        ko.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        kw.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        ke.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        ky.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        G.preventedJoinByTicket = True
-                        ke.updateGroup(G)
-                    else:
-                        G = ke.getGroup(op.param1)
-                        ke.kickoutFromGroup(op.param1,[op.param2])
-                        G.preventedJoinByTicket = False
-                        ke.updateGroup(G)
-                        Ticket = ke.reissueGroupTicket(op.param1)
-                        cl.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        ki.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        kk.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        kc.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        km.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        kb.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        kn.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        ko.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        kw.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        ke.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        ky.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        G.preventedJoinByTicket = True
-                        ke.updateGroup(G)
-                        settings["blacklist"][op.param2] = True
-                        
-                if op.param3 in Imid:
-                    if op.param2 in Jmid:
-                        G = ky.getGroup(op.param1)
-                        G.preventedJoinByTicket = False
-                        ky.updateGroup(G)
-                        Ticket = ky.reissueGroupTicket(op.param1)
-                        cl.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        ki.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        kk.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        kc.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        km.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        kb.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        kn.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        ko.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        kw.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        ke.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        ky.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        G.preventedJoinByTicket = True
-                        ky.updateGroup(G)
-                    else:
-                        G = ky.getGroup(op.param1)
-                        ke.kickoutFromGroup(op.param1,[op.param2])
-                        G.preventedJoinByTicket = False
-                        ky.updateGroup(G)
-                        Ticket = ky.reissueGroupTicket(op.param1)
-                        cl.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        ki.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        kk.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        kc.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        km.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        kb.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        kn.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        ko.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        kw.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        ke.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        ky.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        G.preventedJoinByTicket = True
-                        ky.updateGroup(G)
-                        settings["blacklist"][op.param2] = True
-                        
-                if op.param3 in Jmid:
                     if op.param2 in mid:
                         G = cl.getGroup(op.param1)
                         G.preventedJoinByTicket = False
@@ -2902,16 +1756,6 @@ def bot(op):
                         time.sleep(0.01)
                         kb.acceptGroupInvitationByTicket(op.param1,Ticket)
                         time.sleep(0.01)
-                        kn.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        ko.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        kw.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        ke.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        ky.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
                         G.preventedJoinByTicket = True
                         cl.updateGroup(G)
                     else:
@@ -2931,78 +1775,8 @@ def bot(op):
                         time.sleep(0.01)
                         kb.acceptGroupInvitationByTicket(op.param1,Ticket)
                         time.sleep(0.01)
-                        kn.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        ko.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        kw.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        ke.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        ky.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
                         G.preventedJoinByTicket = True
                         cl.updateGroup(G)
-                        settings["blacklist"][op.param2] = True
-                        
-                if op.param3 in mid:
-                    if op.param2 in Zmid:
-                        G = sw.getGroup(op.param1)
-                        G.preventedJoinByTicket = False
-                        sw.updateGroup(G)
-                        Ticket = sw.reissueGroupTicket(op.param1)
-                        cl.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        ki.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        kk.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        kc.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        km.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        kb.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        kn.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        ko.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        kw.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        ke.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        ky.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        G.preventedJoinByTicket = True
-                        sw.updateGroup(G)
-                    else:
-                        G = sw.getGroup(op.param1)
-                        G.preventedJoinByTicket = False
-                        sw.updateGroup(G)
-                        Ticket = sw.reissueGroupTicket(op.param1)
-                        cl.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        ki.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        kk.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        kc.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        km.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        kb.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        kn.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        ko.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        kw.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        ke.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        ky.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        time.sleep(0.01)
-                        G.preventedJoinByTicket = True
-                        sw.updateGroup(G)
                         settings["blacklist"][op.param2] = True
                 else:
                     pass
@@ -3309,36 +2083,6 @@ def bot(op):
                             del Setmain["ARfoto"][Emid]
                             kb.updateProfilePicture(path)
                             kb.sendMessage(msg.to,"Foto Successfully dirubah")
-                        elif Fmid in Setmain["ARfoto"]:
-                            path = kn.downloadObjectMsg(msg_id)
-                            del Setmain["ARfoto"][Fmid]
-                            kn.updateProfilePicture(path)
-                            kn.sendMessage(msg.to,"Foto Successfully dirubah")
-                        elif Gmid in Setmain["ARfoto"]:
-                            path = ko.downloadObjectMsg(msg_id)
-                            del Setmain["ARfoto"][Gmid]
-                            ko.updateProfilePicture(path)
-                            ko.sendMessage(msg.to,"Foto Successfully dirubah")
-                        elif Hmid in Setmain["ARfoto"]:
-                            path = kw.downloadObjectMsg(msg_id)
-                            del Setmain["ARfoto"][Hmid]
-                            kw.updateProfilePicture(path)
-                            kw.sendMessage(msg.to,"Foto Successfully dirubah")
-                        elif Imid in Setmain["ARfoto"]:
-                            path = ke.downloadObjectMsg(msg_id)
-                            del Setmain["ARfoto"][Imid]
-                            ke.updateProfilePicture(path)
-                            ke.sendMessage(msg.to,"Foto Successfully dirubah")
-                        elif Jmid in Setmain["ARfoto"]:
-                            path = ky.downloadObjectMsg(msg_id)
-                            del Setmain["ARfoto"][Jmid]
-                            ky.updateProfilePicture(path)
-                            ky.sendMessage(msg.to,"Foto Successfully dirubah")
-                        elif Zmid in Setmain["ARfoto"]:
-                            path = sw.downloadObjectMsg(msg_id)
-                            del Setmain["ARfoto"][Zmid]
-                            sw.updateProfilePicture(path)
-                            sw.sendMessage(msg.to,"Foto Successfully dirubah")
 
                if msg.contentType == 1:
                  if msg._from in admin:
@@ -3348,12 +2092,6 @@ def bot(op):
                      path3 = kc.downloadObjectMsg(msg_id)
                      path4 = km.downloadObjectMsg(msg_id)
                      path5 = kb.downloadObjectMsg(msg_id)
-                     path6 = kn.downloadObjectMsg(msg_id)
-                     path7 = ko.downloadObjectMsg(msg_id)
-                     path8 = kw.downloadObjectMsg(msg_id)
-                     path9 = ke.downloadObjectMsg(msg_id)
-                     path10 = ky.downloadObjectMsg(msg_id)
-                     path11 = sw.downloadObjectMsg(msg_id)
                      settings["changePicture"] = False
                      ki.updateProfilePicture(path1)
                      ki.sendMessage(msg.to, "Successfully mengubah foto profile bot")
@@ -3365,18 +2103,6 @@ def bot(op):
                      km.sendMessage(msg.to, "Successfully mengubah foto profile bot")
                      kb.updateProfilePicture(path5)
                      kb.sendMessage(msg.to, "Successfully mengubah foto profile bot")
-                     kn.updateProfilePicture(path6)
-                     kn.sendMessage(msg.to, "Successfully mengubah foto profile bot")
-                     ko.updateProfilePicture(path7)
-                     ko.sendMessage(msg.to, "Successfully mengubah foto profile bot")
-                     kw.updateProfilePicture(path8)
-                     kw.sendMessage(msg.to, "Successfully mengubah foto profile bot")
-                     ke.updateProfilePicture(path9)
-                     ke.sendMessage(msg.to, "Successfully mengubah foto profile bot")
-                     ky.updateProfilePicture(path10)
-                     ky.sendMessage(msg.to, "Successfully mengubah foto profile bot")
-                     sw.updateProfilePicture(path11)
-                     sw.sendMessage(msg.to, "Successfully mengubah foto profile bot")
 
                if msg.contentType == 0:
                     if Setmain["autoRead"] == True:
@@ -3386,12 +2112,6 @@ def bot(op):
                         kc.sendChatChecked(msg.to, msg_id)
                         km.sendChatChecked(msg.to, msg_id)
                         kb.sendChatChecked(msg.to, msg_id)
-                        kn.sendChatChecked(msg.to, msg_id)
-                        ko.sendChatChecked(msg.to, msg_id)
-                        kw.sendChatChecked(msg.to, msg_id)
-                        ke.sendChatChecked(msg.to, msg_id)
-                        ky.sendChatChecked(msg.to, msg_id)
-                        sw.sendChatChecked(msg.to, msg_id)
                     if text is None:
                         return
                     
@@ -3403,12 +2123,12 @@ def bot(op):
                                helpMessage = help()
                                cl.sendMessage(msg.to, str(helpMessage))
                                                                                        
-                        if cmd == "เปิดบอท10":
+                        if cmd == "เปิดบอท5":
                             if msg._from in admin:
                                 wait["selfbot"] = True
                                 cl.sendText(msg.to, "เปิดระบบทำงานคิก10ตัวแล้ว..")
                                 
-                        elif cmd == "ปิดบอท10":
+                        elif cmd == "ปิดบอท5":
                             if msg._from in admin:
                                 wait["selfbot"] = False
                                 cl.sendText(msg.to, "ปิดระบบทำงานคิก10ตัวแล้ว")
@@ -3529,24 +2249,6 @@ def bot(op):
                                msg.contentType = 13
                                msg.contentMetadata = {'mid': Emid}
                                cl.sendMessage1(msg)
-                               msg.contentType = 13
-                               msg.contentMetadata = {'mid': Fmid}
-                               cl.sendMessage1(msg)
-                               msg.contentType = 13
-                               msg.contentMetadata = {'mid': Gmid}
-                               cl.sendMessage1(msg)
-                               msg.contentType = 13
-                               msg.contentMetadata = {'mid': Hmid}
-                               cl.sendMessage1(msg)
-                               msg.contentType = 13
-                               msg.contentMetadata = {'mid': Imid}
-                               cl.sendMessage1(msg)
-                               msg.contentType = 13
-                               msg.contentMetadata = {'mid': Jmid}
-                               cl.sendMessage1(msg)
-                               msg.contentType = 13
-                               msg.contentMetadata = {'mid': Zmid}
-                               cl.sendMessage1(msg)
 
                         elif text.lower() == "ลบแชท":
                           if wait["selfbot"] == True:
@@ -3565,21 +2267,11 @@ def bot(op):
                                    kc.removeAllMessages(op.param2)
                                    km.removeAllMessages(op.param2)
                                    kb.removeAllMessages(op.param2)
-                                   kn.removeAllMessages(op.param2)
-                                   ko.removeAllMessages(op.param2)
-                                   kw.removeAllMessages(op.param2)
-                                   ke.removeAllMessages(op.param2)
-                                   ky.removeAllMessages(op.param2)
                                    ki.sendText(msg.to,"Chat dibersihkan...")
                                    kk.sendText(msg.to,"Chat dibersihkan...")
                                    kc.sendText(msg.to,"Chat dibersihkan...")
                                    km.sendText(msg.to,"Chat dibersihkan...")
                                    kb.sendText(msg.to,"Chat dibersihkan...")
-                                   kn.sendText(msg.to,"Chat dibersihkan...")
-                                   ko.sendText(msg.to,"Chat dibersihkan...")
-                                   kw.sendText(msg.to,"Chat dibersihkan...")
-                                   ke.sendText(msg.to,"Chat dibersihkan...")
-                                   ky.sendText(msg.to,"Chat dibersihkan...")
                                except:
                                    pass
 
@@ -3614,7 +2306,7 @@ def bot(op):
                                Setmain["keyCommand"] = ""
                                cl.sendMessage(msg.to, "「Setkey」\nSetkey mu kembali ke awal")
 
-                        elif cmd == "รี10":
+                        elif cmd == "รี5":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                cl.sendMessage(msg.to, "ใช้เวลารีระบบ 3วิ กรุนารอซักครู่...")
@@ -3786,31 +2478,6 @@ def bot(op):
                             if msg._from in admin:
                                 Setmain["ARfoto"][Emid] = True
                                 kb.sendText(msg.to,"ส่งรูปมาค่ะ.....")
-                                
-                        elif cmd == "6up":
-                            if msg._from in admin:
-                                Setmain["ARfoto"][Fmid] = True
-                                kn.sendText(msg.to,"ส่งรูปมาค่ะ.....")
-                                
-                        elif cmd == "7up":
-                            if msg._from in admin:
-                                Setmain["ARfoto"][Gmid] = True
-                                ko.sendText(msg.to,"ส่งรูปมาค่ะ.....")
-                                
-                        elif cmd == "8up":
-                            if msg._from in admin:
-                                Setmain["ARfoto"][Hmid] = True
-                                kw.sendText(msg.to,"ส่งรูปมาค่ะ.....")
-                                
-                        elif cmd == "9up":
-                            if msg._from in admin:
-                                Setmain["ARfoto"][Imid] = True
-                                ke.sendText(msg.to,"ส่งรูปมาค่ะ.....")
-                                
-                        elif cmd == "10up":
-                            if msg._from in admin:
-                                Setmain["ARfoto"][Jmid] = True
-                                ky.sendText(msg.to,"ส่งรูปมาค่ะ.....")
 
                         elif cmd == "ผีup":
                             if msg._from in admin:
@@ -3881,56 +2548,6 @@ def bot(op):
                                 profile.displayName = string
                                 kb.updateProfile(profile)
                                 kb.sendMessage(msg.to,"Nama diganti jadi " + string + "")
-
-                        elif cmd.startswith("ชื่อ6: "):
-                          if msg._from in admin:
-                            separate = msg.text.split(" ")
-                            string = msg.text.replace(separate[0] + " ","")
-                            if len(string) <= 10000000000:
-                                profile = kn.getProfile()
-                                profile.displayName = string
-                                kn.updateProfile(profile)
-                                kn.sendMessage(msg.to,"Nama diganti jadi " + string + "")
-
-                        elif cmd.startswith("ชื่อ7: "):
-                          if msg._from in admin:
-                            separate = msg.text.split(" ")
-                            string = msg.text.replace(separate[0] + " ","")
-                            if len(string) <= 10000000000:
-                                profile = ko.getProfile()
-                                profile.displayName = string
-                                ko.updateProfile(profile)
-                                ko.sendMessage(msg.to,"Nama diganti jadi " + string + "")
-
-                        elif cmd.startswith("ชื่อ8: "):
-                          if msg._from in admin:
-                            separate = msg.text.split(" ")
-                            string = msg.text.replace(separate[0] + " ","")
-                            if len(string) <= 10000000000:
-                                profile = kw.getProfile()
-                                profile.displayName = string
-                                kw.updateProfile(profile)
-                                kw.sendMessage(msg.to,"Nama diganti jadi " + string + "")
-
-                        elif cmd.startswith("ชื่อ9: "):
-                          if msg._from in admin:
-                            separate = msg.text.split(" ")
-                            string = msg.text.replace(separate[0] + " ","")
-                            if len(string) <= 10000000000:
-                                profile = ke.getProfile()
-                                profile.displayName = string
-                                ke.updateProfile(profile)
-                                ke.sendMessage(msg.to,"Nama diganti jadi " + string + "")
-
-                        elif cmd.startswith("ชื่อ10: "):
-                          if msg._from in admin:
-                            separate = msg.text.split(" ")
-                            string = msg.text.replace(separate[0] + " ","")
-                            if len(string) <= 10000000000:
-                                profile = ky.getProfile()
-                                profile.displayName = string
-                                ky.updateProfile(profile)
-                                ky.sendMessage(msg.to,"Nama diganti jadi " + string + "")
               
                         elif cmd.startswith("ชื่อผี: "):
                           if msg._from in admin:
@@ -4447,7 +3064,7 @@ def bot(op):
                                     mf += str(a) + ". " +cl.getGroup(group).name + "\n"
                                 cl.sendMessage(msg.to,"SELFBOT\n\n「😈」 PROTECT URL :\n"+ma+"\n「😈」 PROTECT KICK :\n"+mb+"\n「😈」 PROTECT JOIN :\n"+md+"\n「😈」 PROTECT CANCEL:\n"+mc+"\n「😈」 PROTECT INVITE:\n"+me+"\n「😈」 PROTECT ANTIJS :\n"+mf+"\nTotal「%s」Grup diamankan" %(str(len(protectqr)+len(protectkick)+len(protectjoin)+len(protectcancel)+len(protectinvite)+len(protectantijs))))
 
-                        elif cmd == "b10":
+                        elif cmd == "b5":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                 ki.sendMessage(msg.to,responsename1)
@@ -4455,30 +3072,19 @@ def bot(op):
                                 kc.sendMessage(msg.to,responsename3)
                                 km.sendMessage(msg.to,responsename4)
                                 kb.sendMessage(msg.to,responsename5)
-                                kn.sendMessage(msg.to,responsename6)
-                                ko.sendMessage(msg.to,responsename7)
-                                kw.sendMessage(msg.to,responsename8)
-                                ke.sendMessage(msg.to,responsename9)
-                                ky.sendMessage(msg.to,responsename10)
                                 
-                        elif cmd == "ดึง10":
+                        elif cmd == "ดึง5":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                 try:
-                                    anggota = [Amid,Bmid,Cmid,Dmid,Emid,Fmid,Gmid,Hmid,Imid,Jmid,Zmid]
+                                    anggota = [Amid,Bmid,Cmid,Dmid,Emid]
                                     cl.inviteIntoGroup(msg.to, anggota)
                                     ki.acceptGroupInvitation(msg.to)
                                     kk.acceptGroupInvitation(msg.to)
                                     kc.acceptGroupInvitation(msg.to)
                                     km.acceptGroupInvitation(msg.to)
                                     kb.acceptGroupInvitation(msg.to)
-                                    kn.acceptGroupInvitation(msg.to)
-                                    ko.acceptGroupInvitation(msg.to)
-                                    kw.acceptGroupInvitation(msg.to)
-                                    ke.acceptGroupInvitation(msg.to)
-                                    ky.acceptGroupInvitation(msg.to)
-                                    sw.acceptGroupInvitation(msg.to)
-                                    ky.sendMessage(msg.to, "พร้อมคุ้มกันเจ้านายค่ะ")
+                                    kb.sendMessage(msg.to, "พร้อมคุ้มกันเจ้านายค่ะ")
                                 except:
                                     pass
                                 
@@ -4492,7 +3098,7 @@ def bot(op):
                                 except:
                                     pass
     
-                        elif cmd == "in10":
+                        elif cmd == "in5":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                 G = cl.getGroup(msg.to)
@@ -4506,17 +3112,12 @@ def bot(op):
                                 kc.acceptGroupInvitationByTicket(msg.to,Ticket)
                                 km.acceptGroupInvitationByTicket(msg.to,Ticket)
                                 kb.acceptGroupInvitationByTicket(msg.to,Ticket)
-                                kn.acceptGroupInvitationByTicket(msg.to,Ticket)
-                                ko.acceptGroupInvitationByTicket(msg.to,Ticket)
-                                kw.acceptGroupInvitationByTicket(msg.to,Ticket)
-                                ke.acceptGroupInvitationByTicket(msg.to,Ticket)
-                                ky.acceptGroupInvitationByTicket(msg.to,Ticket)
-                                G = ky.getGroup(msg.to)
+                                G = kb.getGroup(msg.to)
                                 G.preventedJoinByTicket = True
-                                ky.updateGroup(G)
-                                ky.sendMessage(msg.to, "พร้อมคุ้มกันเจ้านายค่ะ ")
+                                kb.updateGroup(G)
+                                kb.sendMessage(msg.to, "พร้อมคุ้มกันเจ้านายค่ะ ")
 
-                        elif cmd == "out10":
+                        elif cmd == "out5":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                 G = cl.getGroup(msg.to)
@@ -4525,21 +3126,15 @@ def bot(op):
                                 kc.leaveGroup(msg.to)
                                 km.leaveGroup(msg.to)
                                 kb.leaveGroup(msg.to)
-                                kn.leaveGroup(msg.to)
-                                ko.leaveGroup(msg.to)
-                                kw.leaveGroup(msg.to)
-                                ke.leaveGroup(msg.to)
-                                ky.leaveGroup(msg.to)
-                                sw.leaveGroup(msg.to)
                                 
-                        elif cmd == "byeme":
+                        elif cmd == "bye5":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                 G = cl.getGroup(msg.to)
                                 cl.sendText(msg.to, "Bye bye fams "+str(G.name))
                                 cl.leaveGroup(msg.to)
                                 
-                        elif cmd == "ck10":
+                        elif cmd == "ck5":
                             if msg._from in admin or msg._from in owner:
                                try:cl.inviteIntoGroup(to, [mid]);has = "OK"
                                except:has = "NOT"
@@ -4595,51 +3190,6 @@ def bot(op):
                                if has1 == "OK":sil1 = "🔋██ full 100%"
                                else:sil1 = "🔌█▒ Low 0%"
                                kb.sendMessage(to, "Status:\n\n🔴Kick : {} \n🔴Invite : {}".format(sil1,sil))
-                               try:kn.inviteIntoGroup(to, [Fmid]);has = "OK"
-                               except:has = "NOT"
-                               try:kn.kickoutFromGroup(to, [Fmid]);has1 = "OK"
-                               except:has1 = "NOT"
-                               if has == "OK":sil = "🔋██ full 100%"
-                               else:sil = "🔌█▒. Low 0%"
-                               if has1 == "OK":sil1 = "🔋██ full 100%"
-                               else:sil1 = "🔌█▒ Low 0%"
-                               kn.sendMessage(to, "Status:\n\n🔴Kick : {} \n🔴Invite : {}".format(sil1,sil))
-                               try:ko.inviteIntoGroup(to, [Gmid]);has = "OK"
-                               except:has = "NOT"
-                               try:ko.kickoutFromGroup(to, [Gmid]);has1 = "OK"
-                               except:has1 = "NOT"
-                               if has == "OK":sil = "🔋██ full 100%"
-                               else:sil = "🔌█▒ Low 0%"
-                               if has1 == "OK":sil1 = "🔋██ full 100%"
-                               else:sil1 = "🔌█▒ Low 0%"
-                               ko.sendMessage(to, "Status:\n\n🔴Kick : {} \n🔴Invite : {}".format(sil1,sil))                               
-                               try:kw.inviteIntoGroup(to, [Hmid]);has = "OK"
-                               except:has = "NOT"
-                               try:kw.kickoutFromGroup(to, [Hmid]);has1 = "OK"
-                               except:has1 = "NOT"
-                               if has == "OK":sil = "🔋██ full 100%"
-                               else:sil = "🔌█▒. Low 0%"
-                               if has1 == "OK":sil1 = "🔋██ full 100%"
-                               else:sil1 = "🔌█▒ Low 0%"
-                               kw.sendMessage(to, "Status:\n\n🔴Kick : {} \n🔴Invite : {}".format(sil1,sil))
-                               try:ke.inviteIntoGroup(to, [Imid]);has = "OK"
-                               except:has = "NOT"
-                               try:ke.kickoutFromGroup(to, [Imid]);has1 = "OK"
-                               except:has1 = "NOT"
-                               if has == "OK":sil = "🔋██ full 100%"
-                               else:sil = "🔌█▒. Low 0%"
-                               if has1 == "OK":sil1 = "🔋██ full 100%"
-                               else:sil1 = "🔌█▒ Low  0%"
-                               ke.sendMessage(to, "Status:\n\n🔴Kick : {} \n🔴Invite : {}".format(sil1,sil))                               
-                               try:ky.inviteIntoGroup(to, [Jmid]);has = "OK"
-                               except:has = "NOT"
-                               try:ky.kickoutFromGroup(to, [Jmid]);has1 = "OK"
-                               except:has1 = "NOT"
-                               if has == "OK":sil = "🔋██ full 100%"
-                               else:sil = "🔌█▒ Low 0%"
-                               if has1 == "OK":sil1 = "🔋██ full 100%"
-                               else:sil1 = "🔌█▒ Low 0%"
-                               ky.sendMessage(to, "Status:\n\n🔴Kick : {} \n🔴Invite : {}".format(sil1,sil))
 
                         elif cmd == "a1":
                             if msg._from in admin:
@@ -4705,72 +3255,7 @@ def bot(op):
                                 G = kb.getGroup(msg.to)
                                 G.preventedJoinByTicket = True
                                 kb.updateGroup(G)
-
-                        elif cmd == "a6":
-                            if msg._from in admin:
-                                G = cl.getGroup(msg.to)
-                                ginfo = cl.getGroup(msg.to)
-                                G.preventedJoinByTicket = False
-                                cl.updateGroup(G)
-                                invsend = 0
-                                Ticket = cl.reissueGroupTicket(msg.to)
-                                kn.acceptGroupInvitationByTicket(msg.to,Ticket)
-                                G = kn.getGroup(msg.to)
-                                G.preventedJoinByTicket = True
-                                kn.updateGroup(G)
                                 
-                        elif cmd == "a7":
-                            if msg._from in admin:
-                                G = cl.getGroup(msg.to)
-                                ginfo = cl.getGroup(msg.to)
-                                G.preventedJoinByTicket = False
-                                cl.updateGroup(G)
-                                invsend = 0
-                                Ticket = cl.reissueGroupTicket(msg.to)
-                                ko.acceptGroupInvitationByTicket(msg.to,Ticket)
-                                G = ko.getGroup(msg.to)
-                                G.preventedJoinByTicket = True
-                                ko.updateGroup(G)
-
-                        elif cmd == "a8":
-                            if msg._from in admin:
-                                G = cl.getGroup(msg.to)
-                                ginfo = cl.getGroup(msg.to)
-                                G.preventedJoinByTicket = False
-                                cl.updateGroup(G)
-                                invsend = 0
-                                Ticket = cl.reissueGroupTicket(msg.to)
-                                kw.acceptGroupInvitationByTicket(msg.to,Ticket)
-                                G = kw.getGroup(msg.to)
-                                G.preventedJoinByTicket = True
-                                kw.updateGroup(G)
-
-                        elif cmd == "a9":
-                            if msg._from in admin:
-                                G = cl.getGroup(msg.to)
-                                ginfo = cl.getGroup(msg.to)
-                                G.preventedJoinByTicket = False
-                                cl.updateGroup(G)
-                                invsend = 0
-                                Ticket = cl.reissueGroupTicket(msg.to)
-                                ke.acceptGroupInvitationByTicket(msg.to,Ticket)
-                                G = ke.getGroup(msg.to)
-                                G.preventedJoinByTicket = True
-                                ke.updateGroup(G)
-                                
-                        elif cmd == "a10":
-                            if msg._from in admin:
-                                G = cl.getGroup(msg.to)
-                                ginfo = cl.getGroup(msg.to)
-                                G.preventedJoinByTicket = False
-                                cl.updateGroup(G)
-                                invsend = 0
-                                Ticket = cl.reissueGroupTicket(msg.to)
-                                ky.acceptGroupInvitationByTicket(msg.to,Ticket)
-                                G = ky.getGroup(msg.to)
-                                G.preventedJoinByTicket = True
-                                ky.updateGroup(G)
-
                         elif cmd == "ผีมา":
                             if msg._from in admin:
                                 G = cl.getGroup(msg.to)
@@ -4789,7 +3274,7 @@ def bot(op):
                                 G = cl.getGroup(msg.to)
                                 sw.leaveGroup(msg.to)
                                 
-                        elif cmd == "10" or cmd == "ชบ":
+                        elif cmd == "5" or cmd == "ชบ":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                 ki.sendMessage(msg.to, "อยู่ค่ะเจ้านาย ")
@@ -4797,13 +3282,8 @@ def bot(op):
                                 kc.sendMessage(msg.to, "อยู่ค่ะเจ้านาย ")
                                 km.sendMessage(msg.to, "อยู่ค่ะเจ้านาย ")
                                 kb.sendMessage(msg.to, "อยู่ค่ะเจ้านาย ")
-                                kn.sendMessage(msg.to, "อยู่ค่ะเจ้านาย ")
-                                ko.sendMessage(msg.to, "อยู่ค่ะเจ้านาย ")
-                                kw.sendMessage(msg.to, "อยู่ค่ะเจ้านาย ")
-                                ke.sendMessage(msg.to, "อยู่ค่ะเจ้านาย ")
-                                ky.sendMessage(msg.to, "อยู่ค่ะเจ้านาย ")
 
-                        elif cmd == "sb10":
+                        elif cmd == "sb5":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                 get_profile_time_start = time.time()
@@ -4830,26 +3310,6 @@ def bot(op):
                                 get_profile = cl.getProfile()
                                 get_profile_time = time.time() - get_profile_time_start
                                 kb.sendMessage(msg.to, "Speed\n%.10f ms" % (get_profile_time/3))
-                                get_profile_time_start = time.time()
-                                get_profile = cl.getProfile()
-                                get_profile_time = time.time() - get_profile_time_start
-                                kn.sendMessage(msg.to, "Speed\n%.10f ms" % (get_profile_time/3))
-                                get_profile_time_start = time.time()
-                                get_profile = cl.getProfile()
-                                get_profile_time = time.time() - get_profile_time_start
-                                ko.sendMessage(msg.to, "Speed\n%.10f ms" % (get_profile_time/3))
-                                get_profile_time_start = time.time()
-                                get_profile = cl.getProfile()
-                                get_profile_time = time.time() - get_profile_time_start
-                                kw.sendMessage(msg.to, "Speed\n%.10f ms" % (get_profile_time/3))
-                                get_profile_time_start = time.time()
-                                get_profile = cl.getProfile()
-                                get_profile_time = time.time() - get_profile_time_start
-                                ke.sendMessage(msg.to, "Speed\n%.10f ms" % (get_profile_time/3))
-                                get_profile_time_start = time.time()
-                                get_profile = cl.getProfile()
-                                get_profile_time = time.time() - get_profile_time_start
-                                ky.sendMessage(msg.to, "Speed\n%.10f ms" % (get_profile_time/3))
 
                         elif cmd == "speed" or cmd == "sp":
                           if wait["selfbot"] == True:
@@ -4859,7 +3319,7 @@ def bot(op):
                                elapsed_time = time.time() - start
                                cl.sendMessage(msg.to, "{} ms".format(str(elapsed_time)))
 
-                        elif cmd == "speedbot" or cmd == "sp10":
+                        elif cmd == "spb5" or cmd == "sp5":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                start = time.time()
@@ -4874,16 +3334,6 @@ def bot(op):
                                km.sendMessage(msg.to, "{} detik".format(str(elapsed_time)))
                                elapsed_time = time.time() - start
                                kb.sendMessage(msg.to, "{} detik".format(str(elapsed_time)))
-                               elapsed_time = time.time() - start
-                               kn.sendMessage(msg.to, "{} detik".format(str(elapsed_time)))
-                               elapsed_time = time.time() - start
-                               ko.sendMessage(msg.to, "{} detik".format(str(elapsed_time)))
-                               elapsed_time = time.time() - start
-                               kw.sendMessage(msg.to, "{} detik".format(str(elapsed_time)))
-                               elapsed_time = time.time() - start
-                               ke.sendMessage(msg.to, "{} detik".format(str(elapsed_time)))
-                               elapsed_time = time.time() - start
-                               ky.sendMessage(msg.to, "{} detik".format(str(elapsed_time)))
 
                         elif cmd == "lurking on":
                           if wait["selfbot"] == True:
@@ -5287,29 +3737,6 @@ def bot(op):
                                 else:
                                     cl.sendText(msg.to,"Jumlah melebihi batas")
 
-                        elif 'Gif: ' in msg.text:
-                          if wait["selfbot"] == True:
-                           if msg._from in admin:
-                              korban = msg.text.replace('Gif: ','')
-                              korban2 = korban.split()
-                              midd = korban2[0]
-                              jumlah = int(korban2[1])
-                              if jumlah <= 100000:
-                                  for var in range(0,jumlah):
-                                      cl.sendMessage(midd, None, contentMetadata={'PRDID': 'a0768339-c2d3-4189-9653-2909e9bb6f58', 'PRDTYPE': 'THEME', 'MSGTPL': '6'}, contentType=9)
-                                      ki.sendMessage(midd, None, contentMetadata={'PRDID': 'a0768339-c2d3-4189-9653-2909e9bb6f58', 'PRDTYPE': 'THEME', 'MSGTPL': '6'}, contentType=9)
-                                      kk.sendMessage(midd, None, contentMetadata={'PRDID': 'a0768339-c2d3-4189-9653-2909e9bb6f58', 'PRDTYPE': 'THEME', 'MSGTPL': '6'}, contentType=9)
-                                      kc.sendMessage(midd, None, contentMetadata={'PRDID': 'a0768339-c2d3-4189-9653-2909e9bb6f58', 'PRDTYPE': 'THEME', 'MSGTPL': '6'}, contentType=9)
-                                      km.sendMessage(midd, None, contentMetadata={'PRDID': 'a0768339-c2d3-4189-9653-2909e9bb6f58', 'PRDTYPE': 'THEME', 'MSGTPL': '6'}, contentType=9)
-                                      kb.sendMessage(midd, None, contentMetadata={'PRDID': 'a0768339-c2d3-4189-9653-2909e9bb6f58', 'PRDTYPE': 'THEME', 'MSGTPL': '6'}, contentType=9)
-                                      kn.sendMessage(midd, None, contentMetadata={'PRDID': 'a0768339-c2d3-4189-9653-2909e9bb6f58', 'PRDTYPE': 'THEME', 'MSGTPL': '6'}, contentType=9)
-                                      ko.sendMessage(midd, None, contentMetadata={'PRDID': 'a0768339-c2d3-4189-9653-2909e9bb6f58', 'PRDTYPE': 'THEME', 'MSGTPL': '6'}, contentType=9)
-                                      kw.sendMessage(midd, None, contentMetadata={'PRDID': 'a0768339-c2d3-4189-9653-2909e9bb6f58', 'PRDTYPE': 'THEME', 'MSGTPL': '6'}, contentType=9)
-                                      ke.sendMessage(midd, None, contentMetadata={'PRDID': 'a0768339-c2d3-4189-9653-2909e9bb6f58', 'PRDTYPE': 'THEME', 'MSGTPL': '6'}, contentType=9)
-                                      ky.sendMessage(midd, None, contentMetadata={'PRDID': 'a0768339-c2d3-4189-9653-2909e9bb6f58', 'PRDTYPE': 'THEME', 'MSGTPL': '6'}, contentType=9)
-                                      k12.sendMessage(midd, None, contentMetadata={'PRDID': 'a0768339-c2d3-4189-9653-2909e9bb6f58', 'PRDTYPE': 'THEME', 'MSGTPL': '6'}, contentType=9)
-                                      sw.sendMessage(midd, None, contentMetadata={'PRDID': 'a0768339-c2d3-4189-9653-2909e9bb6f58', 'PRDTYPE': 'THEME', 'MSGTPL': '6'}, contentType=9)
-
                         elif 'Spam: ' in msg.text:
                           if wait["selfbot"] == True:
                            if msg._from in admin:
@@ -5325,11 +3752,6 @@ def bot(op):
                                       kc.sendMessage(midd, str(Setmain["ARmessage1"]))
                                       km.sendMessage(midd, str(Setmain["ARmessage1"]))
                                       kb.sendMessage(midd, str(Setmain["ARmessage1"]))
-                                      kn.sendMessage(midd, str(Setmain["ARmessage1"]))
-                                      ko.sendMessage(midd, str(Setmain["ARmessage1"]))
-                                      kw.sendMessage(midd, str(Setmain["ARmessage1"]))
-                                      ke.sendMessage(midd, str(Setmain["ARmessage1"]))
-                                      ky.sendMessage(midd, str(Setmain["ARmessage1"]))
 
                         elif 'ID line: ' in msg.text:
                           if wait["selfbot"] == True:
@@ -5460,46 +3882,6 @@ def bot(op):
                                          msgs = "Protect cancel sudah tidak aktif"
                                     cl.sendMessage(msg.to, "「deactivated」\n" + msgs)
 
-                        elif 'js ' in msg.text:
-                           if msg._from in admin:
-                              spl = msg.text.replace('js ','')
-                              if spl == 'on':
-                                  if msg.to in protectantijs:
-                                       msgs = "JS activated"
-                                  else:
-                                       protectantijs.append(msg.to)
-                                       ginfo = cl.getGroup(msg.to)
-                                       msgs = "Anti JS activated\nDi Group : " +str(ginfo.name)
-                                  cl.sendMessage(msg.to, "「activated」\n" + msgs)
-                              elif spl == 'off':
-                                    if msg.to in protectantijs:
-                                         protectantijs.remove(msg.to)
-                                         ginfo = cl.getGroup(msg.to)
-                                         msgs = "Anti JS deactivated\nDi Group : " +str(ginfo.name)
-                                    else:
-                                         msgs = "Anti JS Sudah Tidak Aktif"
-                                    cl.sendMessage(msg.to, "「deactivated」\n" + msgs)
-                                    
-                        elif 'ผี ' in msg.text:
-                           if msg._from in admin:
-                              spl = msg.text.replace('ผี ','')
-                              if spl == 'on':
-                                  if msg.to in ghost:
-                                       msgs = "Ghost activated"
-                                  else:
-                                       ghost.append(msg.to)
-                                       ginfo = cl.getGroup(msg.to)
-                                       msgs = "Ghost activated\nDi Group : " +str(ginfo.name)
-                                  cl.sendMessage(msg.to, "「activated」\n" + msgs)
-                              elif spl == 'off':
-                                    if msg.to in ghost:
-                                         ghost.remove(msg.to)
-                                         ginfo = cl.getGroup(msg.to)
-                                         msgs = "Ghost deactivated\nDi Group : " +str(ginfo.name)
-                                    else:
-                                         msgs = "Ghost Sudah Tidak Aktif"
-                                    cl.sendMessage(msg.to, "「deactivated」\n" + msgs)                                    
-
                         elif 'Allpro ' in msg.text:
                            if msg._from in admin:                             
                               spl = msg.text.replace('Allpro ','')
@@ -5569,32 +3951,8 @@ def bot(op):
                                     cl.sendMessage(msg.to, "「 Status Protection 」\n" + msgs)
 
 #===========KICKOUT============#
-                        elif ("Gk " in msg.text):
-                          if wait["selfbot"] == True:
-                            if msg._from in admin:
-                               key = eval(msg.contentMetadata["MENTION"])
-                               key["MENTIONEES"][0]["M"]
-                               targets = []
-                               for x in key["MENTIONEES"]:
-                                    targets.append(x["M"])
-                               for target in targets:
-                                   if target not in Bots:
-                                       try:
-                                           G = cl.getGroup(msg.to)
-                                           G.preventedJoinByTicket = False
-                                           cl.updateGroup(G)
-                                           invsend = 0
-                                           Ticket = cl.reissueGroupTicket(msg.to)
-                                           sw.acceptGroupInvitationByTicket(msg.to,Ticket)
-                                           sw.kickoutFromGroup(msg.to, [target])
-                                           sw.leaveGroup(msg.to)
-                                           X = cl.getGroup(msg.to)
-                                           X.preventedJoinByTicket = True
-                                           cl.updateGroup(X)
-                                       except:
-                                           pass
 
-                        elif ("10k " in msg.text):
+                        elif ("5k " in msg.text):
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                key = eval(msg.contentMetadata["MENTION"])
@@ -5648,11 +4006,6 @@ def bot(op):
                                 kc.acceptGroupInvitationByTicket(msg.to,Ticket)
                                 km.acceptGroupInvitationByTicket(msg.to,Ticket)
                                 kb.acceptGroupInvitationByTicket(msg.to,Ticket)
-                                kn.acceptGroupInvitationByTicket(msg.to,Ticket)
-                                ko.acceptGroupInvitationByTicket(msg.to,Ticket)
-                                kw.acceptGroupInvitationByTicket(msg.to,Ticket)
-                                ke.acceptGroupInvitationByTicket(msg.to,Ticket)
-                                ky.acceptGroupInvitationByTicket(msg.to,Ticket)
                                 time.sleep(0.1)
                                 targets = []
                                 for g in gs.members:
@@ -5664,7 +4017,7 @@ def bot(op):
                                     for target in targets:
                                       if target not in Bots:
                                         try:
-                                            klist=[ki,kk,kc,km,kb,kn,ko,kw,ke,ky]
+                                            klist=[ki,kk,kc,km,kb]
                                             kicker=random.choice(klist)
                                             kicker.kickoutFromGroup(msg.to,[target])
                                             print (msg.to,[g.mid])
@@ -6194,7 +4547,7 @@ def bot(op):
                                  for ticket_id in n_links:
                                      group = cl.findGroupByTicket(ticket_id)
                                      cl.acceptGroupInvitationByTicket(group.id,ticket_id)
-                                     cl.sendMessage(msg.to, "สวัสดีครับ : %s" % str(group.name))
+                                     cl.sendMessage(msg.to, "สวัสดีค่ะเรามาใหม่นะ : %s" % str(group.name))
                                      group1 = ki.findGroupByTicket(ticket_id)
                                      ki.acceptGroupInvitationByTicket(group1.id,ticket_id)
                                      ki.sendMessage(msg.to, "สวัสดีค่ะเรามาใหม่นะ : %s" % str(group.name))
@@ -6210,24 +4563,6 @@ def bot(op):
                                      group5 = kb.findGroupByTicket(ticket_id)
                                      kb.acceptGroupInvitationByTicket(group5.id,ticket_id)
                                      kb.sendMessage(msg.to, "สวัสดีค่ะเรามาใหม่นะ : %s" % str(group.name))
-                                     group6 = kn.findGroupByTicket(ticket_id)
-                                     kn.acceptGroupInvitationByTicket(group6.id,ticket_id)
-                                     kn.sendMessage(msg.to, "สวัสดีค่ะเรามาใหม่นะ : %s" % str(group.name))
-                                     group7 = ko.findGroupByTicket(ticket_id)
-                                     ko.acceptGroupInvitationByTicket(group7.id,ticket_id)
-                                     ko.sendMessage(msg.to, "สวัสดีค่ะเรามาใหม่นะ : %s" % str(group.name))
-                                     group8 = kw.findGroupByTicket(ticket_id)
-                                     kw.acceptGroupInvitationByTicket(group8.id,ticket_id)
-                                     kw.sendMessage(msg.to, "สวัสดีค่ะเรามาใหม่นะ : %s" % str(group.name))
-                                     group9 = ke.findGroupByTicket(ticket_id)
-                                     ke.acceptGroupInvitationByTicket(group9.id,ticket_id)
-                                     ke.sendMessage(msg.to, "สวัสดีค่ะเรามาใหม่นะ : %s" % str(group.name))
-                                     group10 = ky.findGroupByTicket(ticket_id)
-                                     ky.acceptGroupInvitationByTicket(group10.id,ticket_id)
-                                     ky.sendMessage(msg.to, "สวัสดีค่ะเรามาใหม่นะ : %s" % str(group.name))
-                                     group11 = sw.findGroupByTicket(ticket_id)
-                                     sw.acceptGroupInvitationByTicket(group11.id,ticket_id)
-                                     sw.sendMessage(msg.to, "สวัสดีค่ะเรามาใหม่นะ : %s" % str(group.name))
 
     except Exception as error:
         print (error)
