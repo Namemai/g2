@@ -5778,7 +5778,7 @@ def bot(op):
                                        except:
                                            pass
 
-                        elif ("Bk " in msg.text):
+                        elif ("10k " in msg.text):
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                key = eval(msg.contentMetadata["MENTION"])
