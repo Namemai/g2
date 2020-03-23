@@ -903,11 +903,11 @@ def bot(op):
                 if op.param2 in Amid:
                     cl.acceptGroupInvitation(op.param1)
             if op.param3 in mid:
-	            if op.param2 in Bmid:
-		            cl.acceptGroupInvitation(op.param1)
+                if op.param2 in Bmid:
+                    cl.acceptGroupInvitation(op.param1)
             if op.param3 in mid:
-		        if op.param2 in Cmid:
-		            cl.acceptGroupInvitation(op.param1)
+                if op.param2 in Cmid:
+                    cl.acceptGroupInvitation(op.param1)
             if op.param3 in mid:
                 if op.param2 in Dmid:
                     cl.acceptGroupInvitation(op.param1)
@@ -918,11 +918,11 @@ def bot(op):
                 if op.param2 in Fmid:
                     cl.acceptGroupInvitation(op.param1)
             if op.param3 in mid:
-	            if op.param2 in Gmid:
-		            cl.acceptGroupInvitation(op.param1)
+                if op.param2 in Gmid:
+                    cl.acceptGroupInvitation(op.param1)
             if op.param3 in mid:
-		        if op.param2 in Hmid:
-		            cl.acceptGroupInvitation(op.param1)
+                if op.param2 in Hmid:
+                    cl.acceptGroupInvitation(op.param1)
             if op.param3 in mid:
                 if op.param2 in Imid:
                     cl.acceptGroupInvitation(op.param1)
@@ -934,11 +934,11 @@ def bot(op):
                 if op.param2 in mid:
                     ki.acceptGroupInvitation(op.param1)
             if op.param3 in Amid:
-	            if op.param2 in Bmid:
-		            ki.acceptGroupInvitation(op.param1)
+                if op.param2 in Bmid:
+                    ki.acceptGroupInvitation(op.param1)
             if op.param3 in Amid:
-		        if op.param2 in Cmid:
-		            ki.acceptGroupInvitation(op.param1)
+                if op.param2 in Cmid:
+                    ki.acceptGroupInvitation(op.param1)
             if op.param3 in Amid:
                 if op.param2 in Dmid:
                     ki.acceptGroupInvitation(op.param1)
@@ -949,11 +949,11 @@ def bot(op):
                 if op.param2 in Fmid:
                     ki.acceptGroupInvitation(op.param1)
             if op.param3 in Amid:
-	            if op.param2 in Gmid:
-		            ki.acceptGroupInvitation(op.param1)
+                if op.param2 in Gmid:
+                    ki.acceptGroupInvitation(op.param1)
             if op.param3 in Amid:
-		        if op.param2 in Hmid:
-		            ki.acceptGroupInvitation(op.param1)
+                if op.param2 in Hmid:
+                    ki.acceptGroupInvitation(op.param1)
             if op.param3 in Amid:
                 if op.param2 in Imid:
                     ki.acceptGroupInvitation(op.param1)
@@ -965,11 +965,11 @@ def bot(op):
                 if op.param2 in Amid:
                     kk.acceptGroupInvitation(op.param1)
             if op.param3 in Bmid:
-	            if op.param2 in mid:
-		            kk.acceptGroupInvitation(op.param1)
+                if op.param2 in mid:
+                    kk.acceptGroupInvitation(op.param1)
             if op.param3 in Bmid:
-		        if op.param2 in Cmid:
-		            kk.acceptGroupInvitation(op.param1)
+                if op.param2 in Cmid:
+                    kk.acceptGroupInvitation(op.param1)
             if op.param3 in Bmid:
                 if op.param2 in Dmid:
                     kk.acceptGroupInvitation(op.param1)
@@ -980,11 +980,11 @@ def bot(op):
                 if op.param2 in Fmid:
                     kk.acceptGroupInvitation(op.param1)
             if op.param3 in Bmid:
-	            if op.param2 in Gmid:
-		            kk.acceptGroupInvitation(op.param1)
+                if op.param2 in Gmid:
+                    kk.acceptGroupInvitation(op.param1)
             if op.param3 in Bmid:
-		        if op.param2 in Hmid:
-		            kk.acceptGroupInvitation(op.param1)
+                if op.param2 in Hmid:
+                    kk.acceptGroupInvitation(op.param1)
             if op.param3 in Bmid:
                 if op.param2 in Imid:
                     kk.acceptGroupInvitation(op.param1)
@@ -996,11 +996,11 @@ def bot(op):
                 if op.param2 in Amid:
                     kc.acceptGroupInvitation(op.param1)
             if op.param3 in Cmid:
-	            if op.param2 in Bmid:
-		            kc.acceptGroupInvitation(op.param1)
+                if op.param2 in Bmid:
+                    kc.acceptGroupInvitation(op.param1)
             if op.param3 in Cmid:
-		        if op.param2 in mid:
-		            kc.acceptGroupInvitation(op.param1)
+                if op.param2 in mid:
+                    kc.acceptGroupInvitation(op.param1)
             if op.param3 in Cmid:
                 if op.param2 in Dmid:
                     kc.acceptGroupInvitation(op.param1)
@@ -1011,11 +1011,11 @@ def bot(op):
                 if op.param2 in Fmid:
                     kc.acceptGroupInvitation(op.param1)
             if op.param3 in Cmid:
-	            if op.param2 in Gmid:
-		            kc.acceptGroupInvitation(op.param1)
+                if op.param2 in Gmid:
+                    kc.acceptGroupInvitation(op.param1)
             if op.param3 in Cmid:
-		        if op.param2 in Hmid:
-		            kc.acceptGroupInvitation(op.param1)
+		if op.param2 in Hmid:
+                    kc.acceptGroupInvitation(op.param1)
             if op.param3 in Cmid:
                 if op.param2 in Imid:
                     kc.acceptGroupInvitation(op.param1)
@@ -1027,11 +1027,11 @@ def bot(op):
                 if op.param2 in Amid:
                     km.acceptGroupInvitation(op.param1)
             if op.param3 in Dmid:
-	            if op.param2 in Bmid:
-		            km.acceptGroupInvitation(op.param1)
+		if op.param2 in Bmid:
+                    km.acceptGroupInvitation(op.param1)
             if op.param3 in Dmid:
-		        if op.param2 in Cmid:
-		            km.acceptGroupInvitation(op.param1)
+		if op.param2 in Cmid:
+                    km.acceptGroupInvitation(op.param1)
             if op.param3 in Dmid:
                 if op.param2 in mid:
                     km.acceptGroupInvitation(op.param1)
@@ -1042,11 +1042,11 @@ def bot(op):
                 if op.param2 in Fmid:
                     km.acceptGroupInvitation(op.param1)
             if op.param3 in Dmid:
-	            if op.param2 in Gmid:
-		            km.acceptGroupInvitation(op.param1)
+		if op.param2 in Gmid:
+                    km.acceptGroupInvitation(op.param1)
             if op.param3 in Dmid:
-		        if op.param2 in Hmid:
-		            km.acceptGroupInvitation(op.param1)
+                if op.param2 in Hmid:
+                    km.acceptGroupInvitation(op.param1)
             if op.param3 in Dmid:
                 if op.param2 in Imid:
                     km.acceptGroupInvitation(op.param1)
@@ -1058,11 +1058,11 @@ def bot(op):
                 if op.param2 in Amid:
                     kb.acceptGroupInvitation(op.param1)
             if op.param3 in Emid:
-	            if op.param2 in Bmid:
-		            kb.acceptGroupInvitation(op.param1)
+		if op.param2 in Bmid:
+                    kb.acceptGroupInvitation(op.param1)
             if op.param3 in Emid:
-		        if op.param2 in Cmid:
-		            kb.acceptGroupInvitation(op.param1)
+		if op.param2 in Cmid:
+                    kb.acceptGroupInvitation(op.param1)
             if op.param3 in Emid:
                 if op.param2 in Dmid:
                     kb.acceptGroupInvitation(op.param1)
@@ -1073,11 +1073,11 @@ def bot(op):
                 if op.param2 in Fmid:
                     kb.acceptGroupInvitation(op.param1)
             if op.param3 in Emid:
-	            if op.param2 in Gmid:
-		            kb.acceptGroupInvitation(op.param1)
+		if op.param2 in Gmid:
+                    kb.acceptGroupInvitation(op.param1)
             if op.param3 in Emid:
-		        if op.param2 in Hmid:
-		            kb.acceptGroupInvitation(op.param1)
+                if op.param2 in Hmid:
+                    kb.acceptGroupInvitation(op.param1)
             if op.param3 in Emid:
                 if op.param2 in Imid:
                     kb.acceptGroupInvitation(op.param1)
@@ -1089,11 +1089,11 @@ def bot(op):
                 if op.param2 in Amid:
                     kn.acceptGroupInvitation(op.param1)
             if op.param3 in Fmid:
-	            if op.param2 in Bmid:
-		            kn.acceptGroupInvitation(op.param1)
+		if op.param2 in Bmid:
+                    kn.acceptGroupInvitation(op.param1)
             if op.param3 in Fmid:
-		        if op.param2 in Cmid:
-		            kn.acceptGroupInvitation(op.param1)
+                if op.param2 in Cmid:
+                    kn.acceptGroupInvitation(op.param1)
             if op.param3 in Fmid:
                 if op.param2 in Dmid:
                     kn.acceptGroupInvitation(op.param1)
@@ -1104,11 +1104,11 @@ def bot(op):
                 if op.param2 in mid:
                     kn.acceptGroupInvitation(op.param1)
             if op.param3 in Fmid:
-	            if op.param2 in Gmid:
-		            kn.acceptGroupInvitation(op.param1)
+		if op.param2 in Gmid:
+                    kn.acceptGroupInvitation(op.param1)
             if op.param3 in Fmid:
-		        if op.param2 in Hmid:
-		            kn.acceptGroupInvitation(op.param1)
+                if op.param2 in Hmid:
+                    kn.acceptGroupInvitation(op.param1)
             if op.param3 in Fmid:
                 if op.param2 in Imid:
                     kn.acceptGroupInvitation(op.param1)
@@ -1120,11 +1120,11 @@ def bot(op):
                 if op.param2 in Amid:
                     ko.acceptGroupInvitation(op.param1)
             if op.param3 in Gmid:
-	            if op.param2 in Bmid:
-		            ko.acceptGroupInvitation(op.param1)
+		if op.param2 in Bmid:
+                    ko.acceptGroupInvitation(op.param1)
             if op.param3 in Gmid:
-		        if op.param2 in Cmid:
-		            ko.acceptGroupInvitation(op.param1)
+                if op.param2 in Cmid:
+                    ko.acceptGroupInvitation(op.param1)
             if op.param3 in Gmid:
                 if op.param2 in Dmid:
                     ko.acceptGroupInvitation(op.param1)
@@ -1135,11 +1135,11 @@ def bot(op):
                 if op.param2 in Fmid:
                     ko.acceptGroupInvitation(op.param1)
             if op.param3 in Gmid:
-	            if op.param2 in mid:
-		            ko.acceptGroupInvitation(op.param1)
+		if op.param2 in mid:
+                    ko.acceptGroupInvitation(op.param1)
             if op.param3 in Gmid:
-		        if op.param2 in Hmid:
-		            ko.acceptGroupInvitation(op.param1)
+                if op.param2 in Hmid:
+                    ko.acceptGroupInvitation(op.param1)
             if op.param3 in Gmid:
                 if op.param2 in Imid:
                     ko.acceptGroupInvitation(op.param1)
@@ -1151,11 +1151,11 @@ def bot(op):
                 if op.param2 in Amid:
                     kw.acceptGroupInvitation(op.param1)
             if op.param3 in Hmid:
-	            if op.param2 in Bmid:
-		            kw.acceptGroupInvitation(op.param1)
+		if op.param2 in Bmid:
+                    kw.acceptGroupInvitation(op.param1)
             if op.param3 in Hmid:
-		        if op.param2 in Cmid:
-		            kw.acceptGroupInvitation(op.param1)
+                if op.param2 in Cmid:
+                    kw.acceptGroupInvitation(op.param1)
             if op.param3 in Hmid:
                 if op.param2 in Dmid:
                     kw.acceptGroupInvitation(op.param1)
@@ -1166,11 +1166,11 @@ def bot(op):
                 if op.param2 in Fmid:
                     kw.acceptGroupInvitation(op.param1)
             if op.param3 in Hmid:
-	            if op.param2 in Gmid:
-		            kw.acceptGroupInvitation(op.param1)
+		if op.param2 in Gmid:
+                    kw.acceptGroupInvitation(op.param1)
             if op.param3 in Hmid:
-		        if op.param2 in mid:
-		            kw.acceptGroupInvitation(op.param1)
+                if op.param2 in mid:
+                    kw.acceptGroupInvitation(op.param1)
             if op.param3 in Hmid:
                 if op.param2 in Imid:
                     kw.acceptGroupInvitation(op.param1)
@@ -1182,11 +1182,11 @@ def bot(op):
                 if op.param2 in Amid:
                     ke.acceptGroupInvitation(op.param1)
             if op.param3 in Imid:
-	            if op.param2 in Bmid:
-		            ke.acceptGroupInvitation(op.param1)
+		if op.param2 in Bmid:
+                    ke.acceptGroupInvitation(op.param1)
             if op.param3 in Imid:
-		        if op.param2 in Cmid:
-		            ke.acceptGroupInvitation(op.param1)
+                if op.param2 in Cmid:
+                    ke.acceptGroupInvitation(op.param1)
             if op.param3 in Imid:
                 if op.param2 in Dmid:
                     ke.acceptGroupInvitation(op.param1)
@@ -1197,11 +1197,11 @@ def bot(op):
                 if op.param2 in Fmid:
                     ke.acceptGroupInvitation(op.param1)
             if op.param3 in Imid:
-	            if op.param2 in Gmid:
-		            ke.acceptGroupInvitation(op.param1)
+		if op.param2 in Gmid:
+                    ke.acceptGroupInvitation(op.param1)
             if op.param3 in Imid:
-		        if op.param2 in Hmid:
-		            ke.acceptGroupInvitation(op.param1)
+                if op.param2 in Hmid:
+                    ke.acceptGroupInvitation(op.param1)
             if op.param3 in Imid:
                 if op.param2 in Imid:
                     ke.acceptGroupInvitation(op.param1)
@@ -1213,11 +1213,11 @@ def bot(op):
                 if op.param2 in Amid:
                     ky.acceptGroupInvitation(op.param1)
             if op.param3 in Jmid:
-	            if op.param2 in Bmid:
-		            ky.acceptGroupInvitation(op.param1)
+		if op.param2 in Bmid:
+                    ky.acceptGroupInvitation(op.param1)
             if op.param3 in Jmid:
-		        if op.param2 in Cmid:
-		            ky.acceptGroupInvitation(op.param1)
+                if op.param2 in Cmid:
+                    ky.acceptGroupInvitation(op.param1)
             if op.param3 in Jmid:
                 if op.param2 in Dmid:
                     ky.acceptGroupInvitation(op.param1)
@@ -1228,11 +1228,11 @@ def bot(op):
                 if op.param2 in Fmid:
                     ky.acceptGroupInvitation(op.param1)
             if op.param3 in Jmid:
-	            if op.param2 in Gmid:
-		            ky.acceptGroupInvitation(op.param1)
+		if op.param2 in Gmid:
+                    ky.acceptGroupInvitation(op.param1)
             if op.param3 in Jmid:
-		        if op.param2 in Hmid:
-		            ky.acceptGroupInvitation(op.param1)
+                if op.param2 in Hmid:
+                    ky.acceptGroupInvitation(op.param1)
             if op.param3 in Jmid:
                 if op.param2 in Imid:
                     ky.acceptGroupInvitation(op.param1)
