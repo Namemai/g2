@@ -134,17 +134,6 @@ Jmid = ky.profile.mid
 kyProfile = ky.getProfile()
 kySettings = ky.getSettings()
 
-oepoll = OEPoll(ky)
-oepoll = OEPoll(ke)
-oepoll = OEPoll(kw)
-oepoll = OEPoll(ko)
-oepoll = OEPoll(kn)
-oepoll = OEPoll(kb)
-oepoll = OEPoll(km)
-oepoll = OEPoll(kc)
-oepoll = OEPoll(kk)
-oepoll = OEPoll(ki)
-oepoll = OEPoll(cl)
 
 print("---LOGIN SUCCES---\n mai")
 
