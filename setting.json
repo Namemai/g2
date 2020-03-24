@@ -34,7 +34,7 @@
     "ARmessage1": "Chat with me",
     "ARprotcancel": {},
     "ARprotinvite": {},
-    "ARprotkick": {},
+    "ARprotkick": true,
     "ARprotqr": {},
     "ARreadMember": {},
     "ARreadPoint": {},
