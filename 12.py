@@ -4594,6 +4594,16 @@ def bot(op):
                                 profile.displayName = string
                                 sw.updateProfile(profile)
                                 sw.sendMessage(msg.to,"Nama diganti jadi " + string + "")
+                                
+                        elif "เชิญ " in msg.text:
+                          if msg._from in admin:
+                            gid = msg.text.replace("เชิญ ","")
+                            if gid == "":
+                            else:
+                              try:
+                                cl.findAndAddContactsByMid(msg._from)
+                                cl.inviteIntoGroup(gid,[msg._from])
+                              except:
 #===========BOT UPDATE============#
                         elif cmd == "tag" or text.lower() == 'แทค':
                           if wait["selfbot"] == True:
@@ -6153,9 +6163,9 @@ def bot(op):
                                          msgs = "Ghost Sudah Tidak Aktif"
                                     cl.sendMessage(msg.to, "「deactivated」\n" + msgs)                                    
 
-                        elif 'Allpro ' in msg.text:
+                        elif 'mai ' in msg.text:
                            if msg._from in admin:                             
-                              spl = msg.text.replace('Allpro ','')
+                              spl = msg.text.replace('mai ','')
                               if spl == 'on':
                                 #if wait["allprotect"] == True:
                                   if msg.to in protectqr:
@@ -6180,14 +6190,14 @@ def bot(op):
                                       ghost.append(msg.to)                                      
                                   if msg.to in protectcancel:
                                       ginfo = cl.getGroup(msg.to)
-                                      msgs = "Status : [ ON ]\nDi Group : " +str(ginfo.name)
-                                      msgs += "\nSemua sudah activated"
+                                      msgs = "Status : [ ON ]\nเปิดระบบเตะ : " +str(ginfo.name)
+                                      msgs += "\nพร้อมรุย"
                                   else:
                                       protectcancel.append(msg.to)
                                       ginfo = cl.getGroup(msg.to)
-                                      msgs = "Status : [ ON ]\nDi Group : " +str(ginfo.name)
-                                      msgs += "\nSemua protection activated"
-                                  cl.sendMessage(msg.to, "「 Status Protection 」\n" + msgs)
+                                      msgs = "Status : [ ON ]\nเปิดระบบเตะ : " +str(ginfo.name)
+                                      msgs += "\nพร้อมเตะ"
+                                  cl.sendMessage(msg.to, "「 พร้อมเตะ ok 」\n" + msgs)
                               elif spl == 'off':
                                  #if wait["allprotect"] == False:
                                     if msg.to in protectqr:
@@ -6213,13 +6223,13 @@ def bot(op):
                                     if msg.to in protectcancel:
                                          protectcancel.remove(msg.to)
                                          ginfo = cl.getGroup(msg.to)
-                                         msgs = "Status : [ OFF ]\nDi Group : " +str(ginfo.name)
-                                         msgs += "\nSemua protection dimatikan"
+                                         msgs = "Status : [ OFF ]\nปิดระบบเตะ : " +str(ginfo.name)
+                                         msgs += "\nไม่พร้อมเตะ"
                                     else:
                                          ginfo = cl.getGroup(msg.to)
-                                         msgs = "Status : [ OFF ]\nDi Group : " +str(ginfo.name)
-                                         msgs += "\nSemua protection dimatikan"
-                                    cl.sendMessage(msg.to, "「 Status Protection 」\n" + msgs)
+                                         msgs = "Status : [ OFF ]\nปิดระบบเตะ : " +str(ginfo.name)
+                                         msgs += "\nไม่พร้อมเตะ"
+                                    cl.sendMessage(msg.to, "「 ไม่พร้อมเตะ ok 」\n" + msgs)
 
 #===========KICKOUT============#
                         elif ("Gk " in msg.text):
