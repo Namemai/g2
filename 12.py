@@ -4595,15 +4595,29 @@ def bot(op):
                                 sw.updateProfile(profile)
                                 sw.sendMessage(msg.to,"Nama diganti jadi " + string + "")
                                 
-                        elif "เชิญ " in msg.text:
+                        elif cmd.startswith("เชิญ "):
                           if msg._from in admin:
-                            gid = msg.text.replace("เชิญ ","")
-                            if gid == "":
-                            else:
-                              try:
-                                cl.findAndAddContactsByMid(msg._from)
-                                cl.inviteIntoGroup(gid,[msg._from])
-                              except:
+                               sep = text.split(" ")
+                               idnya = text.replace(sep[0] + " ","")
+                               conn = cl.findContactsByUserid(idnya)
+                               cl.findAndAddContactsByMid(conn.mid)
+                               cl.inviteIntoGroup(msg.to,[conn.mid])
+                               group = cl.getGroup(msg.to)
+                               xname = cl.getContact(conn.mid)
+                               zx = ""
+                               zxc = ""
+                               zx2 = []
+                               xpesan = '「 Sukses Diinvite 」\nNama contact '
+                               recky = str(xname.displayName)
+                               pesan = ''
+                               pesan2 = pesan+"@a\n"
+                               xlen = str(len(zxc)+len(xpesan))
+                               xlen2 = str(len(zxc)+len(pesan2)+len(xpesan)-1)
+                               zx = {'S':xlen, 'E':xlen2, 'M':xname.mid}
+                               zx2.append(zx)
+                               zxc += pesan2
+                               text = xpesan+ zxc + "ke grup " + str(group.name) +""
+                               cl.sendMessage(receiver, text, contentMetadata={'MENTION':str('{"MENTIONEES":'+json.dumps(zx2).replace(' ','')+'}')}, contentType=0)
 #===========BOT UPDATE============#
                         elif cmd == "tag" or text.lower() == 'แทค':
                           if wait["selfbot"] == True:
