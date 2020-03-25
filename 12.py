@@ -2168,7 +2168,7 @@ def bot(op):
                                                             except:
                                                                 try:
                                                                     ko.kickoutFromGroup(op.param1,[op.param2])
-                                                                    time.sleep(0.008random.choice(ABC)
+                                                                    time.sleep(0.008)
                                                                     ko.inviteIntoGroup(op.param1,[op.param3])
                                                                     kb.acceptGroupInvitation(op.param1)
                                                                 except:
