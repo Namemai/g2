@@ -1357,8 +1357,7 @@ def bot(op):
 		            if op.param2 in Amid:
 		                ky.acceptGroupInvitation(op.param1)
 #--------------------------------------------------------
-                           
-                return
+
         if op.type == 19:
             if mid in op.param3:
                 if op.param2 in Bots:
