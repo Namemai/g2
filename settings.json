@@ -1,6 +1,6 @@
 {
     "Picture": false,
-    "autoJoinTicket": true,
+    "autoJoinTicket": false,
     "changePicture": false,
     "group": {},
     "groupPicture": false,
