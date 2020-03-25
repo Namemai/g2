@@ -3020,7 +3020,7 @@ def bot(op):
                                                                     random.choice(ABC).acceptGroupInvitation(op.param1)
                                                                 except:
                                                                     try:
-									random.choice(ABC).kickoutFromGroup(op.param1,[op.param2])
+                                                                        random.choice(ABC).kickoutFromGroup(op.param1,[op.param2])
                                                                         random.choice(ABC).inviteIntoGroup(op.param1,[op.param3])
                                                                         random.choice(ABC).acceptGroupInvitation(op.param1)
                                                                     except:
