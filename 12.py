@@ -743,77 +743,66 @@ def bot(op):
                         group = cl.getGroup(op.param1)
                         gMembMids = [contact.mid for contact in group.invitee]
                         for _mid in gMembMids:
-                            random.choice(ABC).kickoutFromGroup(op.param1,[op.param2])
                             random.choice(ABC).cancelGroupInvitation(op.param1,[_mid])
                     except:
                         try:
                             group = ki.getGroup(op.param1)
                             gMembMids = [contact.mid for contact in group.invitee]
                             for _mid in gMembMids:
-                                random.choice(ABC).kickoutFromGroup(op.param1,[op.param2])
                                 random.choice(ABC).cancelGroupInvitation(op.param1,[_mid])
                         except:
                             try:
                                 group = kk.getGroup(op.param1)
                                 gMembMids = [contact.mid for contact in group.invitee]
                                 for _mid in gMembMids:
-                                    random.choice(ABC).kickoutFromGroup(op.param1,[op.param2])
                                     random.choice(ABC).cancelGroupInvitation(op.param1,[_mid])
                             except:
                                 try:
                                     group = kc.getGroup(op.param1)
                                     gMembMids = [contact.mid for contact in group.invitee]
                                     for _mid in gMembMids:
-                                        random.choice(ABC).kickoutFromGroup(op.param1,[op.param2])
                                         random.choice(ABC).cancelGroupInvitation(op.param1,[_mid])
                                 except:
                                     try:
                                         group = km.getGroup(op.param1)
                                         gMembMids = [contact.mid for contact in group.invitee]
                                         for _mid in gMembMids:
-                                            random.choice(ABC).kickoutFromGroup(op.param1,[op.param2])
                                             random.choice(ABC).cancelGroupInvitation(op.param1,[_mid])
                                     except:
                                         try:
                                             group = kb.getGroup(op.param1)
                                             gMembMids = [contact.mid for contact in group.invitee]
                                             for _mid in gMembMids:
-                                                random.choice(ABC).kickoutFromGroup(op.param1,[op.param2])
                                                 random.choice(ABC).cancelGroupInvitation(op.param1,[_mid])
                                         except:
                                             try:
                                                 group = kn.getGroup(op.param1)
                                                 gMembMids = [contact.mid for contact in group.invitee]
                                                 for _mid in gMembMids:
-                                                    random.choice(ABC).kickoutFromGroup(op.param1,[op.param2])
                                                     random.choice(ABC).cancelGroupInvitation(op.param1,[_mid])
                                             except:
                                                 try:
                                                     group = ko.getGroup(op.param1)
                                                     gMembMids = [contact.mid for contact in group.invitee]
                                                     for _mid in gMembMids:
-                                                        random.choice(ABC).kickoutFromGroup(op.param1,[op.param2])
                                                         random.choice(ABC).cancelGroupInvitation(op.param1,[_mid])
                                                 except:
                                                     try:
                                                         group = kw.getGroup(op.param1)
                                                         gMembMids = [contact.mid for contact in group.invitee]
                                                         for _mid in gMembMids:
-                                                            random.choice(ABC).kickoutFromGroup(op.param1,[op.param2])
                                                             random.choice(ABC).cancelGroupInvitation(op.param1,[_mid])
                                                     except:
                                                         try:
                                                             group = ke.getGroup(op.param1)
                                                             gMembMids = [contact.mid for contact in group.invitee]
                                                             for _mid in gMembMids:
-                                                                random.choice(ABC).kickoutFromGroup(op.param1,[op.param2])
                                                                 random.choice(ABC).cancelGroupInvitation(op.param1,[_mid])
                                                         except:
                                                             try:
                                                                 group = ky.getGroup(op.param1)
                                                                 gMembMids = [contact.mid for contact in group.invitee]
                                                                 for _mid in gMembMids:
-                                                                    random.choice(ABC).kickoutFromGroup(op.param1,[op.param2])
                                                                     random.choice(ABC).cancelGroupInvitation(op.param1,[_mid])
                                                             except:
                                                                 pass
@@ -4082,7 +4071,7 @@ def bot(op):
                                Setmain["keyCommand"] = ""
                                cl.sendMessage(msg.to, "「Setkey」\nSetkey mu kembali ke awal")
 
-                        elif cmd == "รี10":
+                        elif cmd == "รี":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                cl.sendMessage(msg.to, "ใช้เวลารีระบบ 3วิ กรุนารอซักครู่...")
