@@ -4,7 +4,7 @@
     "userAgent": {},
     "keyCommand": "",
     "autoAdd": true,
-    "autoJoin": false,
+    "autoJoin": true,
     "autoReject": false,
     "autoLeave": false,
     "autoRead": false,
