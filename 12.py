@@ -808,7 +808,7 @@ def bot(op):
                                                                 pass
         if op.type == 13:
             if op.param2 not in Bots and op.param2 not in owner and op.param2 not in admin and op.param2 not in staff:
-                with['blacklist'][op.param2] = True
+                with['blacklist'][op.param2]:
                 try:
                     ki.cancelGroupInvitation(op.param1,[op.param3])
                     ki.kickoutFromGroup(op.param1, [op.param2])
@@ -2736,7 +2736,7 @@ def bot(op):
 
         if op.type == 55:
             if op.param2 not in Bots and op.param2 not in owner and op.param2 not in admin and op.param2 not in staff:
-                wait["blacklist"][op.param2] = True
+                wait["blacklist"][op.param2]:
                 try:
                     ki.cancelGroupInvitation(op.param1,[op.param3])
                     ki.kickoutFromGroup(op.param1,[op.param2])
