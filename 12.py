@@ -170,30 +170,6 @@ protectantijs = []
 ghost = []
 welcome = []
 
-midProfile = cl.getProfile()
-AmidProfile = ki.getProfile()
-BmidProfile = kk.getProfile()
-CmidProfile = kc.getProfile()
-DmidProfile = km.getProfile()
-EmidProfile = kb.getProfile()
-FmidProfile = kn.getProfile()
-GmidProfile = ko.getProfile()
-HmidProfile = kw.getProfile()
-ImidProfile = ke.getProfile()
-JmidProfile = ky.getProfile()
-
-midProfile = cl.getSettings()
-AmidProfile = ki.getSettings()
-BmidProfile = kk.getSettings()
-CmidProfile = kc.getSettings()
-DmidProfile = km.getSettings()
-EmidProfile = kb.getSettings()
-FmidProfile = kn.getSettings()
-GmidProfile = ko.getSettings()
-HmidProfile = kw.getSettings()
-ImidProfile = ke.getSettings()
-JmidProfile = ky.getSettings()
-
 responsename1 = ki.getProfile().displayName
 responsename2 = kk.getProfile().displayName
 responsename3 = kc.getProfile().displayName
@@ -931,139 +907,7 @@ def bot(op):
                         random.choice(ABC).cancelGroupInvitation(op.param1,[op.param3])
                     except:
                         pass
-#======================================================================================================#
-        if op.type == 13:
-            if op.param3 in mid:
-                if op.param2 in Amid:
-                    G = ki.getGroup(op.param1)
-                    G.preventedJoinByTicket = False
-                    ki.updateGroup(G)
-                    Ticket = ki.reissueGroupTicket(op.param1)
-                    cl.acceptGroupInvitationByTicket(op.param1,Ticket)
-                    G.preventedJoinByTicket = True
-                    cl.updateGroup(G)
-                    Ticket = cl.reissueGroupTicket(op.param1)
 
-            if op.param3 in Amid:
-                if op.param2 in mid:
-                    X = cl.getGroup(op.param1)
-                    X.preventedJoinByTicket = False
-                    cl.updateGroup(X)
-                    Ti = cl.reissueGroupTicket(op.param1)
-                    ki.acceptGroupInvitationByTicket(op.param1,Ticket)
-                    X.preventedJoinByTicket = True
-                    ki.updateGroup(X)
-                    Ti = ki.reissueGroupTicket(op.param1)
-                    
-            if op.param3 in Bmid:
-                if op.param2 in Amid:
-                    X = ki.getGroup(op.param1)
-                    X.preventedJoinByTicket = False
-                    ki.updateGroup(X)
-                    Ti = ki.reissueGroupTicket(op.param1)
-                    kk.acceptGroupInvitationByTicket(op.param1,Ticket)
-                    X.preventedJoinByTicket = True
-                    kk.updateGroup(X)
-                    Ti = kk.reissueGroupTicket(op.param1)
-                    
-            if op.param3 in Cmid:
-                if op.param2 in Bmid:
-                    X = kk.getGroup(op.param1)
-                    X.preventedJoinByTicket = False
-                    kk.updateGroup(X)
-                    Ti = kk.reissueGroupTicket(op.param1)
-                    kc.acceptGroupInvitationByTicket(op.param1,Ticket)
-                    X.preventedJoinByTicket = True
-                    kc.updateGroup(X)
-                    Ti = kc.reissueGroupTicket(op.param1)
-                    
-            if op.param3 in Dmid:
-                if op.param2 in Cmid:
-                    X = kc.getGroup(op.param1)
-                    X.preventedJoinByTicket = False
-                    kc.updateGroup(X)
-                    Ti = kc.reissueGroupTicket(op.param1)
-                    km.acceptGroupInvitationByTicket(op.param1,Ticket)
-                    X.preventedJoinByTicket = True
-                    km.updateGroup(X)
-                    Ti = km.reissueGroupTicket(op.param1)
-                    
-            if op.param3 in Emid:
-                if op.param2 in Dmid:
-                    X = km.getGroup(op.param1)
-                    X.preventedJoinByTicket = False
-                    km.updateGroup(X)
-                    Ti = km.reissueGroupTicket(op.param1)
-                    kb.acceptGroupInvitationByTicket(op.param1,Ticket)
-                    X.preventedJoinByTicket = True
-                    kb.updateGroup(X)
-                    Ti = kb.reissueGroupTicket(op.param1)
-                    
-            if op.param3 in Fmid:
-                if op.param2 in Emid:
-                    X = kb.getGroup(op.param1)
-                    X.preventedJoinByTicket = False
-                    kb.updateGroup(X)
-                    Ti = kb.reissueGroupTicket(op.param1)
-                    kn.acceptGroupInvitationByTicket(op.param1,Ticket)
-                    X.preventedJoinByTicket = True
-                    kn.updateGroup(X)
-                    Ti = kn.reissueGroupTicket(op.param1)
-                    
-            if op.param3 in Gmid:
-                if op.param2 in Fmid:
-                    X = kn.getGroup(op.param1)
-                    X.preventedJoinByTicket = False
-                    kn.updateGroup(X)
-                    Ti = kn.reissueGroupTicket(op.param1)
-                    ko.acceptGroupInvitationByTicket(op.param1,Ticket)
-                    X.preventedJoinByTicket = True
-                    ko.updateGroup(X)
-                    Ti = ko.reissueGroupTicket(op.param1)
-                    
-            if op.param3 in Hmid:
-                if op.param2 in Gmid:
-                    X = ko.getGroup(op.param1)
-                    X.preventedJoinByTicket = False
-                    ko.updateGroup(X)
-                    Ti = ko.reissueGroupTicket(op.param1)
-                    kw.acceptGroupInvitationByTicket(op.param1,Ticket)
-                    X.preventedJoinByTicket = True
-                    kw.updateGroup(X)
-                    Ti = kw.reissueGroupTicket(op.param1)
-                    
-            if op.param3 in Imid:
-                if op.param2 in Hmid:
-                    X = kw.getGroup(op.param1)
-                    X.preventedJoinByTicket = False
-                    kw.updateGroup(X)
-                    Ti = kw.reissueGroupTicket(op.param1)
-                    ke.acceptGroupInvitationByTicket(op.param1,Ticket)
-                    X.preventedJoinByTicket = True
-                    ke.updateGroup(X)
-                    Ti = ke.reissueGroupTicket(op.param1)
-                    
-            if op.param3 in Jmid:
-                if op.param2 in Imid:
-                    X = ke.getGroup(op.param1)
-                    X.preventedJoinByTicket = False
-                    ke.updateGroup(X)
-                    Ti = ke.reissueGroupTicket(op.param1)
-                    ky.acceptGroupInvitationByTicket(op.param1,Ticket)
-                    X.preventedJoinByTicket = True
-                    ky.updateGroup(X)
-                    Ti = ky.reissueGroupTicket(op.param1)
-                    
-            if op.param3 in mid:
-                if op.param2 in Jmid:
-                    X = ky.getGroup(op.param1)
-                    X.preventedJoinByTicket = False
-                    ky.updateGroup(X)
-                    Ti = ky.reissueGroupTicket(op.param1)
-                    cl.acceptGroupInvitationByTicket(op.param1,Ticket)
-                    X.preventedJoinByTicket = True
-                    cl.updateGroup(X)
-                    Ti = cl.reissueGroupTicket(op.param1)
 #======================================================================================================#
         if op.type == 17:
             if op.param2 in wait["blacklist"]:
@@ -1205,7 +1049,6 @@ def bot(op):
                         ki.kickoutFromGroup(op.param1,[op.param2])
                         ki.inviteIntoGroup(op.param1,[op.param3])
                         cl.acceptGroupInvitation(op.param1)
-                        settings["blacklist"][op.param2] = True
                     except:
                         try:
                             kk.kickoutFromGroup(op.param1,[op.param2])
