@@ -1442,7 +1442,7 @@ def bot(op):
                                                             ky.acceptGroupInvitationByTicket(op.param1,Ticket)
                                                             G = random.choice(ABC).getGroup(op.param1)
                                                             G.preventedJoinByTicket = True
-                                                            random.choice(ABC).updateGroup(random.choice(ABC)
+                                                            random.choice(ABC).updateGroup(G)
                                                             Ticket = random.choice(ABC).reissueGroupTicket(op.param1)
                                                         except:
                                                             try:
