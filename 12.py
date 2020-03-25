@@ -810,52 +810,52 @@ def bot(op):
             if op.param2 not in Bots and op.param2 not in owner and op.param2 not in admin and op.param2 not in staff:
                 wait["blacklist"][op.param2] = True
                 try:
-                    if op.param3 not in with["blacklist"]:
+                    if op.param3 not in wait["blacklist"]:
                         ki.cancelGroupInvitation(op.param1,[op.param3])
                         ki.kickoutFromGroup(op.param1, [op.param2])
                 except:
                         try:
-                            if op.param3 not in with["blacklist"]:
+                            if op.param3 not in wait["blacklist"]:
                                 kk.cancelGroupInvitation(op.param1,[op.param3])
                                 kk.kickoutFromGroup(op.param1,[op.param2])
                         except:
                             try:
-                                if op.param3 not in with["blacklist"]:
+                                if op.param3 not in wait["blacklist"]:
                                     kc.cancelGroupInvitation(op.param1,[op.param3])
                                     kc.kickoutFromGroup(op.param1,[op.param2])
                             except:
                                 try:
-                                    if op.param3 not in with["blacklist"]:
+                                    if op.param3 not in wait["blacklist"]:
                                         km.cancelGroupInvitation(op.param1,[op.param3])
                                         km.kickoutFromGroup(op.param1,[op.param2])
                                 except:
                                     try:
-                                        if op.param3 not in with["blacklist"]:
+                                        if op.param3 not in wait["blacklist"]:
                                             kb.cancelGroupInvitation(op.param1,[op.param3])
                                             kb.kickoutFromGroup(op.param1,[op.param2])
                                     except:
                                         try:
-                                            if op.param3 not in with["blacklist"]:
+                                            if op.param3 not in wait["blacklist"]:
                                                 ko.cancelGroupInvitation(op.param1,[op.param3])
                                                 ko.kickoutFromGroup(op.param1,[op.param2])
                                         except:
                                             try:
-                                                if op.param3 not in with["blacklist"]:
+                                                if op.param3 not in wait["blacklist"]:
                                                     kn.cancelGroupInvitation(op.param1,[op.param3])
                                                     kn.kickoutFromGroup(op.param1,[op.param2])
                                             except:
                                                 try:
-                                                    if op.param3 not in with["blacklist"]:
+                                                    if op.param3 not in wait["blacklist"]:
                                                         kw.cancelGroupInvitation(op.param1,[op.param3])
                                                         kw.kickoutFromGroup(op.param1,[op.param2])
                                                 except:
                                                     try:
-                                                        if op.param3 not in with["blacklist"]:
+                                                        if op.param3 not in wait["blacklist"]:
                                                             ke.cancelGroupInvitation(op.param1,[op.param3])
                                                             ke.kickoutFromGroup(op.param1,[op.param2])
                                                     except:
                                                         try:
-                                                            if op.param3 not in with["blacklist"]:
+                                                            if op.param3 not in wait["blacklist"]:
                                                                 ky.cancelGroupInvitation(op.param1,[op.param3])
                                                                 ky.kickoutFromGroup(op.param1,[op.param2])
                                                         except:
