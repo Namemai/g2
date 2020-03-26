@@ -3284,8 +3284,96 @@ def bot(op):
                                else:
                                    cl.sendImageWithURL(msg.to, 'http://dl.profile.line.naver.jp'+str(mi.picturePath))
                                     
+                                
+                        elif "ดึง " in msg.text:
+                            if msg._from in admin:                                                                                                                                       
+                               key = eval(msg.contentMetadata["MENTION"])
+                               key["MENTIONEES"][0]["M"]                                                                                                                                
+                               targets = []
+                               for x in key["MENTIONEES"]:                                                                                                                                  
+                                   targets.append(x["M"])
+                               for target in targets:                                                                                                                                       
+                                   try:
+                                      cl.findAndAddContactsByMid(target)
+                                      cl.inviteIntoGroup(msg.to,[target])
+                                   except:
+                                       pass
+
+                        elif cmd == "mybot":
+                          if wait["selfbot"] == True:
+                            if msg._from in admin:
+                               msg.contentType = 13
+                               msg.contentMetadata = {'mid': Amid}
+                               cl.sendMessage1(msg)
+                               msg.contentType = 13
+                               msg.contentMetadata = {'mid': Bmid}
+                               cl.sendMessage1(msg)
+                               msg.contentType = 13
+                               msg.contentMetadata = {'mid': Cmid}
+                               cl.sendMessage1(msg)
+                               msg.contentType = 13
+                               msg.contentMetadata = {'mid': Dmid}
+                               cl.sendMessage1(msg)
+                               msg.contentType = 13
+                               msg.contentMetadata = {'mid': Emid}
+                               cl.sendMessage1(msg)
+                               msg.contentType = 13
+                               msg.contentMetadata = {'mid': Fmid}
+                               cl.sendMessage1(msg)
+                               msg.contentType = 13
+                               msg.contentMetadata = {'mid': Gmid}
+                               cl.sendMessage1(msg)
+                               msg.contentType = 13
+                               msg.contentMetadata = {'mid': Hmid}
+                               cl.sendMessage1(msg)
+                               msg.contentType = 13
+                               msg.contentMetadata = {'mid': Imid}
+                               cl.sendMessage1(msg)
+                               msg.contentType = 13
+                               msg.contentMetadata = {'mid': Jmid}
+                               cl.sendMessage1(msg)
+                               msg.contentType = 13
+                               msg.contentMetadata = {'mid': Zmid}
+                               cl.sendMessage1(msg)
+
+                        elif text.lower() == "ลบแชท":
+                          if wait["selfbot"] == True:
+                            if msg._from in admin:
+                               try:
+                                   cl.removeAllMessages(op.param2)
+                               except:
+                                   pass
+
+                        elif text.lower() == "ลบแชทคิก":
+                          if wait["selfbot"] == True:
+                            if msg._from in admin:
+                               try:
+                                   ki.removeAllMessages(op.param2)
+                                   kk.removeAllMessages(op.param2)
+                                   kc.removeAllMessages(op.param2)
+                                   km.removeAllMessages(op.param2)
+                                   kb.removeAllMessages(op.param2)
+                                   kn.removeAllMessages(op.param2)
+                                   ko.removeAllMessages(op.param2)
+                                   kw.removeAllMessages(op.param2)
+                                   ke.removeAllMessages(op.param2)
+                                   ky.removeAllMessages(op.param2)
+                                   ki.sendText(msg.to,"Chat dibersihkan...")
+                                   kk.sendText(msg.to,"Chat dibersihkan...")
+                                   kc.sendText(msg.to,"Chat dibersihkan...")
+                                   km.sendText(msg.to,"Chat dibersihkan...")
+                                   kb.sendText(msg.to,"Chat dibersihkan...")
+                                   kn.sendText(msg.to,"Chat dibersihkan...")
+                                   ko.sendText(msg.to,"Chat dibersihkan...")
+                                   kw.sendText(msg.to,"Chat dibersihkan...")
+                                   ke.sendText(msg.to,"Chat dibersihkan...")
+                                   ky.sendText(msg.to,"Chat dibersihkan...")
+                               except:
+                                   pass
+                                
                         elif cmd == "addbot":
-                          if msg._from in admin:
+                          if wait["selfbot"] == True:
+                            if msg._from in admin:
                             try:
                                 cl.findAndAddContactsByMid(Amid)
                                 cl.findAndAddContactsByMid(Bmid)
@@ -3416,92 +3504,6 @@ def bot(op):
                                 cl.sendMessage(to,"Sucsess!!!")
                             except:
                                 cl.sendMessage(to,"Sucess! add all bots...Ok")
-                                
-                        elif "ดึง " in msg.text:
-                            if msg._from in admin:                                                                                                                                       
-                               key = eval(msg.contentMetadata["MENTION"])
-                               key["MENTIONEES"][0]["M"]                                                                                                                                
-                               targets = []
-                               for x in key["MENTIONEES"]:                                                                                                                                  
-                                   targets.append(x["M"])
-                               for target in targets:                                                                                                                                       
-                                   try:
-                                      cl.findAndAddContactsByMid(target)
-                                      cl.inviteIntoGroup(msg.to,[target])
-                                   except:
-                                       pass
-
-                        elif cmd == "mybot":
-                          if wait["selfbot"] == True:
-                            if msg._from in admin:
-                               msg.contentType = 13
-                               msg.contentMetadata = {'mid': Amid}
-                               cl.sendMessage1(msg)
-                               msg.contentType = 13
-                               msg.contentMetadata = {'mid': Bmid}
-                               cl.sendMessage1(msg)
-                               msg.contentType = 13
-                               msg.contentMetadata = {'mid': Cmid}
-                               cl.sendMessage1(msg)
-                               msg.contentType = 13
-                               msg.contentMetadata = {'mid': Dmid}
-                               cl.sendMessage1(msg)
-                               msg.contentType = 13
-                               msg.contentMetadata = {'mid': Emid}
-                               cl.sendMessage1(msg)
-                               msg.contentType = 13
-                               msg.contentMetadata = {'mid': Fmid}
-                               cl.sendMessage1(msg)
-                               msg.contentType = 13
-                               msg.contentMetadata = {'mid': Gmid}
-                               cl.sendMessage1(msg)
-                               msg.contentType = 13
-                               msg.contentMetadata = {'mid': Hmid}
-                               cl.sendMessage1(msg)
-                               msg.contentType = 13
-                               msg.contentMetadata = {'mid': Imid}
-                               cl.sendMessage1(msg)
-                               msg.contentType = 13
-                               msg.contentMetadata = {'mid': Jmid}
-                               cl.sendMessage1(msg)
-                               msg.contentType = 13
-                               msg.contentMetadata = {'mid': Zmid}
-                               cl.sendMessage1(msg)
-
-                        elif text.lower() == "ลบแชท":
-                          if wait["selfbot"] == True:
-                            if msg._from in admin:
-                               try:
-                                   cl.removeAllMessages(op.param2)
-                               except:
-                                   pass
-
-                        elif text.lower() == "ลบแชทคิก":
-                          if wait["selfbot"] == True:
-                            if msg._from in admin:
-                               try:
-                                   ki.removeAllMessages(op.param2)
-                                   kk.removeAllMessages(op.param2)
-                                   kc.removeAllMessages(op.param2)
-                                   km.removeAllMessages(op.param2)
-                                   kb.removeAllMessages(op.param2)
-                                   kn.removeAllMessages(op.param2)
-                                   ko.removeAllMessages(op.param2)
-                                   kw.removeAllMessages(op.param2)
-                                   ke.removeAllMessages(op.param2)
-                                   ky.removeAllMessages(op.param2)
-                                   ki.sendText(msg.to,"Chat dibersihkan...")
-                                   kk.sendText(msg.to,"Chat dibersihkan...")
-                                   kc.sendText(msg.to,"Chat dibersihkan...")
-                                   km.sendText(msg.to,"Chat dibersihkan...")
-                                   kb.sendText(msg.to,"Chat dibersihkan...")
-                                   kn.sendText(msg.to,"Chat dibersihkan...")
-                                   ko.sendText(msg.to,"Chat dibersihkan...")
-                                   kw.sendText(msg.to,"Chat dibersihkan...")
-                                   ke.sendText(msg.to,"Chat dibersihkan...")
-                                   ky.sendText(msg.to,"Chat dibersihkan...")
-                               except:
-                                   pass
 
                         elif cmd.startswith("broadcast: "):
                           if wait["selfbot"] == True:
